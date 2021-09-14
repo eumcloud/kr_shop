@@ -1,0 +1,210 @@
+<link href="../../../ilikeclick/desc/merchant_content.css" rel="stylesheet" type="text/css" />
+<link href="../../../ilikeclick/desc/common.css" rel="stylesheet" type="text/css" />
+<link href="../../../ilikeclick/desc/base.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../../ilikeclick/desc/jquery-1.6.1.min.js"></script>
+<script>
+	$(function(){
+		$(".lft").click(function(){
+			var id = $(".what_sub").not(":hidden").attr("id");
+			what_step_left(id);			
+			return false;
+		});
+		$(".rit").click(function()
+		{
+			var id = $(".what_sub").not(":hidden").attr("id");
+			what_step_right(id);
+			return false;
+		});
+	});
+
+function what_step_left(id)
+{
+	id = id.replace("lv","");
+	$("#lv"+id).fadeOut(200);
+	id = ((parseInt(id) - 1) < 1)? 1: parseInt(id) - 1;		
+	$("#lv"+id).delay(200).show(0);
+}
+function what_step_right(id)
+{
+	id = id.replace("lv","");
+	$("#lv"+id).fadeOut(200);
+	id = ((parseInt(id) + 1) > 5)? 5: parseInt(id) + 1;	
+	$("#lv"+id).delay(200).show(0);
+}
+function what_step_show(id)
+{
+	$(":[id^=lv]").fadeOut(200);
+	$("#lv"+id).delay(200).show(0);
+}
+</script>
+
+<div id="container">
+	
+	<!-- 내용 -->
+	<div id="subcont">
+	
+		<div id="sub_contents">
+			<div class="what_top">
+				<p><img src="../../../ilikeclick/desc/images/01_top.gif" alt="Merchant(광고주)란? - 10만여 제휴사이트에 상품, 서비스를 광고할 수 있습니다! 다른 웹사이트나, SNS 와 같은 매체와 제휴를 맺어 판매하는 물건이나 서비스를 광고를 하고자 하는 모든 전자상거래 업체를 Merchant(광고주)라고 합니다. ILikeClick과 함께 10만여 Affiliate(제휴사)의 광고주가 되세요!" /></p>
+			</div>
+			<div class="what_cont01">
+				<p class="title"><img src="../../../ilikeclick/desc/images/01_tit01.gif" alt="제휴마케팅에서 Merchant(광고주)의 활동" /></p>
+				<ul class="box">
+					<li>제휴마케팅에서 Merchant(광고주)로써 활동하기 위해서는 우선 광고수수료와 홍보하고자 하는 광고물을 등록해야 합니다. </li>
+					<li>등록된 정보를 보고 Affiliate(매체)가 제휴를 신청하고, 자신의 매체에 광고물을 노출시킬 수 있기 때문입니다. </li>
+					<li class="c_blue">Merchant(광고주)는 Affiliate(매체)를 통해 온라인 판매망을 넓히고 매출 증대의 기회를 얻을 수 있습니다. 대신, 그 매출로 인해 발생한 <br /> 수익의 일부를 광고의 대가로 Affiliate(매체)에게  지급함으로써 제휴마케팅이 진행됩니다. </li>
+					<li>제휴마케팅에서 물건이나 서비스를 홍보하고자 하는 개인이나 회사를 Merchant(광고주)라고 합니다. </li>
+					<li>참고로 자신의 웹사이트, 블로그, SNS와 같은 매체를 통해 광고를 노출시켜 수수료 수익을 창출하고자 하는 개인이나 회사를 Affiliate(매체)<br />라고 합니다. </li>
+				</ul>
+			</div>
+ 
+ 			<div class="what_good">
+				<p class="pb_30"><img src="../../../ilikeclick/desc/images/01_tit02.gif" alt="제휴마케팅의 대표적인 광고방식" /></p>
+				<ul>
+					<li class="pb_45"><img src="../../../ilikeclick/desc/images/01_good05.gif" alt="CPA (Cost Per Action)-1.회원가입, 이벤트진행 등의 광고 진행 시 주로 사용하는 방법으로, 광고를 통해 가입한 회원 당 책정된 수수료를 Affiliate(매체사)에게 지급합니다. " />
+						<p class="pb_45_2"><img src="../../../ilikeclick/desc/images/01_good05_tit.gif" alt="CPA Merchant" /></p>
+						<p class="pb_45_img"><img src="../../../ilikeclick/desc/images/cpa_logo.gif" alt="로고-SKT, KT, 11번가, 라이나생명, 삼성화재, 쿠팡 ,AK몰, 엠넷, 스포츠토토, 롯데카드, 컴투스, LG전자" /></p>
+					</li>
+					<li class="pb_45"><img src="../../../ilikeclick/desc/images/01_good06.gif" alt="CPS (Cost Per Sale)-2.대부분의 상품을 판매하는 광고 진행 시 사용하는 방법으로, 광고를 통해 상품구매가 이루어지면, 그 상품판매 당 책정된 수수료를 Affiliate(매체사)에게 지급합니다.  Merchant가 상품의 마진 및 기타 사항들을 고려하여 수수료 비율을 결정합니다.  " />
+						<p class="pb_45_2"><img src="../../../ilikeclick/desc/images/01_good06_tit.gif" alt="CPS Merchant" /></p>
+						<p class="pb_45_img"><img src="../../../ilikeclick/desc/images/cps_logo.gif" alt="로고-옥션, G마켓, 11번가, Hmall, 신세계몰, Cjmall, GS SHOP, YES24, 이마트 인터넷 쇼핑몰, 롯데홈쇼핑, AK몰, 위즈위드" /></p>
+					</li>
+				</ul>
+			</div>
+ 
+			<div class="rew_step">
+				<p class=""><img src="../../../ilikeclick/desc/images/01_tit05.gif" alt="Merchant(광고주)의 단계별 제휴마케팅 활동 방법" /></p>
+				<ol>
+					<li><img src="../../../ilikeclick/desc/images/01_num01.gif" alt="1.회원가입&승인" /></li>
+					<li><img src="../../../ilikeclick/desc/images/01_num02.gif" alt="2.서비스준비&승인" /></li>
+					<li><img src="../../../ilikeclick/desc/images/01_num03.gif" alt="3.제휴관리" /></li>
+					<li><img src="../../../ilikeclick/desc/images/01_num04.gif" alt="4.실적관리" /></li>
+					<li><img src="../../../ilikeclick/desc/images/01_num05.gif" alt="4.수수료 지급" /></li>
+				</ol>
+			</div>
+			<!-- step보기 -->
+			<div class="what_step">
+				<ul class="set">
+					<li class="lft"><a href="#" title="이전단계">이전단계</a></li>
+					<li class="cen">
+ 
+						<!-- 1단계-->
+						<div class="what_sub" id="lv1">
+							<p class="what_sub"><img src="../../../ilikeclick/desc/images/01_step01_tit.gif" alt="STEP1/회원가입 " /></p>
+							<ol class="w_step">
+								<li><img src="../../../ilikeclick/desc/images/01_step01_img01.gif" alt="1. Affiliate로 서비스 이용을 위해서는 사이트에서 Affiliate회원가입을 해야합니다." /></li>
+								<li><img src="../../../ilikeclick/desc/images/01_step01_img02.gif" alt="2. 원활한 서비스 이용을 위해 가능한 모든 정보를 정확히 기입해주십시오" /></li>
+								<li><img src="../../../ilikeclick/desc/images/01_step01_img03.gif" alt="3. 가입이 완료 되면 ID와 비밀번호가 부여되며, 바로 서비스 이용이 가능합니다. " /></li>
+							</ol>
+						</div>
+						<!-- //1단계 -->
+ 
+						<!-- 2단계:숨겨져있음(class:skip) -->
+						<div class="what_sub hide" id="lv2">
+							<p class="w_title"><img src="../../../ilikeclick/desc/images/01_step02_tit.gif" alt="STEP2/서비스준비& 승인 " /></p>
+							<ol class="w_step">
+								<li><img src="../../../ilikeclick/desc/images/01_step02_img01.gif" alt="1. 회원가입 승인 후 본격적인 Merchant활동을 위한 서비스 준비를 해야합니다. 수수료는 광고에 대한 대가로 제휴된 매체에 지급할 비용입니다. " /></li>
+								<li><img src="../../../ilikeclick/desc/images/01_step02_img02.gif" alt="2. 제휴마케팅의 결과로 매출이 발생한 것을 확인하기 위해 스크립트 설치를 해야 합니다. 스크립트 설치는 요청 시 유료로 대행가능합니다. " /></li>
+								<li><img src="../../../ilikeclick/desc/images/01_step02_img03.gif" alt="3. 광고물은 텍스트, 이미지, 등 다양한 방법으로 등록할 수 있습니다.모든 준비가 완료되면 센터의 일정 기준에 따라 검수한 후 서비스승인을 하여 정식Merchant로 등록이 됩니다 " /></li>
+							</ol>
+						</div>
+						<!-- //2단계 -->
+ 
+						<!-- 3단계:숨겨져있음(class:skip) -->
+						<div class="what_sub hide"  id="lv3">
+							<p class="w_title"><img src="../../../ilikeclick/desc/images/01_step03_tit.gif" alt="STEP3/제휴관리 " /></p>
+							<ol class="w_step">
+								<li><img src="../../../ilikeclick/desc/images/01_step03_img01.gif" alt="1. 정식 등록된 Merchant는 ILikeClick에 노출되어 많은 Affiliate회원들의 제휴요청을 받을 것입니다." /></li>
+								<li><img src="../../../ilikeclick/desc/images/01_step03_img02.gif" alt="2. 제휴 방법을 자동승인으로 한 경우에는 별도의 승인 없이 Affiliate들이 광고물을 가져갈 수 있습니다." /></li>
+								<li><img src="../../../ilikeclick/desc/images/01_step03_img03.gif" alt="3. 수동승인으로 한 경우에는 제휴요청 업체를 확인하고 직접 승인을 해야 합니다." /></li>
+							</ol>
+						</div>
+						<!-- //3단계 -->
+ 
+						<!-- 4단계:숨겨져있음(class:skip) -->
+						<div class="what_sub hide" id="lv4">
+							<p class="w_title"><img src="../../../ilikeclick/desc/images/01_step04_tit.gif" alt="STEP4/실적관리 " /></p>
+							<ol class="w_step">
+								<li><img src="../../../ilikeclick/desc/images/01_step04_img01.gif" alt="1. 매체를 통해 노출된 광고물을 통해 매출이 발생하게 되면, 그 실적은 로그인 후 리포트에서 확인할 수 있습니다. " /></li>
+								<li><img src="../../../ilikeclick/desc/images/01_step04_img02.gif" alt="2. 취소 및 반품된 매출에 대해서는 사이트에 처리요청을 하면 바로 삭감 처리 됩니다." /></li>
+							</ol>
+						</div>
+						<!-- //4단계 -->
+ 
+						<!-- 5단계 :숨겨져있음(class:skip) -->
+						<div class="what_sub hide"  id="lv5">
+							<p class="w_title"><img src="../../../ilikeclick/desc/images/01_step05_tit.gif" alt="STEP5/수수료지급 " /></p>
+							<ol class="w_step">
+								<li><img src="../../../ilikeclick/desc/images/01_step05_img01.gif" alt="1. 수수료는 매월 1일부터 말일까지를 기준으로, 취소 및 반품 처리를 익월 중 반영하여 익익월 초에 확정됩니다. " /></li>
+								<li><img src="../../../ilikeclick/desc/images/01_step05_img02.gif" alt="2. 확정된 수수료는 가입 시 등록한 메일로 발송되는 세금계산서를 확인 한 후, 매 월 10일까지 카드나 무통장 입금으로 결제하시면 됩니다. 단, 수수료가 1만원 이하인 경우에는 세금계산서가 차월에 발행됩니다. " /></li>
+							</ol>
+						</div>
+						<!-- //5단계 -->
+ 
+					</li>
+					<li class="rit"><a href="#" title="다음단계">다음단계</a></li>
+					<li class="bth"></li>
+				</ul>
+			</div>
+			<!-- //step보기 -->
+			
+			<div class="what_good pb_45">
+				<p class="pb_30"><img src="../../../ilikeclick/desc/images/01_tit03.gif" alt="Merchant의 제휴마케팅 장점" /></p>
+				<ul>
+					<li class="pb_45"><img src="../../../ilikeclick/desc/images/01_good01.gif" alt="1.저비용 고효율 광고의 실현! - 운영 중인 매체와 관련 있는 상품, 서비스를 소개함으로써 이용자들의 매출 가능성을 높일 수 있습니다. " /></li>
+					<li class="pb_45"><img src="../../../ilikeclick/desc/images/01_good02.gif" alt="2.제휴사를 통한 쉽고 빠른 판매망 구축 - 원활한 제휴관계가 성립 할 수 있도록 제휴사 모집, 계약, 운영의 모든 업무를 ILikeClick에서 지원하여 쉽고 빠른 판매망 구축이 가능합니다.  " /></li>
+					<li class="pb_45"><img src="../../../ilikeclick/desc/images/01_good03.gif" alt="3.편리한 광고 관리 시스템 - 관리가 따로 필요 없는 광고컨텐츠를 제공함으로써, 다양한 광고 방식으로 광고가 노출되어 효과를 극대화할 수 있습니다. 또한, 성과, 효과분석, 마케팅 컨설팅, 수수료 정산 시스템 등의 지원으로 보다 효율적인 광고 관리가 가능합니다." /></li>
+					<li><img src="../../../ilikeclick/desc/images/01_good04.gif" alt="4.무료 검색 키워드 등록  -  일 500만여 검색 조회건이 발생되고 있는 키워드 검색 기능에 노출 될 수 있도록, 검색키워드를 무료로 제공합니다" /></li>
+				</ul>
+			</div>
+			
+			<p class="pb_30"><img src="../../../ilikeclick/desc/images/01_tit03.gif" alt="서비스 진행 비용" /></p>
+			<table cellspacing="0" class="table07" summary="서비스 진행 비용">
+				<caption>서비스 진행 비용</caption>
+				<colgroup>
+					<col width="%" />
+					<col width="%" />
+					<col width="%" />
+					<col width="%" />
+				</colgroup>
+				<tbody>
+				<tr>
+					<th class="none">형태</th>
+					<th class="none">항목</th>
+					<th class="none">단가(VAT별도)</th>
+					<th class="none">비고</th>
+				</tr>
+				<tr>
+					<td  rowspan="2" class="center">초기투입비</td>
+					<td>서비스 가입비</td>
+					<td>3개월 : 500,000원<br />6개월 : 800,000원<br />12개월 : 1,500,000원</td>
+					<td class="none">&nbsp;</td>
+				</tr>
+				<tr>
+					<td>보증보험</td>
+					<td>500만원 보증보험료<br />1년 : 105,900원</td>
+					<td class="none">1년 만기 전 서비스 종료 시 남은 기간 차액 환불</td>
+				</tr>
+				<tr>
+					<td  rowspan="2" class="center">광고진행 시</td>
+					<td>실적 발생시</td>
+					<td>지급수수료<br />( 매체 : Ilikeclick => 7 : 3 )</td>
+					<td class="none">지급수수료는 아이라이크클릭 담당자와 협의 결정</td>
+				</tr>
+				</tbody>
+			</table>
+
+			<p class="mjoin_form01_ok">
+				<a href="http://home.ilikeclick.com/service/member/join_merchant.html/" target ="_blank"><img alt="입점신청하기" src="../../../ilikeclick/desc/images/appl_btn.gif" /></a>
+				<a href="http://home.ilikeclick.com/service/" target ="_blank"><img alt="사이트 이동" src="../../../ilikeclick/desc/images/go_btn.gif"/></a>
+			</p>
+			
+			<div class="free_consult" style="margin-top:70px;">
+				<p class="skip">전문가의 효과적인 컨설팅을 무료로 받아보세요.제휴마케팅 전문 컨설턴트가 1:1로 궁금해 하시는 모든 질문에 성실히 답변해드리겠습니다.</p>
+				<p class="text"><span class="fw_b">제휴마케팅 Merchant 담당자:</span> 주성수대리 <a href="">02)501-6474(315) </a></p>
+			</div>
+ 
+		</div>
+ 
+	</div>
+	<!-- //내용 -->

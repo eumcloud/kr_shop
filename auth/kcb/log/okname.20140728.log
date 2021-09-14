@@ -1,0 +1,495 @@
+[2014-07-28 11:23:42.269] # OKNAME v3.70 start!<br>
+[2014-07-28 11:23:42.298] # mode=HS_CNFRM_POPUP<br>
+[2014-07-28 11:23:42.299] # argv[ 1](hs_cert_svc_tx_seqno)=20140728112342522645<br>
+[2014-07-28 11:23:42.299] # argv[ 2](nm)=x<br>
+[2014-07-28 11:23:42.299] # argv[ 3](brdt)=x<br>
+[2014-07-28 11:23:42.299] # argv[ 4](sex)=x<br>
+[2014-07-28 11:23:42.299] # argv[ 5](ntv_frnr_tp_cd)=x<br>
+[2014-07-28 11:23:42.299] # argv[ 6](var1)=03<br>
+[2014-07-28 11:23:42.299] # argv[ 7](var2)=01076621638<br>
+[2014-07-28 11:23:42.299] # argv[ 8](var3)=0<br>
+[2014-07-28 11:23:42.299] # argv[ 9](var4)=0<br>
+[2014-07-28 11:23:42.299] # argv[10](var5)=0<br>
+[2014-07-28 11:23:42.299] # argv[11](return_msg)=x<br>
+[2014-07-28 11:23:42.299] # argv[12](return_url)=http://grptimev40.onedaynet.co.kr/pages/member.join.auth.step3.php<br>
+[2014-07-28 11:23:42.299] # argv[13](in_tp_bit)=8<br>
+[2014-07-28 11:23:42.299] # argv[14](hs_cert_msr_cd)=10<br>
+[2014-07-28 11:23:42.299] # argv[15](hs_cert_rqst_caus_cd)=00<br>
+[2014-07-28 11:23:42.299] # argv[16](idcf_mbr_com_cd)=P00000000000<br>
+[2014-07-28 11:23:42.299] # argv[17](server_ip)=x<br>
+[2014-07-28 11:23:42.299] # argv[18](client_site_nm)=ok-name.co.kr<br>
+[2014-07-28 11:23:42.299] # argv[19](end_point_url)=http://tsafe.ok-name.co.kr:29080/KcbWebService/OkNameService<br>
+[2014-07-28 11:23:42.299] # argv[20](log_path)=/home/onedaynet/solution/grptimev40/public_html/../auth/kcb/log/<br>
+[2014-07-28 11:23:42.299] # argv[21](option)=QLU<br>
+[2014-07-28 11:23:42.299] # soap_timeout: 30000 ms<br>
+[2014-07-28 11:23:42.377] # key   : AwX0eBJISN6UJAmmXuZ3AbnUx+KPpw==:cOEM3PmzALkRHOTc9PU+XA==<br>
+[2014-07-28 11:23:42.377] # spkey : AwX0eBJISN6UJAmmXuZ3AbnUx+KPpw==<br>
+[2014-07-28 11:23:42.377] # ssig  : cOEM3PmzALkRHOTc9PU+XA==<br>
+[2014-07-28 11:23:42.380] # nm               : x    <br>
+[2014-07-28 11:23:42.380] # brdt             : x    <br>
+[2014-07-28 11:23:42.380] # e_nm             : 9mLFb4Y=<br>
+[2014-07-28 11:23:42.380] # e_brdt           : 9mLFb4Y=<br>
+[2014-07-28 11:23:42.380] # cpkey : AgcfUic9zgz8ICOvVYGTpV8+Z7bCdQ==<br>
+[2014-07-28 11:23:42.380] # csig  : ZWUWDExCme3+hfrK4QdC4A==<br>
+[2014-07-28 11:23:42.406] retmsg: zHLUf5zekguJyISHaCuqbXlrcmZUc/9cUlPV9RBqLNnJHgIgiVugnTiefyTmXiV07QrPdx9GI+R5Fx37vT9bR8ubPnOUVkMqoWxNZa/+1lYXMcWdPs/Eh7oK4E7wB/Ad4atw5jMuO2w/OviFplm92GOGiiilPmkENxIOXYdPzf+ITE19WoDuDt71mu/t3kb2Fu3qbtc2RjUr6GOlUXx77iRPcoLJsF16RKKoKbZDKGWlnmnhKWaT+xLD0N7st3iPFGCzs2qjv44fFjb0B0BBnaSFP1PHjz9U
+[2014-07-28 11:23:42.406] retmsg: B010:미계약 서비스 요청:va66cP3oml0n8zx/T3uEgiIUPYFCNlJpDUxidppRd5MpplMjI5rGARTUTD5Mxw23CJlPzenyI1ozcRfDWB1zkS6+aidEiRT617Cg/jp/Xj+6KeKY+lhEQK0j5hhHLpTImrf1W6+TswVzU6Fg154y8yR0erNCn6Ttt9UNakTKScm+QTA5QsFleSWfP3YcQ0P2
+[2014-07-28 11:23:42.406] B010
+[2014-07-28 11:23:42.406] 미계약 서비스 요청
+[2014-07-28 11:23:42.406] va66cP3oml0n8zx/T3uEgiIUPYFCNlJpDUxidppRd5MpplMjI5rGARTUTD5Mxw23CJlPzenyI1ozcRfDWB1zkS6+aidEiRT617Cg/jp/Xj+6KeKY+lhEQK0j5hhHLpTImrf1W6+TswVzU6Fg154y8yR0erNCn6Ttt9UNakTKScm+QTA5QsFleSWfP3YcQ0P2
+[2014-07-28 11:23:42.406] # final ret code=10<br>
+[2014-07-28 11:23:56.346] # OKNAME v3.70 start!<br>
+[2014-07-28 11:23:56.346] # mode=HS_CNFRM_POPUP<br>
+[2014-07-28 11:23:56.346] # argv[ 1](hs_cert_svc_tx_seqno)=20140728112356330616<br>
+[2014-07-28 11:23:56.346] # argv[ 2](nm)=x<br>
+[2014-07-28 11:23:56.347] # argv[ 3](brdt)=x<br>
+[2014-07-28 11:23:56.347] # argv[ 4](sex)=x<br>
+[2014-07-28 11:23:56.347] # argv[ 5](ntv_frnr_tp_cd)=x<br>
+[2014-07-28 11:23:56.347] # argv[ 6](var1)=03<br>
+[2014-07-28 11:23:56.347] # argv[ 7](var2)=01076621638<br>
+[2014-07-28 11:23:56.347] # argv[ 8](var3)=0<br>
+[2014-07-28 11:23:56.347] # argv[ 9](var4)=0<br>
+[2014-07-28 11:23:56.347] # argv[10](var5)=0<br>
+[2014-07-28 11:23:56.347] # argv[11](return_msg)=x<br>
+[2014-07-28 11:23:56.347] # argv[12](return_url)=http://grptimev40.onedaynet.co.kr/pages/member.join.auth.step3.php<br>
+[2014-07-28 11:23:56.347] # argv[13](in_tp_bit)=8<br>
+[2014-07-28 11:23:56.347] # argv[14](hs_cert_msr_cd)=10<br>
+[2014-07-28 11:23:56.347] # argv[15](hs_cert_rqst_caus_cd)=00<br>
+[2014-07-28 11:23:56.347] # argv[16](idcf_mbr_com_cd)=P06230000001<br>
+[2014-07-28 11:23:56.347] # argv[17](server_ip)=x<br>
+[2014-07-28 11:23:56.347] # argv[18](client_site_nm)=ok-name.co.kr<br>
+[2014-07-28 11:23:56.347] # argv[19](end_point_url)=http://tsafe.ok-name.co.kr:29080/KcbWebService/OkNameService<br>
+[2014-07-28 11:23:56.347] # argv[20](log_path)=/home/onedaynet/solution/grptimev40/public_html/../auth/kcb/log/<br>
+[2014-07-28 11:23:56.347] # argv[21](option)=QLU<br>
+[2014-07-28 11:23:56.347] # soap_timeout: 30000 ms<br>
+[2014-07-28 11:23:56.364] # key   : AwNxx+6965qtY2El730R5T1ID0DZTg==:QP1LPhP4WwiPChMpsyGqUA==<br>
+[2014-07-28 11:23:56.364] # spkey : AwNxx+6965qtY2El730R5T1ID0DZTg==<br>
+[2014-07-28 11:23:56.364] # ssig  : QP1LPhP4WwiPChMpsyGqUA==<br>
+[2014-07-28 11:23:56.366] # nm               : x    <br>
+[2014-07-28 11:23:56.366] # brdt             : x    <br>
+[2014-07-28 11:23:56.366] # e_nm             : Q7+DRBI=<br>
+[2014-07-28 11:23:56.366] # e_brdt           : Q7+DRBI=<br>
+[2014-07-28 11:23:56.366] # cpkey : AwO1BSbOplPU5YCAqBKkXQx6T/Hj2A==<br>
+[2014-07-28 11:23:56.366] # csig  : K2V7iPZS0NAILkLYhVsvGQ==<br>
+[2014-07-28 11:23:56.443] retmsg: ea+TVAgrj4Q2jSgHecgaLNQ74mOHlPTDqB6zcdI+LFMUuSxITznNoENMPLV+nb+4GQXOkFfBz5nIzOtB+cX0tEtIkKWGlBy6vcRGD5YwXoBkng/kKnG3nC6yr4c1pbcE5q2bi9EaPgmtjL4bz7qSQnJbiUv3DsvNtqhZ6TyL8KYT56FQ0xW0IBeV1hV2+scIIe8WAPGhQwqhg1Y09SAC+QoAtM/cDF9alcQWsE26Wj7FwNyUoM6B3PEEHI12kaHAUaFpLO+/80Syrg==
+[2014-07-28 11:23:56.443] retmsg: B000:정상:CPs/4AY2JWnfQ78i7RZsZSSmyYm14HYfwu2hLMOjf1T3+ZKpZii53fNBmQ6Ln2pPE3yiSXVRP4HgO1r/Ue0mgcUVCUXfrbnWo/8VTEnIwYd2H1IqEX9ZOqkj+jvS8N8vfbBABcglp+g3nBmHA/0CTRlbvvLPk7ERYt4kIH/bT37g65+eFUf3EarZPQMltoSV
+[2014-07-28 11:23:56.443] B000
+[2014-07-28 11:23:56.443] 정상
+[2014-07-28 11:23:56.443] CPs/4AY2JWnfQ78i7RZsZSSmyYm14HYfwu2hLMOjf1T3+ZKpZii53fNBmQ6Ln2pPE3yiSXVRP4HgO1r/Ue0mgcUVCUXfrbnWo/8VTEnIwYd2H1IqEX9ZOqkj+jvS8N8vfbBABcglp+g3nBmHA/0CTRlbvvLPk7ERYt4kIH/bT37g65+eFUf3EarZPQMltoSV
+[2014-07-28 11:23:56.443] # final ret code=0<br>
+[2014-07-28 11:24:59.556] # OKNAME v3.70 start!<br>
+[2014-07-28 11:24:59.556] # mode=HS_CNFRM_POPUP<br>
+[2014-07-28 11:24:59.556] # argv[ 1](hs_cert_svc_tx_seqno)=20140728112459112065<br>
+[2014-07-28 11:24:59.556] # argv[ 2](nm)=x<br>
+[2014-07-28 11:24:59.556] # argv[ 3](brdt)=x<br>
+[2014-07-28 11:24:59.556] # argv[ 4](sex)=x<br>
+[2014-07-28 11:24:59.556] # argv[ 5](ntv_frnr_tp_cd)=x<br>
+[2014-07-28 11:24:59.556] # argv[ 6](var1)=x<br>
+[2014-07-28 11:24:59.556] # argv[ 7](var2)=x<br>
+[2014-07-28 11:24:59.556] # argv[ 8](var3)=0<br>
+[2014-07-28 11:24:59.556] # argv[ 9](var4)=0<br>
+[2014-07-28 11:24:59.556] # argv[10](var5)=0<br>
+[2014-07-28 11:24:59.556] # argv[11](return_msg)=x<br>
+[2014-07-28 11:24:59.557] # argv[12](return_url)=http://grptimev40.onedaynet.co.kr/pages/member.join.auth.step3.php<br>
+[2014-07-28 11:24:59.557] # argv[13](in_tp_bit)=undefined<br>
+[2014-07-28 11:24:59.557] # argv[14](hs_cert_msr_cd)=10<br>
+[2014-07-28 11:24:59.557] # argv[15](hs_cert_rqst_caus_cd)=00<br>
+[2014-07-28 11:24:59.557] # argv[16](idcf_mbr_com_cd)=P06230000001<br>
+[2014-07-28 11:24:59.557] # argv[17](server_ip)=x<br>
+[2014-07-28 11:24:59.557] # argv[18](client_site_nm)=ok-name.co.kr<br>
+[2014-07-28 11:24:59.557] # argv[19](end_point_url)=http://tsafe.ok-name.co.kr:29080/KcbWebService/OkNameService<br>
+[2014-07-28 11:24:59.557] # argv[20](log_path)=/home/onedaynet/solution/grptimev40/public_html/../auth/kcb/log/<br>
+[2014-07-28 11:24:59.557] # argv[21](option)=QLU<br>
+[2014-07-28 11:24:59.557] # soap_timeout: 30000 ms<br>
+[2014-07-28 11:24:59.575] # key   : AgPEtRyXRjES0pDzxPBKbUq2WNAPmA==:ysqUz6AOvRghKc8DKN3/ug==<br>
+[2014-07-28 11:24:59.576] # spkey : AgPEtRyXRjES0pDzxPBKbUq2WNAPmA==<br>
+[2014-07-28 11:24:59.576] # ssig  : ysqUz6AOvRghKc8DKN3/ug==<br>
+[2014-07-28 11:24:59.577] # nm               : x    <br>
+[2014-07-28 11:24:59.577] # brdt             : x    <br>
+[2014-07-28 11:24:59.577] # e_nm             : +YmILiI=<br>
+[2014-07-28 11:24:59.577] # e_brdt           : +YmILiI=<br>
+[2014-07-28 11:24:59.577] # cpkey : AgCNkKC4ZePCGMd8VhwoLnlDUxwYEA==<br>
+[2014-07-28 11:24:59.577] # csig  : 0Y/TkJ3bXI++Dqes7kthOw==<br>
+[2014-07-28 11:24:59.625] retmsg: w5mYPjhJjefkT0GDRvx88PDxK5PZl+RMMP71Mxszlv8iPF3Cvo5OQ/0kQFodxtPvLQCDgxuZxSXu3cwcCAhFMbXhqwvy4HZCVNuBfvXrgUe5SgfVsBlrhgYdTd2f3bmBNSGn68RTCIlIwZaoI0z6ysmAP47LAK7PB+0yFNSqX4yFhRKornsyrKL8oWMciBzY2SQj5NL/tcYhpBtHyUmvFn9IFBTucfzSpH2iBUUdrX9ASta05FhoBL4erHEhqhYPWTYSVqFXLyrxaQ==
+[2014-07-28 11:24:59.626] retmsg: B000:정상:CPs/4AY2JWnfQ78i7RZsZWh4Vbz1HvcXyiC54ftkN2W9GZx97yEDkTd/HIlLeYjDbZneoheC9z8HjihOPauTkUVJTL6z/k6cxegeU0nTdpivr8G5QS5aHGhOA7IYICIWf7FhRV7Lyet7X81XKOckHmlrI8GEmHvLWzdlDrPkcWY4XQzUu5r2mxzvugcfIte3
+[2014-07-28 11:24:59.626] B000
+[2014-07-28 11:24:59.626] 정상
+[2014-07-28 11:24:59.626] CPs/4AY2JWnfQ78i7RZsZWh4Vbz1HvcXyiC54ftkN2W9GZx97yEDkTd/HIlLeYjDbZneoheC9z8HjihOPauTkUVJTL6z/k6cxegeU0nTdpivr8G5QS5aHGhOA7IYICIWf7FhRV7Lyet7X81XKOckHmlrI8GEmHvLWzdlDrPkcWY4XQzUu5r2mxzvugcfIte3
+[2014-07-28 11:24:59.626] # final ret code=0<br>
+[2014-07-28 11:26:18.232] # OKNAME v3.70 start!<br>
+[2014-07-28 11:26:18.232] # mode=HS_CNFRM_POPUP<br>
+[2014-07-28 11:26:18.232] # argv[ 1](hs_cert_svc_tx_seqno)=2014072811261825846<br>
+[2014-07-28 11:26:18.232] # argv[ 2](nm)=x<br>
+[2014-07-28 11:26:18.232] # argv[ 3](brdt)=x<br>
+[2014-07-28 11:26:18.232] # argv[ 4](sex)=x<br>
+[2014-07-28 11:26:18.232] # argv[ 5](ntv_frnr_tp_cd)=x<br>
+[2014-07-28 11:26:18.232] # argv[ 6](var1)=x<br>
+[2014-07-28 11:26:18.232] # argv[ 7](var2)=x<br>
+[2014-07-28 11:26:18.232] # argv[ 8](var3)=0<br>
+[2014-07-28 11:26:18.232] # argv[ 9](var4)=0<br>
+[2014-07-28 11:26:18.232] # argv[10](var5)=0<br>
+[2014-07-28 11:26:18.232] # argv[11](return_msg)=x<br>
+[2014-07-28 11:26:18.232] # argv[12](return_url)=http://grptimev40.onedaynet.co.kr/pages/member.join.auth.step3.php<br>
+[2014-07-28 11:26:18.232] # argv[13](in_tp_bit)=undefined<br>
+[2014-07-28 11:26:18.232] # argv[14](hs_cert_msr_cd)=10<br>
+[2014-07-28 11:26:18.232] # argv[15](hs_cert_rqst_caus_cd)=00<br>
+[2014-07-28 11:26:18.232] # argv[16](idcf_mbr_com_cd)=P06230000001<br>
+[2014-07-28 11:26:18.232] # argv[17](server_ip)=x<br>
+[2014-07-28 11:26:18.232] # argv[18](client_site_nm)=ok-name.co.kr<br>
+[2014-07-28 11:26:18.233] # argv[19](end_point_url)=http://tsafe.ok-name.co.kr:29080/KcbWebService/OkNameService<br>
+[2014-07-28 11:26:18.233] # argv[20](log_path)=/home/onedaynet/solution/grptimev40/public_html/../auth/kcb/log/<br>
+[2014-07-28 11:26:18.233] # argv[21](option)=QLU<br>
+[2014-07-28 11:26:18.233] # soap_timeout: 30000 ms<br>
+[2014-07-28 11:26:18.252] # key   : AgZghEb+7r+hf07PIDURIDvwr79msg==:rAPA/bCQmwQ+KrrOW2l7Pg==<br>
+[2014-07-28 11:26:18.252] # spkey : AgZghEb+7r+hf07PIDURIDvwr79msg==<br>
+[2014-07-28 11:26:18.252] # ssig  : rAPA/bCQmwQ+KrrOW2l7Pg==<br>
+[2014-07-28 11:26:18.254] # nm               : x    <br>
+[2014-07-28 11:26:18.254] # brdt             : x    <br>
+[2014-07-28 11:26:18.254] # e_nm             : eEqGuZM=<br>
+[2014-07-28 11:26:18.254] # e_brdt           : eEqGuZM=<br>
+[2014-07-28 11:26:18.254] # cpkey : AwAOwRUGOUbvTTIErAYsxaJ9HcD/CA==<br>
+[2014-07-28 11:26:18.254] # csig  : ccCzkPSobRHdzM1jCCPUZg==<br>
+[2014-07-28 11:26:18.300] retmsg: QlqWqYmjOpPvCJvx/yWaHSgIQxKBnXzAnQaeWbOg+pVWHKryOUl0do5n6YMFfA4Du2Rb20TIESxNVqTGwncnueEdHhszmD79Vcpc9nevYc5wtE+hl0NkILvYloVyYVTJZ4D5wtxA7yTw4tXyCsdWW+t9j0YfRwMdiPi5zqJYRTyecNCXsRQHqT4iPMhCX5w8yOt+n2Si9wi0woF+aNGUHedZdwadtxEozCw1X6TdiYgor4W/3KT2JSGan5Ayen7gnm7TPQrT1r2YIg==
+[2014-07-28 11:26:18.300] retmsg: B000:정상:CPs/4AY2JWnfQ78i7RZsZXKtdaY3eWUQJn93h9FApnUQpUO9p692LHysT/6iRJm8FLZpv2376IQBYs7x1HFSdp40I5d9oM7lD6B7MUsfit+x34m8i4lgqpE9t27anmibbZV2E3Mk/8QA4ehTiP6GhiNfHiPTWBf1BG01ptbuOsvJD6FqYacsLgXZz9La1Lrx
+[2014-07-28 11:26:18.300] B000
+[2014-07-28 11:26:18.300] 정상
+[2014-07-28 11:26:18.300] CPs/4AY2JWnfQ78i7RZsZXKtdaY3eWUQJn93h9FApnUQpUO9p692LHysT/6iRJm8FLZpv2376IQBYs7x1HFSdp40I5d9oM7lD6B7MUsfit+x34m8i4lgqpE9t27anmibbZV2E3Mk/8QA4ehTiP6GhiNfHiPTWBf1BG01ptbuOsvJD6FqYacsLgXZz9La1Lrx
+[2014-07-28 11:26:18.300] # final ret code=0<br>
+[2014-07-28 11:28:06.744] # OKNAME v3.70 start!<br>
+[2014-07-28 11:28:06.744] # mode=HS_CNFRM_POPUP<br>
+[2014-07-28 11:28:06.744] # argv[ 1](hs_cert_svc_tx_seqno)=20140728112806167468<br>
+[2014-07-28 11:28:06.744] # argv[ 2](nm)=x<br>
+[2014-07-28 11:28:06.745] # argv[ 3](brdt)=x<br>
+[2014-07-28 11:28:06.745] # argv[ 4](sex)=x<br>
+[2014-07-28 11:28:06.745] # argv[ 5](ntv_frnr_tp_cd)=x<br>
+[2014-07-28 11:28:06.745] # argv[ 6](var1)=x<br>
+[2014-07-28 11:28:06.745] # argv[ 7](var2)=x<br>
+[2014-07-28 11:28:06.745] # argv[ 8](var3)=0<br>
+[2014-07-28 11:28:06.745] # argv[ 9](var4)=0<br>
+[2014-07-28 11:28:06.745] # argv[10](var5)=0<br>
+[2014-07-28 11:28:06.745] # argv[11](return_msg)=x<br>
+[2014-07-28 11:28:06.745] # argv[12](return_url)=http://grptimev40.onedaynet.co.kr/pages/member.join.auth.step3.php<br>
+[2014-07-28 11:28:06.745] # argv[13](in_tp_bit)=undefined<br>
+[2014-07-28 11:28:06.745] # argv[14](hs_cert_msr_cd)=10<br>
+[2014-07-28 11:28:06.745] # argv[15](hs_cert_rqst_caus_cd)=00<br>
+[2014-07-28 11:28:06.745] # argv[16](idcf_mbr_com_cd)=P06230000001<br>
+[2014-07-28 11:28:06.745] # argv[17](server_ip)=x<br>
+[2014-07-28 11:28:06.745] # argv[18](client_site_nm)=ok-name.co.kr<br>
+[2014-07-28 11:28:06.745] # argv[19](end_point_url)=http://tsafe.ok-name.co.kr:29080/KcbWebService/OkNameService<br>
+[2014-07-28 11:28:06.745] # argv[20](log_path)=/home/onedaynet/solution/grptimev40/public_html/../auth/kcb/log/<br>
+[2014-07-28 11:28:06.745] # argv[21](option)=QLU<br>
+[2014-07-28 11:28:06.745] # soap_timeout: 30000 ms<br>
+[2014-07-28 11:28:06.762] # key   : AgK4LSBgL8+Zi+82kBbVwIPzYSb7GQ==:HoUTXabZ+l+R0BjEf7QZvw==<br>
+[2014-07-28 11:28:06.762] # spkey : AgK4LSBgL8+Zi+82kBbVwIPzYSb7GQ==<br>
+[2014-07-28 11:28:06.762] # ssig  : HoUTXabZ+l+R0BjEf7QZvw==<br>
+[2014-07-28 11:28:06.763] # nm               : x    <br>
+[2014-07-28 11:28:06.763] # brdt             : x    <br>
+[2014-07-28 11:28:06.763] # e_nm             : wsH/P54=<br>
+[2014-07-28 11:28:06.763] # e_brdt           : wsH/P54=<br>
+[2014-07-28 11:28:06.763] # cpkey : Agbla74IlD0Av54WRePv2j57Mh9kFg==<br>
+[2014-07-28 11:28:06.763] # csig  : VoTL90vwhLMyFq7WRbzwcQ==<br>
+[2014-07-28 11:28:06.811] retmsg: +NHvL4QloKzpV9N82hsJ3O54n05Sc2cZZr92XxVVZAGlsOwOGljATUzNrt5AgybrodKEeMPOltIJlRpAbkwZmNqpGxPK3r0euOHoVScvgw+m7m4pv+k8bVoH5RJTq4E5SRZREA23Bhoorbj87ioNO7AAAWGBdNbeWwYZPDTkrnZ+uTOgSSyUnvf7UJ94MmdAXSs6/kl4U3o07ShqfzieMnYKsCZPNpBdf15ynlPBJWDuMdazqkjlmxUIWGMzQVwAgT5THUvx1Xl/Fw==
+[2014-07-28 11:28:06.811] retmsg: B000:정상:CPs/4AY2JWnfQ78i7RZsZWW+6cMCS8Yf1UnAgz4r9J1ZaAfx6ICpHC9VjnlIUNf8/Ra7T0BtUy5tmpRucV/KJ+eLII2ZMyOHGclUK7VzY7Grm+qntcPAd8bRVhdoNHJJ2lNjlwp9ylNJTR46Lkxm/5LVKQChptPQNwkVv7xzdd5AUuDYmM2PNkUhEYgPahAx
+[2014-07-28 11:28:06.811] B000
+[2014-07-28 11:28:06.811] 정상
+[2014-07-28 11:28:06.811] CPs/4AY2JWnfQ78i7RZsZWW+6cMCS8Yf1UnAgz4r9J1ZaAfx6ICpHC9VjnlIUNf8/Ra7T0BtUy5tmpRucV/KJ+eLII2ZMyOHGclUK7VzY7Grm+qntcPAd8bRVhdoNHJJ2lNjlwp9ylNJTR46Lkxm/5LVKQChptPQNwkVv7xzdd5AUuDYmM2PNkUhEYgPahAx
+[2014-07-28 11:28:06.811] # final ret code=0<br>
+[2014-07-28 11:28:14.860] # OKNAME v3.70 start!<br>
+[2014-07-28 11:28:14.860] # mode=HS_CNFRM_POPUP<br>
+[2014-07-28 11:28:14.860] # argv[ 1](hs_cert_svc_tx_seqno)=20140728112814273256<br>
+[2014-07-28 11:28:14.860] # argv[ 2](nm)=x<br>
+[2014-07-28 11:28:14.860] # argv[ 3](brdt)=x<br>
+[2014-07-28 11:28:14.860] # argv[ 4](sex)=x<br>
+[2014-07-28 11:28:14.860] # argv[ 5](ntv_frnr_tp_cd)=x<br>
+[2014-07-28 11:28:14.861] # argv[ 6](var1)=03<br>
+[2014-07-28 11:28:14.861] # argv[ 7](var2)=01076621638<br>
+[2014-07-28 11:28:14.861] # argv[ 8](var3)=0<br>
+[2014-07-28 11:28:14.861] # argv[ 9](var4)=0<br>
+[2014-07-28 11:28:14.861] # argv[10](var5)=0<br>
+[2014-07-28 11:28:14.861] # argv[11](return_msg)=x<br>
+[2014-07-28 11:28:14.861] # argv[12](return_url)=http://grptimev40.onedaynet.co.kr/pages/member.join.auth.step3.php<br>
+[2014-07-28 11:28:14.861] # argv[13](in_tp_bit)=8<br>
+[2014-07-28 11:28:14.861] # argv[14](hs_cert_msr_cd)=10<br>
+[2014-07-28 11:28:14.861] # argv[15](hs_cert_rqst_caus_cd)=00<br>
+[2014-07-28 11:28:14.861] # argv[16](idcf_mbr_com_cd)=P06230000001<br>
+[2014-07-28 11:28:14.861] # argv[17](server_ip)=x<br>
+[2014-07-28 11:28:14.861] # argv[18](client_site_nm)=ok-name.co.kr<br>
+[2014-07-28 11:28:14.861] # argv[19](end_point_url)=http://tsafe.ok-name.co.kr:29080/KcbWebService/OkNameService<br>
+[2014-07-28 11:28:14.861] # argv[20](log_path)=/home/onedaynet/solution/grptimev40/public_html/../auth/kcb/log/<br>
+[2014-07-28 11:28:14.861] # argv[21](option)=QLU<br>
+[2014-07-28 11:28:14.861] # soap_timeout: 30000 ms<br>
+[2014-07-28 11:28:14.880] # key   : AwcuBbnCZk7rDN7gylRbzvivHANsNQ==:qBYd7bJ/Wt07XqYy0ZOoKA==<br>
+[2014-07-28 11:28:14.880] # spkey : AwcuBbnCZk7rDN7gylRbzvivHANsNQ==<br>
+[2014-07-28 11:28:14.880] # ssig  : qBYd7bJ/Wt07XqYy0ZOoKA==<br>
+[2014-07-28 11:28:14.882] # nm               : x    <br>
+[2014-07-28 11:28:14.882] # brdt             : x    <br>
+[2014-07-28 11:28:14.882] # e_nm             : fYanVQw=<br>
+[2014-07-28 11:28:14.882] # e_brdt           : fYanVQw=<br>
+[2014-07-28 11:28:14.882] # cpkey : AgShJlJ/QmnLLomlqzXnFD8ApNJdbw==<br>
+[2014-07-28 11:28:14.882] # csig  : wog0Yp6kcXUBmls+fnPTCA==<br>
+[2014-07-28 11:28:14.924] retmsg: R5a3RRZPjpErPqE4E+Hk8XO9kYsFjZpInIJvKeFxYTcgQOkwnhUYC0PoDt4DFk7BM5jz4/ky4a4YWdvFDxAlXJEA9sXWmk9he2xd9A8+5CnCwqEAy4pl/MUDgYuzGmEVuFglitUqoVt2WLzO9UQIFxMU9hcGIt4j3aYhkrghLNChJ1qedfUB71j+Vq+7JEWpSLSiAxsE1CasR6zDQAeJgOrn2W/JRKDHEUB66O6CrFrzpDPfqknV3ZI6Gq3udfIJfMlESrhmhKMLuQ==
+[2014-07-28 11:28:14.924] retmsg: B000:정상:CPs/4AY2JWnfQ78i7RZsZSmmUU9tnHTx3AnzA9QymWmlvwd3YfiDy2dr/Q+QeSMhmNm2a+oy0nzZ9iA9GX5MJ5Z1WGRQiwJAPmpJaDDeEqh3dhVMkGQy75jn+jkhtzMp7rzBqy/0z06awGXn6J5PpjhfBXiumpvkL3znWSk49IkHynZfvHUwqh1dGSu9scui
+[2014-07-28 11:28:14.924] B000
+[2014-07-28 11:28:14.924] 정상
+[2014-07-28 11:28:14.924] CPs/4AY2JWnfQ78i7RZsZSmmUU9tnHTx3AnzA9QymWmlvwd3YfiDy2dr/Q+QeSMhmNm2a+oy0nzZ9iA9GX5MJ5Z1WGRQiwJAPmpJaDDeEqh3dhVMkGQy75jn+jkhtzMp7rzBqy/0z06awGXn6J5PpjhfBXiumpvkL3znWSk49IkHynZfvHUwqh1dGSu9scui
+[2014-07-28 11:28:14.924] # final ret code=0<br>
+[2014-07-28 11:28:46.030] # OKNAME v3.70 start!<br>
+[2014-07-28 11:28:46.030] # mode=IPIN_CKDEC<br>
+[2014-07-28 11:28:46.030] # argv[ 1](keypath    )=/home/onedaynet/solution/grptimev40/public_html/../auth/kcb/key/safecert_P06230000001.key<br>
+[2014-07-28 11:28:46.030] # argv[ 2](memid      )=P06230000001<br>
+[2014-07-28 11:28:46.030] # argv[ 3](EndPointURL)=http://tsafe.ok-name.co.kr:29080/KcbWebService/OkNameService<br>
+[2014-07-28 11:28:46.030] # argv[ 4](cPubKey     )=AgLBVDUTcFaBXgShr69mbWXBS022ng==<br>
+[2014-07-28 11:28:46.030] # argv[ 5](cSig )=r4lzSPS0OzWZP7ZU0XfX4w==<br>
+[2014-07-28 11:28:46.030] # argv[ 6](EncData  )=EPK3HD9SISRcXsk/cP3Ib1RH9GAv4hn+cayYkau+gbr1nbj2XGOP1TdaXqo9F+cJ9+ocR5IBqnfcvSG2Ou1w9nZ3BxrsFsWTOKp9oFGirSOE/kpF+AU+263hgRY66WAl+OjXsknWjnKFMQ==<br>
+[2014-07-28 11:28:46.030] # argv[ 7](logpath	)=/home/onedaynet/solution/grptimev40/public_html/../auth/kcb/log/<br>
+[2014-07-28 11:28:46.030] # argv[ 8](Option     )=SLU<br>
+[2014-07-28 11:28:46.052] # Generating monthly key..
+[2014-07-28 11:28:46.053] pub1: AgQXLbXK5EJjGCJh8RzR27wCHV0fMw==
+[2014-07-28 11:28:46.053] pri1: AzvdiDzjse7FTjLOyr6dbwDFMojr
+[2014-07-28 11:28:46.053] sig1: DlP8hkL6rugtogCD5E3kEw==
+[2014-07-28 11:28:46.053] # soap_timeout: 30000 ms<br>
+[2014-07-28 11:28:46.076] retmsg: AwGyyHRaT03jMpT23JcPLXhQUuTCGw==:KAsMlo0c+GU25ZNnZGuiNQ==:C8eKX2mzsfV4/rv5gBW3Bap0q0Wuazwei3QO1Al/hNsJTMnTrPcTndQ5ZP1+M6mbCnrabboTObqFpKNS6PdhzqWeczQHqrTU7Dvaoy0sfOWXnBvQKps=
+[2014-07-28 11:28:46.076] pub3: AwGyyHRaT03jMpT23JcPLXhQUuTCGw==
+[2014-07-28 11:28:46.076] sig3: KAsMlo0c+GU25ZNnZGuiNQ==
+[2014-07-28 11:28:46.076] pub2pri2sig2: C8eKX2mzsfV4/rv5gBW3Bap0q0Wuazwei3QO1Al/hNsJTMnTrPcTndQ5ZP1+M6mbCnrabboTObqFpKNS6PdhzqWeczQHqrTU7Dvaoy0sfOWXnBvQKps=
+[2014-07-28 11:28:46.077] srvSecurekey: AZhez9tIOspQCFKriBTvBkpoMvu6
+[2014-07-28 11:28:46.077] decData: AgWMeF+4YorJ01OTn1WEx27pbTuBPg==:AJ3z9mJySTUBCBxUeRJLjtwU2N/X:HKZ4DvQx7bnxMkTrnza8wg==
+[2014-07-28 11:28:46.077] # ERROR S203: (Client key generation error.)<br>
+[2014-07-28 11:28:46.077] # final ret code=203<br>
+[2014-07-28 11:29:59.004] # OKNAME v3.70 start!<br>
+[2014-07-28 11:29:59.004] # mode=HS_CNFRM_POPUP<br>
+[2014-07-28 11:29:59.004] # argv[ 1](hs_cert_svc_tx_seqno)=20140728112959514072<br>
+[2014-07-28 11:29:59.004] # argv[ 2](nm)=x<br>
+[2014-07-28 11:29:59.004] # argv[ 3](brdt)=x<br>
+[2014-07-28 11:29:59.004] # argv[ 4](sex)=x<br>
+[2014-07-28 11:29:59.004] # argv[ 5](ntv_frnr_tp_cd)=x<br>
+[2014-07-28 11:29:59.004] # argv[ 6](var1)=03<br>
+[2014-07-28 11:29:59.004] # argv[ 7](var2)=01076621638<br>
+[2014-07-28 11:29:59.004] # argv[ 8](var3)=0<br>
+[2014-07-28 11:29:59.004] # argv[ 9](var4)=0<br>
+[2014-07-28 11:29:59.004] # argv[10](var5)=0<br>
+[2014-07-28 11:29:59.004] # argv[11](return_msg)=x<br>
+[2014-07-28 11:29:59.004] # argv[12](return_url)=http://grptimev40.onedaynet.co.kr/pages/member.join.auth.step3.php<br>
+[2014-07-28 11:29:59.004] # argv[13](in_tp_bit)=8<br>
+[2014-07-28 11:29:59.004] # argv[14](hs_cert_msr_cd)=10<br>
+[2014-07-28 11:29:59.004] # argv[15](hs_cert_rqst_caus_cd)=00<br>
+[2014-07-28 11:29:59.004] # argv[16](idcf_mbr_com_cd)=P06230000001<br>
+[2014-07-28 11:29:59.004] # argv[17](server_ip)=x<br>
+[2014-07-28 11:29:59.004] # argv[18](client_site_nm)=ok-name.co.kr<br>
+[2014-07-28 11:29:59.004] # argv[19](end_point_url)=http://tsafe.ok-name.co.kr:29080/KcbWebService/OkNameService<br>
+[2014-07-28 11:29:59.004] # argv[20](log_path)=/home/onedaynet/solution/grptimev40/public_html/../auth/kcb/log/<br>
+[2014-07-28 11:29:59.004] # argv[21](option)=QLU<br>
+[2014-07-28 11:29:59.004] # soap_timeout: 30000 ms<br>
+[2014-07-28 11:29:59.023] # key   : AwFCLBFNZP0lnUlf7gA2heubXTaFpw==:v3mQd3OtYtZb/VX+ehz5dQ==<br>
+[2014-07-28 11:29:59.023] # spkey : AwFCLBFNZP0lnUlf7gA2heubXTaFpw==<br>
+[2014-07-28 11:29:59.023] # ssig  : v3mQd3OtYtZb/VX+ehz5dQ==<br>
+[2014-07-28 11:29:59.025] # nm               : x    <br>
+[2014-07-28 11:29:59.025] # brdt             : x    <br>
+[2014-07-28 11:29:59.025] # e_nm             : GMuPbuQ=<br>
+[2014-07-28 11:29:59.025] # e_brdt           : GMuPbuQ=<br>
+[2014-07-28 11:29:59.025] # cpkey : AwCeeTXc20tC3kH8H+8+ed+ByTg9dA==<br>
+[2014-07-28 11:29:59.025] # csig  : tRxhLpMa5eBpz6S7k23yTQ==<br>
+[2014-07-28 11:29:59.065] retmsg: Ituffv5x29bn3Tf4WBFRJZZE9kWEO4OWxgbjma7fTcCinkq8FQv76mAxcTDKGaMMtlNV4DdWRr4xabwfJv1GyXXXgFBnz7HrI41kJioye8mf41enXhkYjdvTlYKeeoSME9qUKDJ72hf0ImO31pRVNABj3JWPPuLi+VBqkMRN4bZ36Fa0uXdZk68GdY+RdQdmIMa8N73PFcg/0SkvvMisbYDfNUZdj0eEjz0RQQJe05NhuSi9LqhptmtRsy1U/EBYa0o9dmfmvH0WEw==
+[2014-07-28 11:29:59.065] retmsg: B000:정상:CPs/4AY2JWnfQ78i7RZsZa9ngU0ik+xTJxPZr1p/o0W12XXUV9mTdG7astlFSEUZIkVDEPN26BMEObCgtoh0RvIg7fssI2e8rH8MSpMOeAc7SYigIGWm8VzSo09fBVE/soHG2ZvLu4kbnobKhlMGQQRS6kTGA+OMfhteDLvJKAEpJ9aKcVF9eHEto6K7ALlB
+[2014-07-28 11:29:59.065] B000
+[2014-07-28 11:29:59.065] 정상
+[2014-07-28 11:29:59.065] CPs/4AY2JWnfQ78i7RZsZa9ngU0ik+xTJxPZr1p/o0W12XXUV9mTdG7astlFSEUZIkVDEPN26BMEObCgtoh0RvIg7fssI2e8rH8MSpMOeAc7SYigIGWm8VzSo09fBVE/soHG2ZvLu4kbnobKhlMGQQRS6kTGA+OMfhteDLvJKAEpJ9aKcVF9eHEto6K7ALlB
+[2014-07-28 11:29:59.066] # final ret code=0<br>
+[2014-07-28 11:30:31.778] # OKNAME v3.70 start!<br>
+[2014-07-28 11:30:31.778] # mode=IPIN_CKDEC<br>
+[2014-07-28 11:30:31.778] # argv[ 1](keypath    )=/home/onedaynet/solution/grptimev40/public_html/../auth/kcb/key/safecert_P06230000001.key<br>
+[2014-07-28 11:30:31.778] # argv[ 2](memid      )=P06230000001<br>
+[2014-07-28 11:30:31.778] # argv[ 3](EndPointURL)=http://tsafe.ok-name.co.kr:29080/KcbWebService/OkNameService<br>
+[2014-07-28 11:30:31.778] # argv[ 4](cPubKey     )=AwSNz14MQBDnyJP9X9XYEunCVlc2Qg==<br>
+[2014-07-28 11:30:31.778] # argv[ 5](cSig )=frDndtkU9VfQ2odEBJye6w==<br>
+[2014-07-28 11:30:31.778] # argv[ 6](EncData  )=iw3YETNqZYQ4680qyYO4QW9qPnzbyX+gQ0DXW6/JgEoLLr+H3Sjev9Yqat7zX/Jk7rmZbiQX9oQbwQrfH9QQRQosuWXDRKyzgYwrSN3hBwyTn+dspX+cRWj9s+7HFl0q9a83b3F6mNaydA==<br>
+[2014-07-28 11:30:31.779] # argv[ 7](logpath	)=/home/onedaynet/solution/grptimev40/public_html/../auth/kcb/log/<br>
+[2014-07-28 11:30:31.779] # argv[ 8](Option     )=SLU<br>
+[2014-07-28 11:30:31.779] # Generating monthly key..
+[2014-07-28 11:30:31.779] pub1: AwQHALYPeOor3J6MZQboTc7bEzR18Q==
+[2014-07-28 11:30:31.779] pri1: AFjRuK0AQDl3YsHDrJLlmQSuMcdK
+[2014-07-28 11:30:31.779] sig1: U0Yvi82Sutg5UXWk2BAz7Q==
+[2014-07-28 11:30:31.779] # soap_timeout: 30000 ms<br>
+[2014-07-28 11:30:31.803] retmsg: AwXYxbajjEyX4p520KiFZa8bMir2eg==:jv654XFfWe1N8HoZh5WJfw==:Gyv4JOnbCR5wRmRZOCMMumhofAACHR8/9gFDLMU+d5VLNg7Niyc7e8gi8AF/n5R+obKQ9BgSIqzkyh4eWI1sfFpFUwZb7RGnpD7fqCvncV/L/Ut3CTk=
+[2014-07-28 11:30:31.803] pub3: AwXYxbajjEyX4p520KiFZa8bMir2eg==
+[2014-07-28 11:30:31.803] sig3: jv654XFfWe1N8HoZh5WJfw==
+[2014-07-28 11:30:31.803] pub2pri2sig2: Gyv4JOnbCR5wRmRZOCMMumhofAACHR8/9gFDLMU+d5VLNg7Niyc7e8gi8AF/n5R+obKQ9BgSIqzkyh4eWI1sfFpFUwZb7RGnpD7fqCvncV/L/Ut3CTk=
+[2014-07-28 11:30:31.804] srvSecurekey: A8VfIusq3xA6Xuae/MwRK91mT1zy
+[2014-07-28 11:30:31.804] decData: AgWMeF+4YorJ01OTn1WEx27pbTuBPg==:AJ3z9mJySTUBCBxUeRJLjtwU2N/X:HKZ4DvQx7bnxMkTrnza8wg==
+[2014-07-28 11:30:31.804] # ERROR S203: (Client key generation error.)<br>
+[2014-07-28 11:30:31.804] # final ret code=203<br>
+[2014-07-28 11:31:30.862] # OKNAME v3.70 start!<br>
+[2014-07-28 11:31:30.862] # mode=IPIN_CKDEC<br>
+[2014-07-28 11:31:30.862] # argv[ 1](keypath    )=/home/onedaynet/solution/grptimev40/public_html/../auth/kcb/key/safecert_P06230000001.key<br>
+[2014-07-28 11:31:30.862] # argv[ 2](memid      )=P06230000001<br>
+[2014-07-28 11:31:30.862] # argv[ 3](EndPointURL)=http://tsafe.ok-name.co.kr:29080/KcbWebService/OkNameService<br>
+[2014-07-28 11:31:30.862] # argv[ 4](cPubKey     )=AwSNz14MQBDnyJP9X9XYEunCVlc2Qg==<br>
+[2014-07-28 11:31:30.862] # argv[ 5](cSig )=frDndtkU9VfQ2odEBJye6w==<br>
+[2014-07-28 11:31:30.863] # argv[ 6](EncData  )=iw3YETNqZYQ4680qyYO4QW9qPnzbyX+gQ0DXW6/JgEoLLr+H3Sjev9Yqat7zX/Jk7rmZbiQX9oQbwQrfH9QQRQosuWXDRKyzgYwrSN3hBwyTn+dspX+cRWj9s+7HFl0q9a83b3F6mNaydA==<br>
+[2014-07-28 11:31:30.863] # argv[ 7](logpath	)=/home/onedaynet/solution/grptimev40/public_html/../auth/kcb/log/<br>
+[2014-07-28 11:31:30.863] # argv[ 8](Option     )=SLU<br>
+[2014-07-28 11:31:30.863] # Generating monthly key..
+[2014-07-28 11:31:30.863] pub1: AgafHa7SSTo3024/k7Igg6ablOSHCQ==
+[2014-07-28 11:31:30.863] pri1: A95MURlGs5JLEomxF7a4+cILPLj4
+[2014-07-28 11:31:30.863] sig1: twdqo5lleCoWgDf43ZVkfg==
+[2014-07-28 11:31:30.863] # soap_timeout: 30000 ms<br>
+[2014-07-28 11:31:31.112] retmsg: AwMKzL7NAvAkdzxdyDUoIFm7D7QxFw==:GtUeOjiRsubIMFJHzs1Q9Q==:ca/zZ0WS4/QMv3arP361i0CAygsbAqr/wOXbxU3cVgL+WLuhHmbfa6A/op0dEEBFMA1DaZ/31y5aJfjT+3ZE54RwCWmFkj5CgtjUbXpbqerGglCP/QY=
+[2014-07-28 11:31:31.112] pub3: AwMKzL7NAvAkdzxdyDUoIFm7D7QxFw==
+[2014-07-28 11:31:31.112] sig3: GtUeOjiRsubIMFJHzs1Q9Q==
+[2014-07-28 11:31:31.112] pub2pri2sig2: ca/zZ0WS4/QMv3arP361i0CAygsbAqr/wOXbxU3cVgL+WLuhHmbfa6A/op0dEEBFMA1DaZ/31y5aJfjT+3ZE54RwCWmFkj5CgtjUbXpbqerGglCP/QY=
+[2014-07-28 11:31:31.113] srvSecurekey: B+Gh++teaOceJ+MmAb65N3VxcmSE
+[2014-07-28 11:31:31.113] decData: AgWMeF+4YorJ01OTn1WEx27pbTuBPg==:AJ3z9mJySTUBCBxUeRJLjtwU2N/X:HKZ4DvQx7bnxMkTrnza8wg==
+[2014-07-28 11:31:31.113] # ERROR S203: (Client key generation error.)<br>
+[2014-07-28 11:31:31.113] # final ret code=203<br>
+[2014-07-28 11:32:29.099] # OKNAME v3.70 start!<br>
+[2014-07-28 11:32:29.099] # mode=HS_CNFRM_POPUP<br>
+[2014-07-28 11:32:29.099] # argv[ 1](hs_cert_svc_tx_seqno)=2014072811322945296<br>
+[2014-07-28 11:32:29.099] # argv[ 2](nm)=x<br>
+[2014-07-28 11:32:29.099] # argv[ 3](brdt)=x<br>
+[2014-07-28 11:32:29.099] # argv[ 4](sex)=x<br>
+[2014-07-28 11:32:29.099] # argv[ 5](ntv_frnr_tp_cd)=x<br>
+[2014-07-28 11:32:29.099] # argv[ 6](var1)=03<br>
+[2014-07-28 11:32:29.099] # argv[ 7](var2)=01076621638<br>
+[2014-07-28 11:32:29.099] # argv[ 8](var3)=0<br>
+[2014-07-28 11:32:29.099] # argv[ 9](var4)=0<br>
+[2014-07-28 11:32:29.099] # argv[10](var5)=0<br>
+[2014-07-28 11:32:29.099] # argv[11](return_msg)=x<br>
+[2014-07-28 11:32:29.099] # argv[12](return_url)=http://grptimev40.onedaynet.co.kr/pages/member.join.auth.step3.php<br>
+[2014-07-28 11:32:29.099] # argv[13](in_tp_bit)=8<br>
+[2014-07-28 11:32:29.099] # argv[14](hs_cert_msr_cd)=10<br>
+[2014-07-28 11:32:29.099] # argv[15](hs_cert_rqst_caus_cd)=00<br>
+[2014-07-28 11:32:29.099] # argv[16](idcf_mbr_com_cd)=P06230000001<br>
+[2014-07-28 11:32:29.099] # argv[17](server_ip)=x<br>
+[2014-07-28 11:32:29.099] # argv[18](client_site_nm)=ok-name.co.kr<br>
+[2014-07-28 11:32:29.099] # argv[19](end_point_url)=http://safe.ok-name.co.kr/KcbWebService/OkNameService<br>
+[2014-07-28 11:32:29.099] # argv[20](log_path)=/home/onedaynet/solution/grptimev40/public_html/../auth/kcb/log/<br>
+[2014-07-28 11:32:29.099] # argv[21](option)=QLU<br>
+[2014-07-28 11:32:29.099] # soap_timeout: 30000 ms<br>
+[2014-07-28 11:32:29.121] # key   : AgIyF4j7eb4FeFUX335rxuGmIpKl9A==:iK1PhWzWGc7DZvv53cuCCw==<br>
+[2014-07-28 11:32:29.121] # spkey : AgIyF4j7eb4FeFUX335rxuGmIpKl9A==<br>
+[2014-07-28 11:32:29.121] # ssig  : iK1PhWzWGc7DZvv53cuCCw==<br>
+[2014-07-28 11:32:29.122] # nm               : x    <br>
+[2014-07-28 11:32:29.122] # brdt             : x    <br>
+[2014-07-28 11:32:29.122] # e_nm             : 3yK+e3I=<br>
+[2014-07-28 11:32:29.122] # e_brdt           : 3yK+e3I=<br>
+[2014-07-28 11:32:29.122] # cpkey : AgeWu2tNaWe7f0huEsRULgTxR7zSCA==<br>
+[2014-07-28 11:32:29.122] # csig  : AgWco58OKqxG5LCxOyVuBQ==<br>
+[2014-07-28 11:32:29.158] retmsg: 5TKua2hWwiDi8ELvjHG3y+tg3RxzFnN6Z4sbtvfoKavXzd8zYgxgGazGwH46Oui8wLgNdvQAIaZwey+BSJ+NlM/OWDKP7f8cwuP/X4igz1iajKV3uhzuA+GcO1t7B+WYpiwqNEG7Ibky0YgcJ58zwP7y4w5qC/Q5AF81gCBmar429SqnKraf46JhsQzm6ctNa8OsouLy5canturOWgdvg7s0RJbEX68mOOcmNnQqpWnznNhbuOEEPT1cWwg+y4b7fQ7k0WTkUtBmnA==
+[2014-07-28 11:32:29.158] retmsg: B000:정상:CPs/4AY2JWnfQ78i7RZsZUV7UHAAbzDEPQQ61CouEmiU+//+MpNbts5jeULgChbMKfQ7ZcN+vjlvc8wWCqtfmHJ4eWjwUXDHiarEO3tKbrRVlfFBZochOw+VOJ7xOrIKphwAOiRzxnC8O0PLxEk5qYXsxAAU2b8T1YEOBvQrII0u5BQQRkIux4uJigefNGi5
+[2014-07-28 11:32:29.158] B000
+[2014-07-28 11:32:29.158] 정상
+[2014-07-28 11:32:29.158] CPs/4AY2JWnfQ78i7RZsZUV7UHAAbzDEPQQ61CouEmiU+//+MpNbts5jeULgChbMKfQ7ZcN+vjlvc8wWCqtfmHJ4eWjwUXDHiarEO3tKbrRVlfFBZochOw+VOJ7xOrIKphwAOiRzxnC8O0PLxEk5qYXsxAAU2b8T1YEOBvQrII0u5BQQRkIux4uJigefNGi5
+[2014-07-28 11:32:29.158] # final ret code=0<br>
+[2014-07-28 11:33:19.698] # OKNAME v3.70 start!<br>
+[2014-07-28 11:33:19.699] # mode=IPIN_CKDEC<br>
+[2014-07-28 11:33:19.699] # argv[ 1](keypath    )=/home/onedaynet/solution/grptimev40/public_html/../auth/kcb/key/safecert_P06230000001.key<br>
+[2014-07-28 11:33:19.699] # argv[ 2](memid      )=P06230000001<br>
+[2014-07-28 11:33:19.699] # argv[ 3](EndPointURL)=http://safe.ok-name.co.kr/KcbWebService/OkNameService<br>
+[2014-07-28 11:33:19.699] # argv[ 4](cPubKey     )=AwL5Q8AEzD6HmdVaXDjNUxNsRf386w==<br>
+[2014-07-28 11:33:19.699] # argv[ 5](cSig )=iLQF+GKVWDz2xeja+6/LAQ==<br>
+[2014-07-28 11:33:19.699] # argv[ 6](EncData  )=+66n8ErEg5A1ovFMVajukeYNcCuWUgQnQKoMMM/DOI0WihLIyjo63LCOQsECyFewTNBnQjtgeBwF47DSxZQa9HvpNLStMgr8Q4NeolGSxyT1euf8883Zb8NX13JfOpdBnJQgfz2luV2yk1WqbEWTUErRGFOWjlbecWkmuFh1h8R6u2DNb+24DpjZ87m/+Rov/h8U+zvNgT4GNSt6fhT8VddY9g0vnIxRD+lMGgSyN05ShRj3Qz+uXrvTfuR027Y8HLD9PLnkSxR+D06ya+Rzom+eQ6yuVdHLDjwKyLuNp9qchAornrLH4gEXiIgWXZMNBQ/kV/xeLvL7JCFW<br>
+[2014-07-28 11:33:19.699] # argv[ 7](logpath	)=/home/onedaynet/solution/grptimev40/public_html/../auth/kcb/log/<br>
+[2014-07-28 11:33:19.699] # argv[ 8](Option     )=SLU<br>
+[2014-07-28 11:33:19.699] # Generating monthly key..
+[2014-07-28 11:33:19.700] pub1: AgFnEIJdAoJWML5qjfCkkBVOUrpTCQ==
+[2014-07-28 11:33:19.700] pri1: AVhUZiSUPQBXuUdAARICoDO8Navv
+[2014-07-28 11:33:19.700] sig1: AHXTeKqMqPQZ5AuVv0nvOA==
+[2014-07-28 11:33:19.700] # soap_timeout: 30000 ms<br>
+[2014-07-28 11:33:19.723] retmsg: AgNHXo4c9ROyveG4cILMfEixscPGyA==:pSukuWXjO9i36o0KvLqabg==:LiC/zSGcndbSqBHptsIp9+9zoz/lwGIXrdT/vQVCLWkBjuzw9V8Ptx/oIwsDRwC/7vuGYNPmqBbcuYOw6J344w2jWGsgFe723BZ5YUvoT7Shu2YIwZ0=
+[2014-07-28 11:33:19.723] pub3: AgNHXo4c9ROyveG4cILMfEixscPGyA==
+[2014-07-28 11:33:19.723] sig3: pSukuWXjO9i36o0KvLqabg==
+[2014-07-28 11:33:19.723] pub2pri2sig2: LiC/zSGcndbSqBHptsIp9+9zoz/lwGIXrdT/vQVCLWkBjuzw9V8Ptx/oIwsDRwC/7vuGYNPmqBbcuYOw6J344w2jWGsgFe723BZ5YUvoT7Shu2YIwZ0=
+[2014-07-28 11:33:19.724] srvSecurekey: ATLQj4spGmEf6jbrNvi6CeFFwpGR
+[2014-07-28 11:33:19.724] decData: AwWGeSnV34hGhz2aH+uNz82IMNS5gQ==:AlWZraQdnnf4Yy7gvxjPOroQKV9l:Voc3eh22/vgpdcGTec+OiA==
+[2014-07-28 11:33:19.724] # ERROR S203: (Client key generation error.)<br>
+[2014-07-28 11:33:19.724] # final ret code=203<br>
+[2014-07-28 11:35:14.122] # OKNAME v3.70 start!<br>
+[2014-07-28 11:35:14.123] # mode=IPIN_CKDEC<br>
+[2014-07-28 11:35:14.123] # argv[ 1](keypath    )=/home/onedaynet/solution/grptimev40/public_html/../auth/kcb/key/safecert_P06230000001.key<br>
+[2014-07-28 11:35:14.123] # argv[ 2](memid      )=P06230000001<br>
+[2014-07-28 11:35:14.123] # argv[ 3](EndPointURL)=http://safe.ok-name.co.kr/KcbWebService/OkNameService<br>
+[2014-07-28 11:35:14.123] # argv[ 4](cPubKey     )=AwL5Q8AEzD6HmdVaXDjNUxNsRf386w==<br>
+[2014-07-28 11:35:14.123] # argv[ 5](cSig )=iLQF+GKVWDz2xeja+6/LAQ==<br>
+[2014-07-28 11:35:14.123] # argv[ 6](EncData  )=+66n8ErEg5A1ovFMVajukeYNcCuWUgQnQKoMMM/DOI0WihLIyjo63LCOQsECyFewTNBnQjtgeBwF47DSxZQa9HvpNLStMgr8Q4NeolGSxyT1euf8883Zb8NX13JfOpdBnJQgfz2luV2yk1WqbEWTUErRGFOWjlbecWkmuFh1h8R6u2DNb+24DpjZ87m/+Rov/h8U+zvNgT4GNSt6fhT8VddY9g0vnIxRD+lMGgSyN05ShRj3Qz+uXrvTfuR027Y8HLD9PLnkSxR+D06ya+Rzom+eQ6yuVdHLDjwKyLuNp9qchAornrLH4gEXiIgWXZMNBQ/kV/xeLvL7JCFW<br>
+[2014-07-28 11:35:14.123] # argv[ 7](logpath	)=/home/onedaynet/solution/grptimev40/public_html/../auth/kcb/log/<br>
+[2014-07-28 11:35:14.123] # argv[ 8](Option     )=SLU<br>
+[2014-07-28 11:35:14.123] # Generating monthly key..
+[2014-07-28 11:35:14.123] pub1: AwE5ligy9zGZlIj2f+b2C6Atwgyjsg==
+[2014-07-28 11:35:14.124] pri1: AMM0M++jO/v4Uhgv2VKW7BcdFg9G
+[2014-07-28 11:35:14.124] sig1: Wc25mn56FwP5m3p7j4Q8Hw==
+[2014-07-28 11:35:14.124] # soap_timeout: 30000 ms<br>
+[2014-07-28 11:35:14.152] retmsg: AgGqS9P+dJXkkO99L/icrH0Y5ScESA==:ULkbNJKmHfACfbhOMpgqIQ==:FDgP2dTGcnimZtFajiIqmwq0oOxS3eCLI5p4Jx8vXF4z+mYDWseQe86wLDrHXDo5jspq+89w6tJHawWZDQbmtBdn73haJ1689mWBG8jMPCJJG5vzLZI=
+[2014-07-28 11:35:14.152] pub3: AgGqS9P+dJXkkO99L/icrH0Y5ScESA==
+[2014-07-28 11:35:14.152] sig3: ULkbNJKmHfACfbhOMpgqIQ==
+[2014-07-28 11:35:14.152] pub2pri2sig2: FDgP2dTGcnimZtFajiIqmwq0oOxS3eCLI5p4Jx8vXF4z+mYDWseQe86wLDrHXDo5jspq+89w6tJHawWZDQbmtBdn73haJ1689mWBG8jMPCJJG5vzLZI=
+[2014-07-28 11:35:14.153] srvSecurekey: BOlPtAL37P6cl/SWHDmpqOXBMkJW
+[2014-07-28 11:35:14.153] decData: AwWGeSnV34hGhz2aH+uNz82IMNS5gQ==:AlWZraQdnnf4Yy7gvxjPOroQKV9l:Voc3eh22/vgpdcGTec+OiA==
+[2014-07-28 11:35:14.153] # Current month<br>
+[2014-07-28 11:35:14.153] # public_key   : AwWGeSnV34hGhz2aH+uNz82IMNS5gQ==<br>
+[2014-07-28 11:35:14.153] # private_key  : AlWZraQdnnf4Yy7gvxjPOroQKV9l<br>
+[2014-07-28 11:35:14.153] # signature    : Voc3eh22/vgpdcGTec+OiA==<br>
+[2014-07-28 11:35:14.153] # Last month<br>
+[2014-07-28 11:35:14.153] # public_key1  : <br>
+[2014-07-28 11:35:14.153] # private_key1 : <br>
+[2014-07-28 11:35:14.153] # signature1   : <br>
+[2014-07-28 11:35:14.154] # clnPublicKey : AwL5Q8AEzD6HmdVaXDjNUxNsRf386w==<br>
+[2014-07-28 11:35:14.154] # clnSignature : iLQF+GKVWDz2xeja+6/LAQ==<br>
+[2014-07-28 11:35:14.154] # srvPrivateKey: AlWZraQdnnf4Yy7gvxjPOroQKV9l<br>
+[2014-07-28 11:35:14.154] # srvSecurekey : AsdLvp5eGNmHhWumr23er+Q8Gmr0<br>
+[2014-07-28 11:35:14.155] # decData      : B000|�������� �Ϸ�|2014072811322945296|20140728113303|MC0GCCqGSIb3DQIJAyEAw0Ozjh7+6x2okvgTzhNrh8ccQTikfBh1mK8291dJVq4=|SgelidyfQH2L7XYDRS7SjCXBxiODZMyiYgxjcSUKPkhtv3wEzLDt31q/0xzKlrAlW7jlU8BzYsG6zpaMbrioRQ==| |�ۼ���|19820314|1|1|03|01076621638| | | |x<br>
+[2014-07-28 11:35:14.155] B000
+[2014-07-28 11:35:14.155] 본인인증 완료
+[2014-07-28 11:35:14.155] 2014072811322945296
+[2014-07-28 11:35:14.155] 20140728113303
+[2014-07-28 11:35:14.155] MC0GCCqGSIb3DQIJAyEAw0Ozjh7+6x2okvgTzhNrh8ccQTikfBh1mK8291dJVq4=
+[2014-07-28 11:35:14.155] SgelidyfQH2L7XYDRS7SjCXBxiODZMyiYgxjcSUKPkhtv3wEzLDt31q/0xzKlrAlW7jlU8BzYsG6zpaMbrioRQ==
+[2014-07-28 11:35:14.155]  
+[2014-07-28 11:35:14.155] 송선종
+[2014-07-28 11:35:14.155] 19820314
+[2014-07-28 11:35:14.155] 1
+[2014-07-28 11:35:14.155] 1
+[2014-07-28 11:35:14.155] 03
+[2014-07-28 11:35:14.155] 01076621638
+[2014-07-28 11:35:14.155]  
+[2014-07-28 11:35:14.155]  
+[2014-07-28 11:35:14.155]  
+[2014-07-28 11:35:14.155] x
+[2014-07-28 11:35:14.155] # final ret code=0<br>
+[2014-07-28 11:57:21.895] # OKNAME v3.70 start!<br>
+[2014-07-28 11:57:21.895] # mode=HS_CNFRM_POPUP<br>
+[2014-07-28 11:57:21.895] # argv[ 1](hs_cert_svc_tx_seqno)=20140728115721161<br>
+[2014-07-28 11:57:21.895] # argv[ 2](nm)=x<br>
+[2014-07-28 11:57:21.895] # argv[ 3](brdt)=x<br>
+[2014-07-28 11:57:21.895] # argv[ 4](sex)=x<br>
+[2014-07-28 11:57:21.895] # argv[ 5](ntv_frnr_tp_cd)=x<br>
+[2014-07-28 11:57:21.895] # argv[ 6](var1)=03<br>
+[2014-07-28 11:57:21.895] # argv[ 7](var2)=01076621638<br>
+[2014-07-28 11:57:21.895] # argv[ 8](var3)=0<br>
+[2014-07-28 11:57:21.895] # argv[ 9](var4)=0<br>
+[2014-07-28 11:57:21.895] # argv[10](var5)=0<br>
+[2014-07-28 11:57:21.895] # argv[11](return_msg)=x<br>
+[2014-07-28 11:57:21.895] # argv[12](return_url)=http://grptimev40.onedaynet.co.kr/pages/member.join.auth.step3.php<br>
+[2014-07-28 11:57:21.895] # argv[13](in_tp_bit)=8<br>
+[2014-07-28 11:57:21.895] # argv[14](hs_cert_msr_cd)=10<br>
+[2014-07-28 11:57:21.895] # argv[15](hs_cert_rqst_caus_cd)=00<br>
+[2014-07-28 11:57:21.895] # argv[16](idcf_mbr_com_cd)=P06230000001<br>
+[2014-07-28 11:57:21.895] # argv[17](server_ip)=x<br>
+[2014-07-28 11:57:21.895] # argv[18](client_site_nm)=ok-name.co.kr<br>
+[2014-07-28 11:57:21.895] # argv[19](end_point_url)=http://tsafe.ok-name.co.kr:29080/KcbWebService/OkNameService<br>
+[2014-07-28 11:57:21.895] # argv[20](log_path)=/home/onedaynet/solution/grptimev40/public_html/../auth/kcb/log/<br>
+[2014-07-28 11:57:21.895] # argv[21](option)=QLU<br>
+[2014-07-28 11:57:21.896] # soap_timeout: 30000 ms<br>
+[2014-07-28 11:57:21.909] # key   : AwcV87WvOMGGavD9KiP/KPx+RQuzng==:7+rgtjVxD0OMmb7Y5jbZaQ==<br>
+[2014-07-28 11:57:21.910] # spkey : AwcV87WvOMGGavD9KiP/KPx+RQuzng==<br>
+[2014-07-28 11:57:21.910] # ssig  : 7+rgtjVxD0OMmb7Y5jbZaQ==<br>
+[2014-07-28 11:57:21.911] # nm               : x    <br>
+[2014-07-28 11:57:21.911] # brdt             : x    <br>
+[2014-07-28 11:57:21.911] # e_nm             : K+0mQJ0=<br>
+[2014-07-28 11:57:21.911] # e_brdt           : K+0mQJ0=<br>
+[2014-07-28 11:57:21.911] # cpkey : Awd2TZiQWsHJ1TJTLLm3YTZo0lDzmg==<br>
+[2014-07-28 11:57:21.911] # csig  : kIi6ruBDkcPdo7PHaJJBXQ==<br>
+[2014-07-28 11:57:21.966] retmsg: Ef02UIft592rEBZn19Vuiaz+FBiMSRwCOWHo8U3C02+BpOaP4965H0P+xLmOCGliYn7SCT5XS6DEXYQ7ohYgygTsKk6Yhi6vc39wt2xPVgXCpb5Wfp+ItpsCvg/z+x74vO4HlaS7bth44G8J0byEf/lJxNiEE0t5EWMiXdahM4Vg8xtdXHMsY+SfNydazV1qaF5wzaESGsB6DpRO1tpM2+lbq4+C1P/VaOfXKKKv8qC4gbTImAp4ZDCJpYswwDBQ/1sv87nhuau/3w==
+[2014-07-28 11:57:21.966] retmsg: B000:정상:CPs/4AY2JWnfQ78i7RZsZU1mVobqcX/fSKLNez2TOssoRqVJCrEjJCzb31cy9/T+4aIw52SPblZsPmOTgoPll84QkVngxPZBRQ/WPWODgJ7QM6HbR3KXtDxqEW4A5on+Io+2XO4YmyrxpiH7OHPCMCDBZE7UEWcpN7xLMdHgMLGySQKX+JMD2vwrA9J6QmC/
+[2014-07-28 11:57:21.966] B000
+[2014-07-28 11:57:21.966] 정상
+[2014-07-28 11:57:21.966] CPs/4AY2JWnfQ78i7RZsZU1mVobqcX/fSKLNez2TOssoRqVJCrEjJCzb31cy9/T+4aIw52SPblZsPmOTgoPll84QkVngxPZBRQ/WPWODgJ7QM6HbR3KXtDxqEW4A5on+Io+2XO4YmyrxpiH7OHPCMCDBZE7UEWcpN7xLMdHgMLGySQKX+JMD2vwrA9J6QmC/
+[2014-07-28 11:57:21.966] # final ret code=0<br>

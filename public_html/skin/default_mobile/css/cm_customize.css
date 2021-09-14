@@ -1,0 +1,35 @@
+@charset 'utf-8';
+
+/*
+	copyright(c) 상상너머·원데이넷 all rights reserved.
+	허용된 라이센스이외 무단도용재배포를 금합니다.
+	공통페이지 관련된 커스터마이징
+*/
+
+
+/* ●●●●●●●●●● cm_계열 공통페이지 중 사이트별로 필수적으로 변경해야할 css */
+
+/* 체크박스 컬러 */
+input[type=checkbox]:checked {background-color:#fa0d3e; }
+
+/* 라디오박스 컬러 */
+input[type=radio]:checked {background-color:#fa0d3e;}
+
+
+/* ● 해당파일 : cm_degisn
+	  공통 디자인버튼 사이즈별 컬러버튼
+*/
+.button_pack .btn_sm_color {background:#fb5074; color:#fff !important; border:1px solid #f14f4f; }
+.button_pack .btn_md_color {background:#fb5074; color:#fff !important; border:1px solid #f14f4f; }
+.button_pack .btn_lg_color {background:#fb5074; color:#fff !important; border:1px solid #f14f4f; }
+
+
+
+/* ● 해당파일 : cm_board */
+
+
+/* ● 해당파일 : cm_member */
+.cm_member_login .btn_login {background-color:#da0500;}
+
+
+/* ● 해당파일 : cm_mypage */

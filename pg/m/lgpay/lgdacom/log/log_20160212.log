@@ -1,0 +1,218 @@
+2016-02-12 10:31:18 [INFO ] [] XPayClient initialize [/home/onedaynet/solution/grp5test/public_html/../pg/m/lgpay/lgdacom] []
+2016-02-12 10:31:18 [DEBUG] [] Config [server_id] = [01]
+2016-02-12 10:31:18 [DEBUG] [] Config [timeout] = [60]
+2016-02-12 10:31:18 [DEBUG] [] Config [log_level] = [4]
+2016-02-12 10:31:18 [DEBUG] [] Config [verify_cert] = [1]
+2016-02-12 10:31:18 [DEBUG] [] Config [verify_host] = [1]
+2016-02-12 10:31:18 [DEBUG] [] Config [report_error] = [1]
+2016-02-12 10:31:18 [DEBUG] [] Config [output_UTF8] = [1]
+2016-02-12 10:31:18 [DEBUG] [] Config [auto_rollback] = [1]
+2016-02-12 10:31:18 [DEBUG] [] Config [log_dir] = [/home/onedaynet/solution/grptimev500/pg/m/lgpay/lgdacom/log]
+2016-02-12 10:31:18 [DEBUG] [] Config [tlgdacomxpay] = [95160cce09854ef44d2edb2bfb05f9f3]
+2016-02-12 10:31:18 [DEBUG] [] Config [lgdacomxpay] = [95160cce09854ef44d2edb2bfb05f9f3]
+2016-02-12 10:31:18 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2016-02-12 10:31:18 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2016-02-12 10:31:18 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2016-02-12 10:34:01 [INFO ] [] XPayClient initialize [/home/onedaynet/solution/grp5test/public_html/../pg/m/lgpay/lgdacom] [test]
+2016-02-12 10:34:01 [DEBUG] [] Config [server_id] = [01]
+2016-02-12 10:34:01 [DEBUG] [] Config [timeout] = [60]
+2016-02-12 10:34:01 [DEBUG] [] Config [log_level] = [4]
+2016-02-12 10:34:01 [DEBUG] [] Config [verify_cert] = [1]
+2016-02-12 10:34:01 [DEBUG] [] Config [verify_host] = [1]
+2016-02-12 10:34:01 [DEBUG] [] Config [report_error] = [1]
+2016-02-12 10:34:01 [DEBUG] [] Config [output_UTF8] = [1]
+2016-02-12 10:34:01 [DEBUG] [] Config [auto_rollback] = [1]
+2016-02-12 10:34:01 [DEBUG] [] Config [log_dir] = [/home/onedaynet/solution/grptimev500/pg/m/lgpay/lgdacom/log]
+2016-02-12 10:34:01 [DEBUG] [] Config [tlgdacomxpay] = [95160cce09854ef44d2edb2bfb05f9f3]
+2016-02-12 10:34:01 [DEBUG] [] Config [lgdacomxpay] = [95160cce09854ef44d2edb2bfb05f9f3]
+2016-02-12 10:34:01 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2016-02-12 10:34:01 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2016-02-12 10:34:01 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2016-02-12 10:34:01 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Post [LGD_TXID] = [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30]
+2016-02-12 10:34:01 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Post [LGD_AUTHCODE] = [bcadf93945b298c72075937cb7043e657c922544]
+2016-02-12 10:34:01 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Post [LGD_MID] = [tlgdacomxpay]
+2016-02-12 10:34:01 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Post [LGD_TXNAME] = [PaymentByKey]
+2016-02-12 10:34:01 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Post [LGD_PAYKEY] = [20160212103400BFB8993C558041474CC5B3E6D61A9CF70ED31918]
+2016-02-12 10:34:01 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] post_string = LGD_TXID=tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30&LGD_AUTHCODE=bcadf93945b298c72075937cb7043e657c922544&LGD_MID=tlgdacomxpay&LGD_TXNAME=PaymentByKey&LGD_PAYKEY=20160212103400BFB8993C558041474CC5B3E6D61A9CF70ED31918
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Result = [
+
+
+
+
+
+
+
+
+
+{"LGD_RESPCODE":"0000","LGD_RESPMSG":"결제성공","LGD_RESPONSE":[{"LGD_BILLKEY":"eEHx2WXeVNV3tdlWYKzRkwZjcA/r0T0dnaDLmjXPbb8=","LGD_CARDACQUIRER":"21","LGD_CARDNOINTEREST_YN":"0","LGD_IFOS":"3ETS0S","LGD_MID":"tlgdacomxpay","LGD_FINANCENAME":"외환VISA","LGD_PCANCELFLAG":"1","LGD_FINANCEAUTHNUM":"00000000","LGD_DELIVERYINFO":"","LGD_BUYER":"운영자","LGD_AFFILIATECODE":"******","LGD_TRANSAMOUNT":"1000","LGD_BUYERID":"","LGD_OID":"99017-39406-60330","LGD_CARDNUM":"4119046612023609","LGD_RECEIVERPHONE":"","LGD_2TR_FLAG":"Y","LGD_DEVICE":"iPhone","LGD_TID":"tlgda2016021210340179099","LGD_TIMESTAMP":"20160212103402","LGD_FINANCECODE":"21100","LGD_CARDNOINTYN":"0","LGD_PCANCELSTR":"0","LGD_DISCOUNTUSEYN":"0","LGD_BUYERPHONE":"","LGD_ESCROWYN":"N","LGD_PAYTYPE":"SC0010","LGD_AMOUNT":"1000","LGD_VANCODE":"van0012","LGD_EXCHANGERATE":"1.0","LGD_BUYERSSN":"","LGD_CARDINSTALLMONTH":"00","LGD_RESPMSG":"결제성공","LGD_HASHDATA_BILLKEY":"7c532b7ac6b00112337b8fbb198cd33d","LGD_PAYDATE":"20160212103402","LGD_PRODUCTINFO":"브로콜리 야채피자세트","LGD_PRODUCTCODE":"","LGD_HASHDATA":"a18d88e6de2ab27e92387fc886007c94","LGD_CARDGUBUN1":"0","LGD_CARDGUBUN2":"0","LGD_BUYERADDRESS":"","LGD_RECEIVER":"","LGD_RESPCODE":"0000","LGD_BUYEREMAIL":"help@onedaynet.co.kr","LGD_DISCOUNTUSEAMOUNT":"0"}]}
+]
+2016-02-12 10:34:03 [INFO ] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response Code=[0000], Msg=[��������], Count=1
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_BILLKEY, 0) = eEHx2WXeVNV3tdlWYKzRkwZjcA/r0T0dnaDLmjXPbb8=
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_CARDACQUIRER, 0) = 21
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_CARDNOINTEREST_YN, 0) = 0
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_IFOS, 0) = 3ETS0S
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_MID, 0) = tlgdacomxpay
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_FINANCENAME, 0) = 외환VISA
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_PCANCELFLAG, 0) = 1
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_FINANCEAUTHNUM, 0) = 00000000
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_DELIVERYINFO, 0) = 
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_BUYER, 0) = 운영자
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_AFFILIATECODE, 0) = ******
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_TRANSAMOUNT, 0) = 1000
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_BUYERID, 0) = 
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_OID, 0) = 99017-39406-60330
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_CARDNUM, 0) = 4119046612023609
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_RECEIVERPHONE, 0) = 
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_2TR_FLAG, 0) = Y
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_DEVICE, 0) = iPhone
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_TID, 0) = tlgda2016021210340179099
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_TIMESTAMP, 0) = 20160212103402
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_FINANCECODE, 0) = 21100
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_CARDNOINTYN, 0) = 0
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_PCANCELSTR, 0) = 0
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_DISCOUNTUSEYN, 0) = 0
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_BUYERPHONE, 0) = 
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_ESCROWYN, 0) = N
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_PAYTYPE, 0) = SC0010
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_AMOUNT, 0) = 1000
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_VANCODE, 0) = van0012
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_EXCHANGERATE, 0) = 1.0
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_BUYERSSN, 0) = 
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_CARDINSTALLMONTH, 0) = 00
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_RESPMSG, 0) = 결제성공
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_HASHDATA_BILLKEY, 0) = 7c532b7ac6b00112337b8fbb198cd33d
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_PAYDATE, 0) = 20160212103402
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_PRODUCTINFO, 0) = 브로콜리 야채피자세트
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_PRODUCTCODE, 0) = 
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_HASHDATA, 0) = a18d88e6de2ab27e92387fc886007c94
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_CARDGUBUN1, 0) = 0
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_CARDGUBUN2, 0) = 0
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_BUYERADDRESS, 0) = 
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_RECEIVER, 0) = 
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_RESPCODE, 0) = 0000
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_BUYEREMAIL, 0) = help@onedaynet.co.kr
+2016-02-12 10:34:03 [DEBUG] [tlgdacomxpay-01201602121034014be29fd5a0142631d13c4f17e55fa2d04e907d30] Response (LGD_DISCOUNTUSEAMOUNT, 0) = 0
+2016-02-12 10:36:16 [INFO ] [] XPayClient initialize [/home/onedaynet/solution/grp5test/public_html/../pg/m/lgpay/lgdacom] []
+2016-02-12 10:36:16 [DEBUG] [] Config [server_id] = [01]
+2016-02-12 10:36:16 [DEBUG] [] Config [timeout] = [60]
+2016-02-12 10:36:16 [DEBUG] [] Config [log_level] = [4]
+2016-02-12 10:36:16 [DEBUG] [] Config [verify_cert] = [1]
+2016-02-12 10:36:16 [DEBUG] [] Config [verify_host] = [1]
+2016-02-12 10:36:16 [DEBUG] [] Config [report_error] = [1]
+2016-02-12 10:36:16 [DEBUG] [] Config [output_UTF8] = [1]
+2016-02-12 10:36:16 [DEBUG] [] Config [auto_rollback] = [1]
+2016-02-12 10:36:16 [DEBUG] [] Config [log_dir] = [/home/onedaynet/solution/grptimev500/pg/m/lgpay/lgdacom/log]
+2016-02-12 10:36:16 [DEBUG] [] Config [tlgdacomxpay] = [95160cce09854ef44d2edb2bfb05f9f3]
+2016-02-12 10:36:16 [DEBUG] [] Config [lgdacomxpay] = [95160cce09854ef44d2edb2bfb05f9f3]
+2016-02-12 10:36:16 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2016-02-12 10:36:16 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2016-02-12 10:36:16 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2016-02-12 10:39:35 [INFO ] [] XPayClient initialize [/home/onedaynet/solution/grp5test/public_html/../pg/m/lgpay/lgdacom] []
+2016-02-12 10:39:35 [DEBUG] [] Config [server_id] = [01]
+2016-02-12 10:39:35 [DEBUG] [] Config [timeout] = [60]
+2016-02-12 10:39:35 [DEBUG] [] Config [log_level] = [4]
+2016-02-12 10:39:35 [DEBUG] [] Config [verify_cert] = [1]
+2016-02-12 10:39:35 [DEBUG] [] Config [verify_host] = [1]
+2016-02-12 10:39:35 [DEBUG] [] Config [report_error] = [1]
+2016-02-12 10:39:35 [DEBUG] [] Config [output_UTF8] = [1]
+2016-02-12 10:39:35 [DEBUG] [] Config [auto_rollback] = [1]
+2016-02-12 10:39:35 [DEBUG] [] Config [log_dir] = [/home/onedaynet/solution/grptimev500/pg/m/lgpay/lgdacom/log]
+2016-02-12 10:39:35 [DEBUG] [] Config [tlgdacomxpay] = [95160cce09854ef44d2edb2bfb05f9f3]
+2016-02-12 10:39:35 [DEBUG] [] Config [lgdacomxpay] = [95160cce09854ef44d2edb2bfb05f9f3]
+2016-02-12 10:39:35 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2016-02-12 10:39:35 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2016-02-12 10:39:35 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2016-02-12 10:45:19 [INFO ] [] XPayClient initialize [/home/onedaynet/solution/grp5test/public_html/../pg/m/lgpay/lgdacom] []
+2016-02-12 10:45:19 [DEBUG] [] Config [server_id] = [01]
+2016-02-12 10:45:19 [DEBUG] [] Config [timeout] = [60]
+2016-02-12 10:45:19 [DEBUG] [] Config [log_level] = [4]
+2016-02-12 10:45:19 [DEBUG] [] Config [verify_cert] = [1]
+2016-02-12 10:45:19 [DEBUG] [] Config [verify_host] = [1]
+2016-02-12 10:45:19 [DEBUG] [] Config [report_error] = [1]
+2016-02-12 10:45:19 [DEBUG] [] Config [output_UTF8] = [1]
+2016-02-12 10:45:19 [DEBUG] [] Config [auto_rollback] = [1]
+2016-02-12 10:45:19 [DEBUG] [] Config [log_dir] = [/home/onedaynet/solution/grptimev500/pg/m/lgpay/lgdacom/log]
+2016-02-12 10:45:19 [DEBUG] [] Config [tlgdacomxpay] = [95160cce09854ef44d2edb2bfb05f9f3]
+2016-02-12 10:45:19 [DEBUG] [] Config [lgdacomxpay] = [95160cce09854ef44d2edb2bfb05f9f3]
+2016-02-12 10:45:19 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2016-02-12 10:45:19 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2016-02-12 10:45:19 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2016-02-12 10:46:52 [INFO ] [] XPayClient initialize [/home/onedaynet/solution/grp5test/public_html/../pg/m/lgpay/lgdacom] [test]
+2016-02-12 10:46:52 [DEBUG] [] Config [server_id] = [01]
+2016-02-12 10:46:52 [DEBUG] [] Config [timeout] = [60]
+2016-02-12 10:46:52 [DEBUG] [] Config [log_level] = [4]
+2016-02-12 10:46:52 [DEBUG] [] Config [verify_cert] = [1]
+2016-02-12 10:46:52 [DEBUG] [] Config [verify_host] = [1]
+2016-02-12 10:46:52 [DEBUG] [] Config [report_error] = [1]
+2016-02-12 10:46:52 [DEBUG] [] Config [output_UTF8] = [1]
+2016-02-12 10:46:52 [DEBUG] [] Config [auto_rollback] = [1]
+2016-02-12 10:46:52 [DEBUG] [] Config [log_dir] = [/home/onedaynet/solution/grptimev500/pg/m/lgpay/lgdacom/log]
+2016-02-12 10:46:52 [DEBUG] [] Config [tlgdacomxpay] = [95160cce09854ef44d2edb2bfb05f9f3]
+2016-02-12 10:46:52 [DEBUG] [] Config [lgdacomxpay] = [95160cce09854ef44d2edb2bfb05f9f3]
+2016-02-12 10:46:52 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2016-02-12 10:46:52 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2016-02-12 10:46:52 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2016-02-12 10:46:52 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Post [LGD_TXID] = [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa]
+2016-02-12 10:46:52 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Post [LGD_AUTHCODE] = [d8d0fdc8ee84c92f768f097f5b2ade5797f6c118]
+2016-02-12 10:46:52 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Post [LGD_MID] = [tlgdacomxpay]
+2016-02-12 10:46:52 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Post [LGD_TXNAME] = [PaymentByKey]
+2016-02-12 10:46:52 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Post [LGD_PAYKEY] = [20160212104650F76A6E4D93F07338101B4FCCB11E6B50B259FC38]
+2016-02-12 10:46:52 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] post_string = LGD_TXID=tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa&LGD_AUTHCODE=d8d0fdc8ee84c92f768f097f5b2ade5797f6c118&LGD_MID=tlgdacomxpay&LGD_TXNAME=PaymentByKey&LGD_PAYKEY=20160212104650F76A6E4D93F07338101B4FCCB11E6B50B259FC38
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Result = [
+
+
+
+
+
+
+
+
+
+{"LGD_RESPCODE":"0000","LGD_RESPMSG":"결제성공","LGD_RESPONSE":[{"LGD_BILLKEY":"FKuixhfW3CIN5511YF7XCwZjcA/r0T0dnaDLmjXPbb8=","LGD_CARDACQUIRER":"91","LGD_CARDNOINTEREST_YN":"0","LGD_IFOS":"3ETS0S","LGD_MID":"tlgdacomxpay","LGD_FINANCENAME":"NH MASTER","LGD_PCANCELFLAG":"1","LGD_FINANCEAUTHNUM":"00000000","LGD_DELIVERYINFO":"","LGD_BUYER":"운영자","LGD_AFFILIATECODE":"******","LGD_TRANSAMOUNT":"109000","LGD_BUYERID":"","LGD_OID":"52894-55098-93050","LGD_CARDNUM":"5430170060287877","LGD_RECEIVERPHONE":"","LGD_2TR_FLAG":"Y","LGD_DEVICE":"SM-A500L","LGD_TID":"tlgda2016021210465279231","LGD_TIMESTAMP":"20160212104653","LGD_FINANCECODE":"91200","LGD_CARDNOINTYN":"0","LGD_PCANCELSTR":"0","LGD_DISCOUNTUSEYN":"0","LGD_BUYERPHONE":"","LGD_ESCROWYN":"N","LGD_PAYTYPE":"SC0010","LGD_AMOUNT":"109000","LGD_VANCODE":"van0001","LGD_EXCHANGERATE":"1.0","LGD_BUYERSSN":"","LGD_CARDINSTALLMONTH":"00","LGD_RESPMSG":"결제성공","LGD_HASHDATA_BILLKEY":"0836f2e1e4564cae84a6433a89520ac9","LGD_PAYDATE":"20160212104652","LGD_PRODUCTINFO":"일본 전통 초밥 코스요리","LGD_PRODUCTCODE":"","LGD_HASHDATA":"bc20788d1f0a1c9c6c182557be31c0e4","LGD_CARDGUBUN1":"0","LGD_CARDGUBUN2":"0","LGD_BUYERADDRESS":"","LGD_RECEIVER":"","LGD_RESPCODE":"0000","LGD_BUYEREMAIL":"help@onedaynet.co.kr","LGD_DISCOUNTUSEAMOUNT":"0"}]}
+]
+2016-02-12 10:46:54 [INFO ] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response Code=[0000], Msg=[��������], Count=1
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_BILLKEY, 0) = FKuixhfW3CIN5511YF7XCwZjcA/r0T0dnaDLmjXPbb8=
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_CARDACQUIRER, 0) = 91
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_CARDNOINTEREST_YN, 0) = 0
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_IFOS, 0) = 3ETS0S
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_MID, 0) = tlgdacomxpay
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_FINANCENAME, 0) = NH MASTER
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_PCANCELFLAG, 0) = 1
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_FINANCEAUTHNUM, 0) = 00000000
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_DELIVERYINFO, 0) = 
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_BUYER, 0) = 운영자
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_AFFILIATECODE, 0) = ******
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_TRANSAMOUNT, 0) = 109000
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_BUYERID, 0) = 
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_OID, 0) = 52894-55098-93050
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_CARDNUM, 0) = 5430170060287877
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_RECEIVERPHONE, 0) = 
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_2TR_FLAG, 0) = Y
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_DEVICE, 0) = SM-A500L
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_TID, 0) = tlgda2016021210465279231
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_TIMESTAMP, 0) = 20160212104653
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_FINANCECODE, 0) = 91200
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_CARDNOINTYN, 0) = 0
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_PCANCELSTR, 0) = 0
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_DISCOUNTUSEYN, 0) = 0
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_BUYERPHONE, 0) = 
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_ESCROWYN, 0) = N
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_PAYTYPE, 0) = SC0010
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_AMOUNT, 0) = 109000
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_VANCODE, 0) = van0001
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_EXCHANGERATE, 0) = 1.0
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_BUYERSSN, 0) = 
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_CARDINSTALLMONTH, 0) = 00
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_RESPMSG, 0) = 결제성공
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_HASHDATA_BILLKEY, 0) = 0836f2e1e4564cae84a6433a89520ac9
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_PAYDATE, 0) = 20160212104652
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_PRODUCTINFO, 0) = 일본 전통 초밥 코스요리
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_PRODUCTCODE, 0) = 
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_HASHDATA, 0) = bc20788d1f0a1c9c6c182557be31c0e4
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_CARDGUBUN1, 0) = 0
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_CARDGUBUN2, 0) = 0
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_BUYERADDRESS, 0) = 
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_RECEIVER, 0) = 
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_RESPCODE, 0) = 0000
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_BUYEREMAIL, 0) = help@onedaynet.co.kr
+2016-02-12 10:46:54 [DEBUG] [tlgdacomxpay-0120160212104652ce3fb5d8ecc6b7a26272f2291a0907ac9d2c6dfa] Response (LGD_DISCOUNTUSEAMOUNT, 0) = 0

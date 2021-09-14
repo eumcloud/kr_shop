@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+/* basic */
+.fw_b{font-weight:bold;}
+.bold_12{font-weight:bold; font-size:12px;}
+.f_size12{font-size:12px;}
+.pl_9{padding-left:9px;}
+.pt_2{padding-top:2px;}
+.pt_3{padding-top:3px;}
+.pt_5{padding-top:5px;}
+.pt_10{padding-top:10px;}
+.pt_15{padding-top:15px;}
+.pt_20{padding-top:20px;}
+.pr_4{padding-right:4px;}
+.pr_10{padding-right:10px;}
+.pb_2{padding-bottom:2px;}
+.pb_4{padding-bottom:4px;}
+.pb_10{padding-bottom:10px;}
+.pb_15{padding-bottom:15px;}
+.pb_20{padding-bottom:20px;}
+.pb_25{padding-bottom:25px;}
+.pb_30{padding-bottom:30px;}
+.pb_45{padding-bottom:45px;}
+.mb_30{margin-bottom:30px;}
+.mt_10{margin-top:10px;}
+.dark_gray{color:#333;}
+.blue{color:#6576bf;}
+.c_blue{color:#403b8c;}
+.orange{color:#f66826;}
+.vivid_blue{color:#000ca7;}
+.vivid_red{color:#d40000;}
+.hide{display:none;}
+
+

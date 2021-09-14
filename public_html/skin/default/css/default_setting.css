@@ -1,0 +1,89 @@
+/*
+copyright(c) 상상너머·원데이넷 all rights reserved.
+허용된 라이센스이외 무단도용재배포를 금합니다.
+*/
+
+@charset 'utf-8';
+/* @import url(cm_font.css); */
+
+/* ●●●●●●●●●● 기본설정 */
+
+html {width:100%; height:100%;}
+body {margin:0; padding:0; background:#f5f5f7; min-width:1210px; overflow-y:scroll;}
+/* 시스템폰트 사용시 */
+body,p,pre,form,span,div,table,td,ul,ol,li,dl,dt,dd,input,textarea,label,button {color:#888; word-wrap:break-word; word-break:keep-all; font-family:dotum, sans-serif ; font-size:12px; font-weight:400;}
+b,strong {word-wrap:break-word; word-break:break-all; font-family:inherit; font-weight:600; letter-spacing:0px;}
+
+/* 웹폰트 사용시 
+body,p,pre,form,span,div,table,td,ul,ol,li,dl,dt,dd,input,textarea,label,button {color:#666; word-wrap:break-word; word-break:break-all; font-family:'NanumGothic',sans-serif; font-size:12px; font-weight:400}
+b,strong {color:#666; word-wrap:break-word; word-break:break-all; font-family:inherit; font-weight:600}
+*/
+
+p,form,span,h1,h2,h3,h4,h5,h6 {margin:0; padding:0; font-weight:normal}
+div,table {margin:0; padding:0; border-spacing:0; border-collapse:collapse; border:0px none; }
+ul,ol,li,td,dl,dt,dd {margin:0; padding:0;}
+em,i {font-style:normal}
+a,span {display:inline-block;}
+img {border:0;}
+
+a:link, a:visited {color:#999; text-decoration: none; cursor:pointer}
+a:hover, a:active {color:#333; text-decoration: none;}
+
+/* 마우스 드래그시 컬러 (디자인적으로 필요하면 사용) 하위브라우저 적용안됨 */
+::selection {background:#bfc2ca; color:#fff; text-shadow: none;} 
+::-moz-selection {background:#bfc2ca; color:#fff; text-shadow: none;} 
+::-webkit-selection {background:#bfc2ca; color:#fff; text-shadow: none;} 
+
+
+/* 폼요소기본 */
+label {display:inline-block; overflow:hidden; cursor:pointer; color:#888}
+label:hover {color:#333}
+label input[type=checkbox],label input[type=radio] {float:left; margin-right:5px; height:13px; width:13px; cursor:pointer; outline:none}
+
+input[type=submit],input[type=button],button {cursor:pointer; border:0; outline:none; -webkit-appearance:none; -webkit-gradient:none; -webkit-border-radius:0;}
+input[type=text],input[type=password],input[type=search],input[type=email],input[type=number],input[type=tel] {margin:0;padding:0; -webkit-appearance:none; -webkit-gradient:none; -webkit-border-radius:0;}
+input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {-webkit-appearance:none; margin:0;} /* number 오른쪽에 나타나는 화살표 버튼없애기 */
+input[type=date]::-webkit-outer-spin-button, input[type=date]::-webkit-inner-spin-button {-webkit-appearance:none; margin:0;} /* 오른쪽에 나타나는 화살표 버튼없애기 */
+input {color:#999; background:transparent; margin:0; padding:0; border:0; outline:none}
+input:focus {color:#333 !important;}
+
+textarea {color:#999; background:transparent; margin:0;padding:0; outline:none; border:0}
+textarea:focus {color:#333 !important;}
+
+select {color:#999; cursor:pointer; font-size: inherit !important; font-family: inherit !important;} /* 셀렉트는오류때문에 필수! */
+
+/* placeholder는 아직 브라우저 환경때문에 PC버전에서 사용안함 
+input::-webkit-input-placeholder {color:#999}
+input::input-placeholder {color:#999}
+textarea::-webkit-textarea-placeholder {color:#ff0000}
+textarea::textarea-placeholder {color:#ff0000}
+*/
+
+/* 이미지롤오버 */
+.roll_off {display:block;}
+.roll_over {display:none;}
+a:hover .roll_off {display:none;}
+a:hover .roll_over {display:block;}
+.roll_hit .roll_off {display:none;}
+.roll_hit .roll_over {display:block;}
+/* Use <a href="" class="roll_hit"><img src="" class="roll_over" alt="" /><img src="" class="roll_off" alt="" /></a> */
+
+.wrap {position:relative;} /* 이부분 실작업시 수정할것! */
+.lineup {display:inline-block} /* float요소들 정렬시킬때 사용 */
+.layout_fix {width:1000px; margin:0 auto; position:relative}
+.upper_link {position:absolute; left:0; top:0; width:100%; height:100%; z-index:3}
+.upper_link img {width:100%; height:100%;}
+
+
+
+/* 공통페이지는 다음과 같은 경로안으로 들어갑니다. */
+.common_page {width:998px; background:#fff; margin:0 auto 80px auto; border-left:1px solid #dadada; border-right:1px solid #dadada; border-bottom:1px solid #dadada; overflow:hidden;}
+.common_page .layout_fix {background:#fff; width:940px; margin:30px auto;}
+.common_clear {margin-bottom:0} /* 박스연속될때 위에오는 박스 */
+.common_none {border:0 !important; background:none !important; width:1000px; margin:0 auto;} /* 컨텐츠아닌 공통영역(페이지타이틀) */
+.common_only {border:1px solid #dadada; background:none !important; width:1000px; margin:60px auto;} /* 멤버쪽 별도박스 */
+
+.font-inherit { font-size: inherit!important; font-family: inherit!important; font-weight: inherit!important; color: inherit!important; line-height: inherit!important; }
+
+/* 2017-09-07 pre 크롬브라우저 오류 ARA */
+pre {word-wrap:break-word; word-break:keep-all; white-space:normal;}

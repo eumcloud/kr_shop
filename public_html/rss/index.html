@@ -1,0 +1,196 @@
+<?
+$address = 'http://'.$_SERVER[HTTP_HOST].'/rss';
+?>
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+<title>rss format 제공페이지 입니다</title>
+<script language = 'JavaScript' src='js/script.js'></script>
+<style type='text/css'> 
+<!--
+body, table, th, tr, td {
+	font-family:dotum, verdana, arial;
+	font-size:12px;
+	color:#666666;
+	line-height:1.4;
+}
+.link01 {
+	font-family:dotum;
+	text-decoration:none;
+	color:#0188ce;
+	font-weight:bold
+}
+.link01:link {
+	font-family:dotum;
+	text-decoration:none;
+	color:#0188ce;
+	font-weight:bold
+}
+.link01:visied {
+font-family:dotum;
+text-decoration:none;
+color:#0188ce;
+font-weight:bold
+}
+.link01:hover {
+	font-family:dotum;
+	text-decoration:underline;
+	color:#ea0811;
+	font-weight:bold
+}
+-->
+</style>
+</head>
+<body>
+<table width='774' border='0' cellspacing='0' cellpadding='0'>
+    <tr>
+        <td><img src='images/rss_head.jpg' /></td>
+    </tr>
+    <tr>
+        <td background='images/rss_bg.gif'>
+            <table width='100%' border='0' cellspacing='0' cellpadding='0'>
+                <tr>
+                    <td align='center'><img src='images/rss_01.jpg' /></td>
+                </tr>
+                <tr>
+                    <td height='7'></td>
+                </tr>
+                <tr>
+                    <td  style='padding:0 0 0 60'> 이 프로그램은 원데이넷에서 메타사이트 연동이 용이하도록 XML 서식을 미리 생성하여 제공하는 프로그램입니다. <br>
+                        만약 메타사이트의 업데이트로 인해서 서식이 변경되었다면 소스를 직접수정하시거나 원데이넷 게시판에 해당 
+                        변동<br>
+                        부분을  올려 주시기 바랍니다. <p>
+                        RSS 파일의 패치는 원데이넷 FAQ게시판에 게시를 하고 있습니다.<p>
+                        이 프로그램을 사용함에 있어서 발생하는 모든 책임은 사용자에게 있으며 원치않는 분은 관련파일을 모두 삭제하시기<br>
+                        바랍니다. 
+                        소스수정은 자유롭습니다. 원하시는 필드, 기능이 있을경우 소스수정을 통해서 기능구현을 하시기 바랍니다. <br>
+                        메타사이트로의 입점등록은 사용자가 직접등록을 해야합니다. 
+                        각 사이트마다 요구하는 상품정보XML 주소는 아래의 지원<br>
+                        목록에서 해당 사이트의 링크주소를 알려주시면 됩니다. </td>
+                </tr>
+                <tr>
+                    <td align='center'><img src='images/rss_02.jpg' /></td>
+                </tr>
+                <tr>
+                    <td height='7'></td>
+                </tr>
+                <tr>
+                    <td  style='padding:0 0 0 60'>각 메타사이트에서 요구하는정보가 솔루션에 없는경우 빈값으로 표시될수있습니다. <br>
+                        FAQ게시판의 RSS지역정보 패치를 수행하면 좀더 많은 정보가 노출됩니다.(패치권장)</td>
+                </tr>
+                <tr>
+                    <td align='center'><img src='images/rss_03.jpg' /></td>
+                </tr>
+                <tr>
+                    <td height='7'></td>
+                </tr>
+                <tr><? echo "
+                    <td  style='padding:0 0 0 60'>01.쿠폰집:<a href='$address/rss_couponzip.php' target='_blank' class='link01'>$address/rss_couponzip.php </a> <br>
+                        02.지름닷컴: <a href='$address/rss2.php' target='_blank' class='link01'> $address/rss2.php</a> <br>
+                        03.소쿠리:<a href='$address/rss_socury.php' target='_blank' class='link01'> $address/rss_socury.php</a> <br>
+                        04.쿠폰모아 :<a href='$address/rss_couponmoa.php' target='_blank' class='link01'> $address/rss_couponmoa.php</a> <br>
+                        05.다원데이 :<a href='$address/rss_daoneday.php' target='_blank' class='link01'> $address/rss_daoneday.php</a> <br>
+                        06.쿠폰차트 :<a href='$address/rss_couponchart.php' target='_blank' class='link01'> $address/rss_couponchart.php</a> <br>
+                        07.하루하나 :<a href='$address/rss_haroohana.php' target='_blank' class='link01'> $address/rss_haroohana.php </a><br>
+                        08.티켓초이스 :<a href='$address/rss_ticketchoice.php' target='_blank' class='link01'> $address/rss_ticketchoice.php</a> <br>
+                        09.쿠폰셔틀 :<a href='$address/rss_couponshutle.php' target='_blank' class='link01'> $address/rss_couponshutle.php</a> <br>
+                        10.올쿠 :<a href='$address/rss_olcoo.php' target='_blank' class='link01'> $address/rss_olcoo.php</a> <br>
+                        11.원츄 : <a href='$address/rss_wanchu.php' target='_blank' class='link01'>$address/rss_wanchu.php </a><br>
+                        12.다할인 :<a href='$address/rss_dasale.php' target='_blank' class='link01'> $address/rss_dasale.php</a> <br>
+                        13.반값닷컴 :<a href='$address/rss_halfprice.php' target='_blank' class='link01'> $address/rss_halfprice.php</a> <br>
+                        14.와우24 :<a href='$address/rss_wow24.php' target='_blank' class='link01'> $address/rss_wow24.php</a> <br>
+                        15.모아톡 : <a href='$address/rss_moatock.php' target='_blank' class='link01'>$address/rss_moatock.php </a><br>
+                        16.티켓원 :<a href='$address/rss_ticketone.php' target='_blank' class='link01'> $address/rss_ticketone.php </a><br>
+                        17.가비아메타폰 :<a href='$address/rss_metapon.php' target='_blank' class='link01'> $address/rss_metapon.php</a><br>
+                        18.애니폰 :<a href='$address/rss_anypon.php' target='_blank' class='link01'> $address/rss_anypon.php</a><br>
+                        19.코스트 :<a href='$address/rss_cost.php' target='_blank' class='link01'> $address/rss_cost.php</a><br>
+                        20.쿠폰딜 :<a href='$address/rss_coupondeal.php' target='_blank' class='link01'> $address/rss_coupondeal.php</a><br>
+                        21.프리챌 :<a href='$address/rss_freechal.php' target='_blank' class='link01'> $address/rss_freechal.php</a><br>
+                        22.팡쿠 :<a href='$address/rss_pangcu.php' target='_blank' class='link01'> $address/rss_pangcu.php</a><br>
+                        23.티몽 :<a href='$address/rss_tmong.php' target='_blank' class='link01'> $address/rss_tmong.php</a><br>
+                        24.미스터태그 :<a href='$address/rss_mrtag.php' target='_blank' class='link01'> $address/rss_mrtag.php</a><br>
+                        25.올쿠폰 : <a href='$address/rss_allcoupon.php' target='_blank' class='link01'> $address/rss_allcoupon.php</a><br>
+                        26.굿투데이 : <a href='$address/rss_goodtoday.php' target='_blank' class='link01'> $address/rss_goodtoday.php</a><br>
+                        27.소셜커머스닷컴 : <a href='$address/rss_socialcom.php' target='_blank' class='link01'> $address/rss_socialcom.php</a><br>
+                        28.티사모 : <a href='$address/rss_tisamo.php' target='_blank' class='link01'> $address/rss_tisamo.php</a><br>
+                        29.티켓모아 : <a href='$address/rss_ticketmoa.php' target='_blank' class='link01'> $address/rss_ticketmoa.php</a><br>
+                        30.디지다 : <a href='$address/rss_dgda.php' target='_blank' class='link01'> $address/rss_dgda.php</a><br>
+                        31.소셜스퀘어 : <a href='$address/rss_ssquare.php' target='_blank' class='link01'> $address/rss_ssquare.php</a><br>
+                        32.하프게이트 : <a href='$address/rss_halfgate.php' target='_blank' class='link01'> $address/rss_halfgate.php</a><br>
+                        33.쩐다쩜넷 : <a href='$address/rss_jjunda.php' target='_blank' class='link01'> $address/rss_jjunda.php</a><br>
+                        34.모아앤모아 : <a href='$address/rss_moanmoa.php' target='_blank' class='link01'> $address/rss_moanmoa.php</a><br>
+                        35.티쿠모아 : <a href='$address/rss_ticumoa.php' target='_blank' class='link01'> $address/rss_ticumoa.php</a><br>
+                        36.티켓다모아 : <a href='$address/rss_ticketdamoa.php' target='_blank' class='link01'>$address/rss_ticketdamoa.php</a><br>
+                        37.와즐 : <a href='$address/rss_wazzle.php' target='_blank' class='link01'> $address/rss_wazzle.php</a><br>
+                        38.쿠팟 : <a href='$address/rss_coupot.php' target='_blank' class='link01'> $address/rss_coupot.php</a><br>
+                        39.인터쿠폰 : <a href='$address/rss_intercoupon.php' target='_blank' class='link01'> $address/rss_intercoupon.php</a><Br>
+                        40.쿠폰파티 : <a href='$address/rss_couponparty.php' target='_blank' class='link01'> $address/rss_couponparty.php</a><br>
+                        41.오픈게이트 : <a href='$address/rss_opengate.php' target='_blank' class='link01'> $address/rss_opengate.php</a><br>
+                        41.오픈데이즈 : <a href='$address/rss_opendays.php' target='_blank' class='link01'> $address/rss_opendays.php</a><br>
+                        42.메타프라이 : <a href='$address/rss_metafry.php' target='_blank' class='link01'> $address/rss_metafry.php</a><br>
+                        43.소셜차트 : <a href='$address/rss_social-chart.php' target='_blank' class='link01'> $address/rss_social-chart.php</a><br>
+                        44.반가격 : <a href='$address/rss_banprice.php' target='_blank' class='link01'> $address/rss_banprice.php</a><br>
+                        45.쿠폰몬스터 : <a href='$address/rss_couponmonster.php' target='_blank' class='link01'> $address/rss_couponmonster.php</a><br>
+                        46.쿠투데이 : <a href='$address/rss_kutoday.php' target='_blank' class='link01'> $address/rss_kutoday.php</a><br>
+                        47.티켓채널 : <a href='$address/rss_ticketch.php' target='_blank' class='link01'> $address/rss_ticketch.php</a><br>
+                        48.디씨야 : <a href='$address/rss_dcya.php' target='_blank' class='link01'> $address/rss_dcya.php</a><br>
+                        49.뽐뿌 : <a href='$address/rss_ppomppu.php' target='_blank' class='link01'> $address/rss_ppomppu.php</a><br>
+                        50.티켓베네 : <a href='$address/rss_ticketbene.php' target='_blank' class='link01'> $address/rss_ticketbene.php</a><br>
+                        51.사람&사람 : <a href='$address/rss_saramnsaram.php' target='_blank' class='link01'> $address/rss_saramnsaram.php</a><br>
+                        52.오빠사줘 : <a href='$address/rss_obbasajo.php' target='_blank' class='link01'> $address/rss_obbasajo.php</a><br>
+                        53.오빠이거 : <a href='$address/rss_5829.php' target='_blank' class='link01'> $address/rss_5829.php</a><br>
+                        54.원어데이몰 : <a href='$address/rss_oneadaymall.php' target='_blank' class='link01'> $address/rss_oneadaymall.php</a><br>
+                        55.쿠폰메거진 : <a href='$address/rss_couponmagazine.php' target='_blank' class='link01'> $address/rss_couponmagazine.php</a><br>
+                        56.위메링 : <a href='$address/rss_wemakelink.php' target='_blank' class='link01'> $address/rss_wemakelink.php</a><br>
+						57.티켓차트 : <a href='$address/rss_ticket-chart.php' target='_blank' class='link01'> $address/rss_ticket-chart.php</a><br>
+						58.소셜리스트 : <a href='$address/rss_sociallist.php' target='_blank' class='link01'> $address/rss_sociallist.php</a><br>
+						59.이지쿠폰 : <a href='$address/rss_easycoupon.php' target='_blank' class='link01'> $address/rss_easycoupon.php</a><br>
+						60.쿠폰유 : <a href='$address/rss_couponu.php' target='_blank' class='link01'> $address/rss_couponu.php</a><br>
+                        61.올트윗 : <a href='$address/rss_alltwt.php' target='_blank' class='link01'> $address/rss_alltwt.php</a><br>
+                        62.무한데이 : <a href='$address/rss2.php' target='_blank' class='link01'> $address/rss2.php</a><br>
+                        63.알밤나무 : <a href='$address/rss2.php' target='_blank' class='link01'> $address/rss2.php</a><br>
+                        64.리얼쿠폰 : <a href='$address/rss_realcoupon.php' target='_blank' class='link01'> $address/rss_realcoupon.php</a><br>
+                        65.소셜포탈 : <a href='$address/rss_socialportal.php' target='_blank' class='link01'> $address/rss_socialportal.php</a><br>
+                        66.반값뉴스 : <a href='$address/rss_halfpricenews.php' target='_blank' class='link01'> $address/rss_halfpricenews.php</a><br>
+						67.원데이키즈 : <a href='$address/rss2.php' target='_blank' class='link01'> $address/rss2.php</a><br>
+   						68.쿠폰순이 : <a href='$address/rss_couponsoony.php' target='_blank' class='link01'> $address/rss_couponsoony.php</a><br>
+                        69.쿠폰매거진 : <a href='$address/rss_couponmagazine.php' target='_blank' class='link01'> $address/rss_couponmagazine.php</a><br>
+                        70.오분 : <a href='$address/rss_5boon.php' target='_blank' class='link01'> $address/rss_5boon.php</a><br>
+                        71.소셜마켓 : <a href='$address/rss_socialmarket.php' target='_blank' class='link01'> $address/rss_socialmarket.php</a><br>
+                        72.쿠폰닷컴 : <a href='$address/rss_coupondotcom.php' target='_blank' class='link01'> $address/rss_coupondotcom.php</a><br>
+                        73.쿠폰짱 : <a href='$address/rss_couponjjang.php' target='_blank' class='link01'> $address/rss_couponjjang.php</a><br>
+                        74.쿠폰리스트 : <a href='$address/rss_couponlist.php' target='_blank' class='link01'> $address/rss_couponlist.php</a><br>
+                        75.틱모아 : <a href='$address/rss_ticmoa.php' target='_blank' class='link01'> $address/rss_ticmoa.php</a><br>
+						76.위원잇 : <a href='$address/rss_wewantit.php' target='_blank' class='link01'> $address/rss_wewantit.php</a><br>
+						77.티켓투더문 : <a href='$address/rss_ttmoon.php' target='_blank' class='link01'> $address/rss_ttmoon.php</a><br>
+                        78.카몬메타 : <a href='$address/rss2.php' target='_blank' class='link01'> $address/rss2.php</a><br>
+                        79.쿠폰버스 : <a href='$address/rss_couponbus.php' target='_blank' class='link01'> $address/rss_couponbus.php</a><br>
+                        80.반반하네 : <a href='$address/rss_banbanhane.php' target='_blank' class='link01'> $address/rss_banbanhane.php</a><br>
+                        81.디씨데일리 : <a href='$address/rss_dcdaily.php' target='_blank' class='link01'> $address/rss_dcdaily.php</a><br>
+						82.누나사줘 : <a href='$address/rss_nunasajo.php' target='_blank' class='link01'> $address/rss_nunasajo.php</a><br>
+                        83.쿠폰데이타 : <a href='$address/rss_coupondata.php' target='_blank' class='link01'> $address/rss_coupondata.php</a><br>
+                        84.아바마마 : <a href='$address/rss2.php' target='_blank' class='link01'> $address/rss2.php</a><br>
+                        85.다음소셜 : <a href='$address/rss_daumsocialshopping.php' target='_blank' class='link01'> $address/rss_daumsocialshopping.php</a><br>
+                        86.다음소셜2 : <a href='$address/rss_daumsocialshopping.php' target='_blank' class='link01'> $address/rss_daumsocialshopping2.php</a><br>
+                        87.쿠미 : <a href='$address/rss_coome.php' target='_blank' class='link01'> $address/rss_coome.php</a><br>
+                        88.쿠폰나비 : <a href='$address/rss_couponnavi.php' target='_blank' class='link01'> $address/rss_couponnavi.php</a><br>                        
+                        89.쿱스 : <a href='$address/rss_koops.php' target='_blank' class='link01'> $address/rss_koops.php</a><br>
+                        90.몬스터쿠폰 : <a href='$address/rss2.php' target='_blank' class='link01'> $address/rss2.php</a><br>
+						91.네이버 : <a href='$address/rss_naver.php' target='_blank' class='link01'> $address/rss_naver.php</a><br>
+
+                        </td>";
+						?>
+                </tr>
+                <tr>
+                    <td height='30'></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td><img src='images/rss_bottom.gif' /></td>
+    </tr>
+</table>
+</body>
+</html>
+

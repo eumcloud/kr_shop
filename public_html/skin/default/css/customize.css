@@ -1,0 +1,29 @@
+.font-inherit { font-size: inherit!important; font-family: inherit!important; font-weight: inherit!important; color: inherit!important; line-height: inherit!important; }
+
+
+
+
+/* 2016-02-03 하단 에스크로 추가관련 */
+.footer .logo {overflow:hidden; position:absolute; left:0; top:0; width:220px; text-align:center;}
+.footer .logo img {max-width:220px; max-height:80px; float:none}
+.footer .escrow {overflow:hidden; padding-top:15px; margin-top:15px; border-top:1px solid #ccc; }
+.footer .escrow img {max-width:220px; max-height:80px}
+.footer .right {margin-left:310px}
+.footer .right .text {line-height:20px;}
+
+
+/* 2016-07-13 PC버전 한줄제한 CSS제어 */
+.item_box .item_name {overflow:hidden; text-overflow:ellipsis; white-space: nowrap; word-wrap: normal !important; display:block;}
+.wide_item_box .item_name {margin-right:90px}
+
+
+/* 회원가입 동의항목 내부타이틀 추가 2017-09-20 */
+.cm_member_agree.no_bg {background:transparent; }
+.cm_member_agree .text_title {background:#ddd; border:1px solid #ccc; border-bottom:0; color:#333; padding:10px 15px; font-weight:400;}
+.cm_member_agree .agree_check.text_box {border-top:0;}
+@media screen and (min-width:550px) {
+    .cm_member_agree .agree_check {padding:3px 0 10px 0;}
+}
+
+/* SSJ: 2017-09-20 구독신청 개인정보수집동의 추가 */
+.cm_step_agree.no_bg {background:transparent; position:relative; border-bottom:0px solid #dedede; padding:0px; margin:20px 0; text-align:center;}

@@ -1,0 +1,8 @@
+<?
+	$full_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+	$full_link_array = parse_url($full_link);
+	$path = str_replace('/m/', '/', $full_link_array[path]);
+	$query = '?_mobilemode=chk&'.$full_link_array[query];
+	
+	header("Location: ".$path.$query);
+?>

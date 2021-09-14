@@ -1,0 +1,42 @@
+/*
+copyright(c) 상상너머·원데이넷 all rights reserved.
+허용된 라이센스이외 무단도용재배포를 금합니다.
+*/
+
+@charset 'utf-8';
+
+
+
+/* 카테고리별 추천상품 ●●●● */
+.main_ctg_item .item_box {width:230px; height:327px;}
+
+.main_ctg_item .item_box .soldout_soon {display:none}
+.main_ctg_item .item_box .discount {display:none}
+.main_ctg_item .item_box .price {overflow:hidden;}
+.main_ctg_item .item_box .before {margin: 6px 10px 0 0; float:left;}
+
+
+/* 메인 상품리스트 ●●●● */
+.main_list .item_list_area .item_box .kor {display:inline-block}
+.main_list .item_list_area .item_box {width:322px; height:410px;}
+.item_list_area .item_box .soldout_soon {display:none}
+
+.item_list_area .item_box .discount {display:none}
+.item_list_area .item_box .price {overflow:hidden; width:100%}
+.item_list_area .item_box .before {float:left; margin: 6px 10px 0 0}
+
+
+/* 서브리스트 ●●●● */
+.sub_list .item_list_area .item_box {height:456px;}
+.sub_list .item_list_area .ranking {display:none}
+
+.item_list_area .wide_item_box .discount {display:none}
+.item_list_area .wide_item_box .soldout_soon {display:none}
+
+
+
+/* 상세보기 구매정보 */
+.product_view .price_info .discount {display:none!important}
+.product_view .price_info .before {float:left; margin: 15px 15px 0 0}
+.product_view .price_info .after .kor {display:inline-block}
+.product_view .buy_info {display:none}

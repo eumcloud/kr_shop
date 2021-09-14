@@ -1,0 +1,196 @@
+<?php
+
+	include "../include/inc.php";
+
+
+
+
+
+	// --- JJC004 - 모바일 검출에 모바일 전용 관리자페이지 불러오기 ---
+	if($_REQUEST['_pcmode']=="chk") {
+		samesiteCookie("AuthAdminNoMobile","chk",0,"/" , "." . str_replace("www." , "" , $_SERVER[HTTP_HOST]));
+	}
+	else if($_REQUEST['_mobilemode']=="chk") {
+		samesiteCookie("AuthAdminNoMobile","",time()-3600,"/" , "." . str_replace("www." , "" , $_SERVER[HTTP_HOST]));
+		error_loc("/include/addons/m.totalAdmin/");
+	}
+	else if( !$_COOKIE['AuthAdminNoMobile'] ) {
+		require_once '../include/Mobile_Detect/Mobile_Detect.php';
+		$detect = new Mobile_Detect;
+		if ( $detect->isMobile() ) {
+			error_loc("/include/addons/m.totalAdmin/");
+		}
+	}
+	// --- JJC004 - 모바일 검출에 모바일 전용 관리자페이지 불러오기 ---
+
+
+
+
+
+
+	if($_mode=='autologin') { $_id='id'; $_pw='pw'; $userType = 'com'; }
+
+	// --- 아이디 / 비번 입력 시 ---
+	if( $_id != "" && $_pw != "") {
+		if($userType == "master") {
+			$row = _MQ("SELECT * FROM odtAdmin WHERE id='$_id'");
+			if(sizeof($row) == 0 ) { error_msg('등록되어 있지 않은 ID 입니다.\\n\\n다시 입력하세요.'); }
+			else {
+				$TablePassWD = _MQ("SELECT password('$_pw') as chk_pass ");
+				if( $row['passwd'] <> $TablePassWD['chk_pass']) { error_msg('입력하신 비밀번호가 일치하지 않습니다.\\n\\n다시 입력하세요.'); }
+				else {
+					$keepTermLogin = $row_setup['keepTerm']*60;
+					login_admin($row['serialnum'] , $row_setup['ranDsum'],$_MaddSum,$keepTermLogin);
+					$f_link = _MQ(" SELECT am.m2_link FROM m_menu_set as ms inner join m_adm_menu as am on(ms.m15_code1 = am.m2_code1 and ms.m15_code2 = am.m2_code2)   WHERE ms.m15_id = '" . $_id . "' and ms.m15_vkbn = 'Y' and ms.m15_code2 != '' order by am.m2_seq asc, ms.m15_code1 asc, ms.m15_code2 asc limit 1 ");
+					AdminLogin();
+					error_loc($f_link['m2_link']);
+				}
+			}
+		} else if($userType == "com") {
+			if($_mode=='autologin') { $row = _MQ("SELECT * FROM odtMember WHERE serialnum = '$serialnum'"); }
+			else { $row = _MQ("SELECT * FROM odtMember WHERE id='$_id' and passwd=password('$_pw') and userType='C'"); }
+			if(sizeof($row) == 0 ) { error_msg('입력하신 아이디나 비밀번호가 일치하지 않습니다.\\n\\n다시 입력하세요.'); }
+			$keepTermLogin = $row_setup['keepTerm']*60;
+			login_subcompany($row['serialnum'] , $row_setup['ranDsum'],$_MaddSum , $keepTermLogin);
+			error_loc("../subAdmin/_order2.list.php?delivstatus=yes&ordertype=coupon&menu_idx=5");
+			//error_loc("../subAdmin/");
+		}
+	}
+	// --- 아이디 / 비번 입력 시 ---
+
+	if($row_admin['id']) {
+		$f_link = _MQ(" SELECT am.m2_link FROM m_menu_set as ms inner join m_adm_menu as am on(ms.m15_code1 = am.m2_code1 and ms.m15_code2 = am.m2_code2)   WHERE ms.m15_id = '" . $row_admin['id'] . "' and ms.m15_vkbn = 'Y' and ms.m15_code2 != '' order by am.m2_seq asc, ms.m15_code1 asc, ms.m15_code2 asc limit 1 ");
+		error_loc($f_link['m2_link']);
+	} else if($com['id']) {
+		error_loc("../subAdmin/_order2.list.php?delivstatus=yes&ordertype=coupon");
+	} else {
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="kr" lang="kr" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>관리자페이지에 오신것을 환영합니다.</title>
+	
+	<!-- 홈아이콘 -->
+	<?$banner_info = info_banner("site_icon_basic",1,"data");?>
+	<?php if($banner_info[0][b_img]) { ?>
+	<link rel="apple-touch-icon-precomposed" href="<?=IMG_DIR_BANNER.$banner_info[0][b_img]?>" />
+	<link rel="shortcut icon" href="<?=IMG_DIR_BANNER.$banner_info[0][b_img]?>" />
+	<?php } ?>
+
+	<link href="./css/adm_style.css" rel="stylesheet" type="text/css" />
+	<SCRIPT src="/include/js/jquery-1.11.2.min.js"></SCRIPT>
+	<SCRIPT src="/include/js/jquery.placeholder.js"></SCRIPT>
+	<SCRIPT src="/include/js/jquery-migrate-1.2.1.min.js"></SCRIPT>
+	<SCRIPT src="/include/js/jquery.validate.js"></SCRIPT>
+</head>
+<body>
+<div id="login">
+	
+	<!-- 로그인폼 전체하얀박스 -->
+	<div class="box"> 
+
+		<!-- 로그인이미지 -->
+		<div class="left"><img src="./images/login_img.gif" alt="로그인이미지" title="" /></div>
+
+		<!-- 로그인폼 -->
+		<div class="right">
+
+			<form name=frm_login_page method=post action=<?=$PHP_SELF?>>
+				<div class="form_box">
+
+					<div class="type_choice">
+						<label><input type="radio" name="userType" value="master" checked/> 관리자</label>
+						&nbsp;&nbsp;&nbsp;
+						<label><input type="radio" name="userType" value="com"/> 입점업체</label>
+					</div>
+
+					<div class="input_box">
+						<input type="text" name="_id" class="input_text" value="아이디" />
+						<input type="text" name="_pw" class="input_text" value="비밀번호" />
+					</div>
+
+					<span class="btn_login"><input type="submit" name="" value="" class="btn" /></span>
+				</div>
+			</form>
+
+		</div>
+		<!-- // 로그인폼 -->
+
+	</div>
+	<!-- //로그인폼 전체하얀박스 -->
+	
+	<!-- 업체 카피라잇 -->
+	<div class="copyright">&copy; ONEDAYNET.CO.KR. ALL RIGHTS RESERVED.</div>
+
+	<!-- 경고문구 -->
+	<div class="warning">
+		<span class="icon"></span>
+		<div class="text">
+			<ul>
+				<li>본 페이지는 관리자 인증 페이지 입니다.</li>
+				<li>익스플로러 8.0 이상, 해상도 1280 * 1024 에 최적화 되었습니다.</li>
+				<li>인증 획득시 정보에 대한 보안을 반드시 지키셔야 하며 어길시 민형사상의 책임을 질 수 있습니다. </li>
+				<? if($row_setup[login_page_phone]||$row_setup[login_page_email]) { ?>
+				<li>유지보수 및 사용상 문의사항 - <?="고객센터: <b>".$row_setup[login_page_phone]."</b>"?> <?="이메일문의: <b>".$row_setup[login_page_email]."</b>"?></li>
+				<? } ?>
+			</ul>
+		</div>	
+	</div>
+
+</div>
+
+
+		<?
+		if( preg_match('/(alcatel|amoi|android|avantgo|blackberry|benq|cell|cricket|docomo|elaine|htc|iemobile|iphone|ipad|ipaq|ipod|j2me|java|midp|mini|mmp|mobi|motorola|nec-|nokia|palm|panasonic|philips|phone|playbook|sagem|sharp|sie-|silk|smartphone|sony|symbian|t-mobile|telus|up\.browser|up\.link|vodafone|wap|webos|wireless|xda|xoom|zte)/i', $_SERVER['HTTP_USER_AGENT']) ) {
+		?>
+			<div id="backToMobile">
+				<a href="/totalAdmin/?_mobilemode=chk&<?=str_replace('_pcmode=chk','',$_SERVER['QUERY_STRING'])?>">모바일버전보기</a>
+			</div>
+		<? } ?>
+
+
+</body>
+</html>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+$(document).ready(function(){
+
+	//$('input[name=_id]').focus();
+
+	// - 아이디 클릭적용 ---
+	$('input[name=_id]').on('blur',function(){($(this).val() == "") ? $(this).val("아이디") : "";}).focus(function() {($(this).val() == "아이디") ? $(this).val("") : "";});
+	// - 아이디 클릭적용 ---
+
+	// - 로그인 박스 validate ---
+	$("form[name=frm]").validate({
+		rules: {
+			_id: {required: function() {($("input[name=_id]").val() == "아이디") ? $("input[name=_id]").val("") : ""; return true; }},
+			_pw: {required: function() { ($("input[name=_pw]").val() == "비밀번호") ? $("input[name=_pw]").val("") : "";return true;}}
+		},
+		messages: {
+			_id: { required: "ID를 입력하시기 바랍니다." },
+			_pw: { required: "PASSWORD를 입력하시기 바랍니다."}
+		}
+	});
+	// - 로그인 박스 validate ---
+});
+
+// - jquery validator 경고창 띄우기 (jquery validate 공통) ---
+jQuery.validator.setDefaults({
+	onkeyup:false,
+	onclick:false,
+	onfocusout:false,
+	showErrors:function(errorMap, errorList){
+		//var caption = $(errorList[0].element).attr('name');
+		if(errorList.length > 0 ) {
+			alert(errorList[0].message);
+		}
+	}
+});
+// - jquery validator 경고창 띄우기 (jquery validate 공통) ---
+
+</SCRIPT>
+<script type="text/javascript" src="../include/js/login_passwordtotext.js"></script><!-- 익스플로서에서 this.type='password' 적용안되는 오류 처리 js -->
+<? } ?>

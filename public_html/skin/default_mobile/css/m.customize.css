@@ -1,0 +1,42 @@
+/* ●●●●●●●●●● 관리자설정 팝업창 */
+.popup {position:absolute; z-index:99; display:block; top: 0; left: 0; border-radius:10px; overflow:hidden; margin:20px; box-shadow:0 0 6px rgba(0,0,0,0.5);}
+.popup .img {overflow:hidden;}
+.popup .img a {display:block; float:left; width:100%;}
+.popup .img img {float:left; width:100%;}
+.popup .btn_area {position:relative; overflow:hidden; background:rgba(0,0,0,0.8);}
+.popup .btn_area label {overflow:hidden; color:#999; font-size:12px; float:left; padding:0 15px; line-height:35px;}
+.popup .btn_area input {margin:1px 3px 0 0; width:0; height:0;}
+.popup .btn_close {position:absolute; right:0; top:0; padding:10px 10px; height:35px; width:40px; box-sizing:border-box; background:rgba(0,0,0,0.5);}
+.popup .btn_close .shape {width:18px; height:2px; background:#ccc; position:absolute; left:50%; top:50%; margin:-1px 0 0 -8px; transform: rotate(45deg); -webkit-transform: rotate(45deg);}
+.popup .btn_close .shape:before {content:''; background:#d5d4d4; width:2px; height:18px; position:absolute; left:50%; top:50%; margin:-9px 0 0 -1px;}
+
+.disable_selection {
+	-webkit-user-select: none; /* disable selection/Copy of UIWebView */
+	-webkit-touch-callout: none; /* disable the IOS popup when long-press on a link */ 
+}
+
+
+/* 에디터 동영상 크기 고정 */
+.editor iframe { width:100%; height:240px; }
+@media (min-width:500px) {
+	.editor iframe { width:100%; height:360px; }
+}
+
+/* 회원가입 동의항목 내부타이틀 추가 2017-09-20 */
+.cm_member_agree.no_bg {background:transparent; padding:10px 0 0 0}
+.cm_member_agree .text_title {background:#ddd; border:1px solid #ccc; border-bottom:0; color:#333; padding:10px 15px; font-weight:400;}
+.cm_member_agree .agree_check.text_box {border-top:0;}
+.cm_member_agree .agree_check.text_box label {padding:0;}
+
+/* SSJ: 2017-09-20 구독신청 개인정보수집동의 추가 */
+.cm_step_agree.no_bg {background:transparent; position:relative; border-bottom:0px solid #dedede; padding:0px; margin:20px 0; text-align:center;}
+
+
+
+
+
+
+
+
+
+

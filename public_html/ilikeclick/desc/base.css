@@ -1,0 +1,28 @@
+@charset "utf-8"; 
+
+/* base */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td{margin:0;padding:0;}
+body {color:#666; font-size:11px; font-family:Dotum,arial,serif,sans-serif; line-height:135%; letter-spacing:0em; background:url(/images/common/top_bg.gif) repeat-x;}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;font-size:100%;}
+ol, ul, li {list-style:none;}
+fieldset, img{border:none; }
+img {vertical-align:top;}
+/*label{cursor:pointer;}*/
+address, caption, em{font-weight:normal;font-style:normal;}
+input {font-size:11px; vertical-align:middle; overflow:visible; font-family:Dotum; color:#666; }
+select{font-size:12px; vertical-align:middle; color:#666; height:20px;}
+form img {vertical-align:middle;}
+textarea{font-family:Dotum; line-height:135%; font-size:100%; color:#666; border:1px solid #c9c9c9;}
+.radio_bisic{width:13px; height:13px;}
+.checkbox_basic{height:13px; width:13px;}
+
+/* link */
+a {color:#666; text-decoration:none;}
+a:hover, a:active{color:#444;text-decoration:none;}
+
+/* skip */
+#accessibility, .skip, hr, legend, caption{position:absolute; width:1px; height:0px; font-size:0; line-height:0; overflow:hidden; visibility:hidden; z-index:-1;}
+
+label.lblimg { position: relative; overflow: hidden; padding-right:8px;}
+label.lblimg span { position: absolute; left: 0; top: 0; width: 50px; height: 18px; text-indent:-5000px; background: url(/images/common/logo.gif) no-repeat -5000px; /* required for IE click bug fix */  }
+

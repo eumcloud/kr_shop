@@ -1,0 +1,239 @@
+/* sms 관련업데이트 2015-02-10 */
+
+/* 계정설정 */
+.new_sms_default {border:2px solid #c1c1c1; background:#fff; margin:20px 20px 10px 20px; overflow:hidden; position:relative;}
+.new_sms_default .opt {position:absolute; left:0; top:0; font-size:15px; font-weight:600; border-right:1px solid #ddd; padding:0 30px; line-height:83px;}
+.new_sms_default .value {margin-left:160px; padding:20px; overflow:hidden}
+.new_sms_default .value .txt {float:left; line-height:40px; font-size:13px; font-weight:600; color:#999}
+.new_sms_default .value .txt_color {float:left; line-height:40px; font-size:13px; font-weight:600; color:#ff6600}
+.new_sms_default .value .input_box {float:left; margin:0 20px 0 10px}
+.new_sms_default .value .input_design {height:40px; line-height:40px; background:#f3f3f3; border-left:1px solid #c7c7c7; border-top:1px solid #c7c7c7; border-right:0; border-bottom:0; padding:0 10px; font-size:13px;}
+
+.new_sms_default +.guide_text {margin:5px 20px;}
+.new_sms_default .button_box {/* position:absolute; right:20px; top:20px; */}
+.new_sms_default .shop_btn_pack {margin-left:5px}
+
+
+/* 문자내용설정 */
+.new_sms_form {background:#d9dbdd; border:1px solid #c1c1c1; margin:20px; /* padding:40px;  */overflow:hidden; position:relative; text-align:center;}
+.new_sms_form.freeHeight {}
+.new_sms_form dl, .new_sms_form dt, .new_sms_form dd {margin:0; padding:0}
+
+.new_sms_form .button_box {/* position:absolute; right:20px; top:20px; */; clear:both; text-align:center; padding-top:30px; box-sizing:border-box; width:100%; padding-left:180px;}
+.new_sms_form .button_box .shop_btn_pack { width:500px !important; float:none; width:100%; box-sizing:border-box; display:inline-block;}
+.new_sms_form .button_box .shop_btn_pack input {width:100%;}
+
+.new_sms_form .aside_opt_box {background:#fff; margin-bottom:0; width:100%; height:91px; position:absolute; left:0; top:0; text-align:center; z-index:2;}
+.new_sms_form .aside_opt_box ul {display:table; width:100%; box-sizing:border-box; table-layout:fixed;}
+.new_sms_form .aside_opt_box li {border-bottom:1px solid #ddd; position:relative; display:table-cell; vertical-align:middle; height:90px; border-bottom:1px solid #c3c7ca; box-sizing:border-box; padding-bottom:30px;}
+.new_sms_form .aside_opt_box li+ li {border-left:1px solid #c3c7ca;}
+.new_sms_form .aside_opt_box .link {display:block; padding:0 3px; font-size:12px; overflow:hidden; color:#333; letter-spacing:-0.5px; font-weight:600; word-wrap:break-word; word-break:keep-all; white-space:normal;}
+.new_sms_form .hit_icon {display:none;}
+
+.new_sms_form .quick_preview {position:absolute; left:250px; top:0; width:230px; background:#fff; padding:10px; z-index:555; display:none; border:1px solid #333}
+.new_sms_form .quick_preview dd {margin:10px 0 0 0; padding:10px 0 0 0 ; border-top:1px solid #ddd;}
+.new_sms_form .quick_preview .edge {position:absolute; left:-6px; top:25px}
+
+.new_sms_form .send_check {overflow:hidden; display:block; text-align:center; border-top:1px solid #eee; padding-top:5px; position:absolute; left:0; bottom:10px; width:100%;}
+.new_sms_form .send_check .icon {width:15px; height:15px; background:transparent url('../images/new_sms/check_ic.png') left top no-repeat; margin:23px 3px 0 0; display:none;}
+.new_sms_form .send_check span {overflow:hidden;}
+.new_sms_form .send_check .me {color:#ffd7e0}
+.new_sms_form .send_check .ad {color:#cce4ea; margin-left:10px}
+.new_sms_form .send_check .ad .icon {background-position:-15px 0}
+.new_sms_form .send_check .checked_me {color:#ff2957}
+.new_sms_form .send_check .checked_me .icon {background-position:0 -15px}
+.new_sms_form .send_check .checked_ad {color:#007896}
+.new_sms_form .send_check .checked_ad .icon {background-position:-15px -15px}
+
+/* 카카오톡 추가 */
+.new_sms_form .send_check .kakao_checked {background:transparent url('../images/sms_kakao.png') left center no-repeat; padding-left:19px;}
+
+.new_sms_form .aside_opt_box li:hover .quick_preview {display:block;}
+.new_sms_form .aside_opt_box .hit {padding-bottom:0px; background:#d9dbdd; border-bottom:1px solid #d9dbdd; }
+.new_sms_form .aside_opt_box .hit .link {font-size:13px; text-align:center; color:#000;}
+.new_sms_form .aside_opt_box .hit .send_check {display:none}
+.new_sms_form .aside_opt_box .hit .quick_preview {display:none !important}
+
+.new_sms_form .aside_opt_box .button_box {/* position:absolute; left:0; bottom:0; */ margin:20px; width:210px;}
+.new_sms_form .aside_opt_box .button_box *{width:100%; text-align:center;}
+
+
+
+
+
+
+/* 개별적으로 보내는 폼추가 */
+.new_sms_send_wrap {text-align:center;}
+
+.new_sms_form .aside_send_box {background:#fff; border-right:1px solid #c3c7ca; margin-bottom:30px; width:300px; height:100%; position:absolute; left:0; top:0;}
+.new_sms_form .aside_send_box .arrow_edge {position:absolute; right:-22px; top:50%; margin-top:-60px}
+.new_sms_form .aside_send_box .button_box {position:absolute; left:0; bottom:0; margin:20px; width:260px;}
+.new_sms_form .aside_send_box .button_box *{width:100%; text-align:center;}
+
+.new_sms_form .send_to {margin:20px; text-align:center; overflow:hidden}
+.new_sms_form .send_to .title {font-size:15px; color:#333; font-weight:600; margin-bottom:10px}
+.new_sms_form .send_to .input_design {float:left; height:30px; line-height:30px; font-family:calibri;  text-align:center; font-size:16px; font-weight:500; width:70px; color:#333;
+										background:#f3f3f3;  border-left:1px solid #c7c7c7; border-top:1px solid #c7c7c7; border-right:0; border-bottom:0; }
+.new_sms_form .send_to .input_design:focus {background:#ddd}
+.new_sms_form .send_to .unit {float:left; font-size:18px; height:30px; line-height:30px; padding:0 8px 0 8px}
+.new_sms_form .send_to .btn_add {width:100%; background:#434446; color:#fff; border:0; font-weight:600; font-size:13px; letter-spacing:-1px; padding:8px; margin-top:5px; cursor:pointer}
+.new_sms_form .send_to .btn_add:hover {background:#ff6000}
+.new_sms_form .send_to .list {background:#f3f3f3;  border-left:1px solid #c7c7c7; border-top:1px solid #c7c7c7; margin-top:15px;}
+.new_sms_form .send_to .list select {width:100%; background:transparent; border:0; overflow:auto; height:120px}
+.new_sms_form .send_to .total {position:relative; height:25px; line-height:25px; text-align:left; letter-spacing:-1px; font-size:13px; margin-top:5px;}
+.new_sms_form .send_to .total b {color:#ff0000; font-weight:800}
+.new_sms_form .send_to .total .btn_delete {position:absolute; right:0; top:0;  height:25px; line-height:25px; background:#a1a1a2; color:#fff; padding:0 10px; font-weight:600; font-size:11px;}
+.new_sms_form .send_to .total .btn_delete:hover {background:#333}
+
+.new_sms_form .send_reserve {border:1px solid #ff4e00; margin:30px 20px; padding-bottom:5px}
+.new_sms_form .send_reserve dt {border-bottom:1px solid #ddd; margin-bottom:10px}
+.new_sms_form .send_reserve label {display:block; padding:10px 15px; font-weight:600; font-size:13px; color:#ff0000; cursor:pointer; }
+.new_sms_form .send_reserve label input {margin:0 5px 0 0}
+.new_sms_form .send_reserve dd {padding:5px 15px; overflow:hidden}
+.new_sms_form .send_reserve select {float:left; padding:3px 2px; font-size:12px; font-family:tahoma; font-weight:500; border:1px solid #ccc; width:59px; margin-left:4px;}
+.new_sms_form .send_reserve select:first-child {margin:0}
+.new_sms_form .send_reserve .unit {float:left; line-height:25px; padding:0 0 0 3px; font-size:11px; font-weight:600;}
+
+.new_sms_form .send_from {margin:20px; text-align:center; overflow:hidden; position:absolute; left:0; bottom:50px; width:260px}
+.new_sms_form .send_from .title {font-size:15px; color:#333; font-weight:600; margin-bottom:10px}
+.new_sms_form .send_from .input_design {float:left; height:40px; line-height:40px; font-family:calibri; text-align:center; font-size:16px; font-weight:500; width:100%; color:#333;
+							background:#f3f3f3;  border-left:1px solid #c7c7c7; border-top:1px solid #c7c7c7; border-right:0; border-bottom:0; }
+.new_sms_form .send_from .input_design:focus {background:#ddd}
+
+
+
+
+
+/* 휴대폰폼 */
+.new_sms_phone_wrap {display:inline-block; padding-top:120px; position:relative;}
+
+.new_sms_phone {width:260px; overflow:hidden; float:left; margin:10px; float:left;}
+.new_sms_phone .bottom {display:none;}
+
+.new_sms_phone .body {width:100%; background:#353c43; float:left; border-radius:25px; position:relative; height:440px;}
+.new_sms_phone .body:before {content:""; width:30px; height:3px; border-radius:100px; background:#fff; position:absolute; left:50%; top:20px; margin-left:-15px; overflow:hidden;}
+.new_sms_phone .body:before {opacity: 0.2; filter: alpha(opacity=20); -ms-filter:alpha(opacity=20);}
+.new_sms_phone .body .inner {margin:40px 0 25px 0; width:260px; background:#fff; border-left:1px solid #ccc; border-right:1px solid #ccc; box-sizing:border-box;}
+.new_sms_phone .body .fix_box {overflow:auto; height:260px; }
+
+.new_sms_phone .check {background:#93c6ff}
+.new_sms_phone .check label {display:block; padding:12px 20px; font-size:13px; cursor:pointer; color:#333; text-align:left; font-weight:600;}
+.new_sms_phone .check label input {float:left; margin:2px 5px 0 0}
+.new_sms_phone .me {background:#; }
+.new_sms_phone .ad {background:#}
+
+.new_sms_phone .title_box {border-bottom:1px solid #ddd; padding:0 10px}
+.new_sms_phone .title_box .input_design {border:0; line-height:30px; height:36px; font-size:13px; text-align:center; width:100%; color:#333; font-weight:600}
+
+.new_sms_phone .img_box {position:relative; margin-bottom:10px;}
+.new_sms_phone .img_box img {max-width:100%}
+.new_sms_phone .img_box .btn_delete {position:absolute; left:-5px; top:-5px;}
+.new_sms_phone .message_box {}
+.new_sms_phone .message_box textarea {width:100%; background:none; overflow:auto; min-height:180px; border:0; overflow:auto !important; font-size:13px; letter-spacing:-0.5px; line-height:19px; color:#333; font-weight:600; }
+.new_sms_phone .message_box textarea {padding:15px; box-sizing:border-box;}
+.new_sms_phone .message_box textarea:focus {color:#333}
+
+.new_sms_phone .total_box {text-align:center; border-top:1px solid #eee; padding:8px 0; font-family:tahoma; color:#ff0000; font-size:11px; position:relative;}
+.new_sms_phone .total_box b {margin-left:5px;}
+.new_sms_phone .file_box {overflow:hidden; }
+
+.new_sms_phone .btn_rollback {position:absolute; right:5px; top:5px; background:transparent url('../images/new_sms/rollback.png') center center no-repeat; width:20px; height:20px; text-indent:-500%}
+
+
+
+
+/* ●●●●●●●●●● 인풋파일 file 눈속임디자인  */
+.input_file_sms {overflow:hidden; position:relative; float:left; height:35px; width:100%; cursor:pointer !important; }
+.input_file_sms:first-child {margin-top:0}
+.input_file_sms .fakeFileTxt {float:left; width:98%; color:#999; height: 35px; line-height: 35px; text-indent:5px; border:0; font-size:13px; }
+.input_file_sms .fileDiv {background:#fff; width:100px; height:100%; overflow: hidden; }
+.input_file_sms .buttonImg {background:#9f9f9f url('../images/new_sms/btn_file.png') 90px center no-repeat; padding-left:20px; width:100%; height:100%; position:absolute; top:0; right:0; color:#fff; border:0; font-size:13px; font-weight:500;  cursor:pointer !important;}
+.input_file_sms .fileDiv:hover .buttonImg {background-color:#ff6000}
+.input_file_sms .buttonImg_delete { display: none; }
+
+/*
+.input_file_sms:hover .buttonImg {background:#aaa}
+.input_file_sms:hover {border:1px solid #aaa;}
+*/
+.input_file_sms .realFile {position:absolute; right:0px; top:0px; width:100%; font-size:200px; height:100%; cursor:pointer !important; opacity:0; filter: alpha(opacity=0); -ms-filter: "alpha(opacity=0)"; -khtml-opacity: 0; -moz-opacity: 0;font-size:0;}
+
+.input_file_sms.old-ie { height: 34px; border-top: 1px solid #eee; }
+.input_file_sms.old-ie .buttonImg {
+	width:20%; font-size: 0; background-position: center center; right: 20%; padding: 0;
+}
+.input_file_sms.old-ie .buttonImg_delete {
+	display: block; right: 0; top: 0; width: 20%; height: 100%; position: absolute; padding: 0; font-size: 0;
+	background:#ff0000 url('../images/new_sms/btn_file_delete.png') center center no-repeat; z-index: 100;
+}
+/* 사용법
+<div class="input_file_box">
+	<input type="text" id="fakeFileTxt" class="fakeFileTxt" readonly="readonly" disabled>
+	<div class="fileDiv">
+		<input type="button" class="buttonImg" value="파일은 ZIP파일만 업로드 가능합니다." />
+		<input type="file" class="realFile" onchange="javascript:document.getElementById('fakeFileTxt').value = this.value" />
+	</div>
+</div>
+*/
+
+
+
+
+
+/* placeholder 스타일링 */
+::-webkit-input-placeholder { color: #999!important; font-style: italic; padding-right:2px; }
+:-moz-placeholder { color: #999!important; font-style: italic; padding-right:2px; }
+::-moz-placeholder { color: #999!important; font-style: italic; padding-right:2px; }
+:-ms-input-placeholder { color: #999!important; font-style: italic; padding-right:2px; }
+
+/* 치환자 */
+ul.replace_item { list-style: none; margin: 5px 0 0 10px; }
+ul.replace_item li {
+	float: left; display: inline-block; padding: 5px 8px; border-radius: 50px; font-size: 11px;
+	background: #fff; color: #666; border:1px solid #666; margin: 2px; cursor: move; z-index:100;
+}
+ul.replace_item li strong { font-size: 11px; }
+
+
+
+/* 2015-09-10 SMS발송옵션 설정 */
+
+/* JJC : 알림톡 패치 : 2018-06-14  --- left:360px; -> left:700px;*/
+.new_send_type_set {float:left; background:#fff; width:170px; border-radius:20px;overflow:hidden; margin:10px;}
+
+.new_send_type_set dt {background:#686e74; text-align:center; color:#fff; font-weight:600; font-size:13px; height:42px; line-height:42px;}
+.new_send_type_set dd {border-top:1px solid #cdced0;}
+.new_send_type_set dd:first-of-type {border-top:0;}
+.new_send_type_set label {padding:25px 15px; overflow:hidden; display:block;}
+.new_send_type_set label .txt {color:#424242; font-weight:600; font-size:13px;}
+.new_send_type_set label .exp {display:block; color:#888;  margin-top:8px; line-height:16px;}
+.new_send_type_set label:hover {background:#fafafa;}
+.new_send_type_set label input:checked+ .txt {color:#ff6600;}
+
+
+
+
+
+
+/* 영역추가 */
+.new_guide {text-align:left; margin-top:50px;}
+.new_guide .ul {display:table; width:100%; box-sizing:border-box; table-layout:fixed; background:#fff; border-top:1px solid #ccc;}
+.new_guide .li {display:table-cell; vertical-align:top; list-style:none; box-sizing:border-box; padding:30px 40px;}
+.new_guide .li+ .li {border-left:1px solid #ddd;}
+
+.new_guide .guide_text {position:relative; padding-left:15px; margin-left:0px;}
+.new_guide .guide_text .ic_blue {position:absolute; left:0; top:0; margin:0px; margin-top:1px;}
+
+.if_in_box {overflow:hidden; display:inline-block; padding:0 20px;}
+.if_in_box+ .if_in_box {overflow:hidden; display:inline-block; padding:0 20px; border-left:1px solid #ccc;}
+.if_kakao.new_sms_phone .body {background:#493334;}
+.if_kakao.new_sms_phone .check {background:#ffef00;}
+
+
+
+
+
+/* 보내는페이지에서 추가 2018-07-31 : ARA */
+.new_sms_form.if_sendpage .new_sms_send_wrap {display:inline-block; padding:30px 0; float:left; margin-left:350px;}
+.new_sms_form.if_sendpage .guide_text {text-align:left}
+.new_sms_form.if_sendpage .button_box {padding-left:0px !important;}
+.new_sms_form.if_sendpage .button_box .shop_btn_pack {width:260px !important;}

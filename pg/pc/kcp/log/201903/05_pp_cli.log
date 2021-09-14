@@ -1,0 +1,10 @@
+0305-131439.151 - 15578 - T000035DEAPSZOK3 - MSG : TX_START - site_cd=[T0000]+tx_cd=[00100000]+ordr_idxx=[96212-39978-91438]+log_level=[3]+opt=[0]
+0305-131439.160 - 15578 - T000035DEAPSZOK3 - MSG : PG_SERVER_CONN__SUCC
+0305-131439.170 - 15578 - T000035DEAPSZOK3 - MSG : PG_SERVER_REQ_MSG_SEND__SUCC
+0305-131439.326 - 15578 - T000035DEAPSZOK3 - MSG : PG_SERVER_RES_MSG_RECV__SUCC
+0305-131439.327 - 15578 - T000035DEAPSZOK3 - MSG : TX_ENDED - res=[res_cd=0000res_msg=정상처리res_en_msg=processing completedtrace_no=T000035DEAPSZOK3pay_method=PACAorder_no=96212-39978-91438card_cd=CCSScard_name=삼성카드acqu_cd=CCSSacqu_name=삼성카드card_no=5188310000004808mcht_taxno=1138521083mall_taxno=1138521083ca_order_id=96212-39978-91438tno=19314924592575amount=5900card_mny=5900coupon_mny=0escw_yn=Nvan_cd=VNKCapp_time=20190305131439van_apptime=20190305131439app_no=78601435bizx_numb=157254098quota=00noinf=Npg_txid=0305131439MP01ACM8IMWB0000000059000078601435res_tax_flag=TG03res_tax_mny=5363res_free_mny=0res_vat_mny=537partcanc_yn=Ycard_bin_type_01=0card_bin_type_02=0join_cd=0000]
+0305-131452.569 - 15603 - 19314924592575   - MSG : TX_START - site_cd=[T0000]+tx_cd=[00200000]+ordr_idxx=[96212-39978-91438]+log_level=[3]+opt=[0]
+0305-131452.578 - 15603 - 19314924592575   - MSG : PG_SERVER_CONN__SUCC
+0305-131452.588 - 15603 - 19314924592575   - MSG : PG_SERVER_REQ_MSG_SEND__SUCC
+0305-131452.811 - 15603 - 19314924592575   - MSG : PG_SERVER_RES_MSG_RECV__SUCC
+0305-131452.811 - 15603 - 19314924592575   - MSG : TX_ENDED - res=[res_cd=0000res_msg=정상처리res_en_msg=processing completedtrace_no=19314924592575  pay_method=PACAorder_no=96212-39978-91438card_cd=CCSScard_name=삼성카드acqu_cd=CCSSacqu_name=삼성카드mcht_taxno=1138521083mall_taxno=1138521083ca_order_id=96212-39978-91438tno=19314924592575amount=5900card_mny=5900coupon_mny=0escw_yn=Ncanc_gubn=Bvan_cd=VNKCapp_time=20190305131452van_apptime=20190305131452canc_time=20190305131452app_no=78601435bizx_numb=157254098quota=00noinf=Npg_txid=0305131452MP01ACM8IMWB0000000059000078601435]

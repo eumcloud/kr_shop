@@ -1,0 +1,109 @@
+<?php
+
+	include_once( dirname(__FILE__)."/inc.php");
+
+
+	// --- 아이디 / 비번 입력 시 ---
+	if( $_id != "" && $_pw != "") {
+
+		// --사전 체크 ---
+		if(!trim($_id))	 error_msg("아이디를 입력하세요.");
+		if(!trim($_pw))	 error_msg("패스워드를 입력하세요.");
+		// --사전 체크 ---
+
+		$row = _MQ("SELECT * FROM odtAdmin WHERE id='". addslashes(stripslashes($_id)) ."'");
+		if(sizeof($row) == 0 ) { 
+			error_msg('등록되어 있지 않은 ID 입니다.\\n\\n다시 입력하세요.'); 
+		}
+		else {
+			$TablePassWD = _MQ("SELECT password('". addslashes(stripslashes($_pw)) ."') as chk_pass ");
+			if( $row['passwd'] <> $TablePassWD['chk_pass']) { 
+				error_msg('입력하신 비밀번호가 일치하지 않습니다.\\n\\n다시 입력하세요.'); 
+			}
+			else {
+
+				$keepTermLogin = $row_setup['keepTerm']*60;				
+				login_admin($row['serialnum'] , $row_setup['ranDsum'],$_MaddSum,$keepTermLogin);
+
+				// 3가지 링크에 대한 접속 권한이 있는지 확인
+				$f_link = _MQ(" SELECT count(*) as cnt FROM m_menu_set as ms inner join m_adm_menu as am on(ms.m15_code1 = am.m2_code1 and ms.m15_code2 = am.m2_code2) WHERE ms.m15_id = '" . $_id . "' and ms.m15_vkbn = 'Y' and ms.m15_code2 != '' and am.m2_link in ('". implode("' , '" , $arr_menu_link) ."') ");
+				if( $f_link['cnt'] > 0 ){
+					error_loc("_intro.php");
+				}
+				else {
+					error_msg("권한을 가진 메뉴가 없습니다.\\n\\n권한을 가진 관리자에게 문의하시기 바랍니다.");
+				}
+
+			}
+		}
+
+	}
+	// --- 아이디 / 비번 입력 시 ---
+
+
+
+
+
+
+	// 로그인시 페이지 이동
+	if($row_admin['id']) :
+
+		// 3가지 링크에 대한 접속 권한이 있는지 확인
+		$f_link = _MQ(" SELECT count(*) as cnt FROM m_menu_set as ms inner join m_adm_menu as am on(ms.m15_code1 = am.m2_code1 and ms.m15_code2 = am.m2_code2) WHERE ms.m15_id = '" . $row_admin['id'] . "' and ms.m15_vkbn = 'Y' and ms.m15_code2 != '' and am.m2_link in ('". implode("' , '" , $arr_menu_link) ."') ");
+		if( $f_link['cnt'] > 0 ){error_loc("_main.php");}
+		else {error_msg("권한을 가진 메뉴가 없습니다.\\n\\n권한을 가진 관리자에게 문의하시기 바랍니다.");}
+
+	// 로그인 form
+	else :
+
+		$_login_trigger = "N"; // 로그인 필요없는 페이지 표시
+		include dirname(__FILE__)."/inc.header.php";
+
+?>
+<body class="login_bg">
+<div class="member_login_wrap">
+
+
+	<div class="floating">
+
+		<!-- ●●●●●●●●●● 로그인 -->
+		<div class="cm_member_login">	
+
+<form name="frm_login_page" method="post" action="<?=$_SERVER["PHP_SELF"]?>">
+			<div class="form_box">
+				<div class="title_box">Total Admin Login</div>
+				<ul>
+					<li class="login_id"><input type="text" name="_id" class="input_design" placeholder="관리자 아이디"/></li>
+					<li class="login_pw"><input type="password" name="_pw" class="input_design " placeholder="관리자 비밀번호"/></li>
+				</ul>			
+				<input type="submit" name="" class="btn_login" value="LOGIN"/>
+			</div>		
+</form>
+
+			<div class="copyright">
+				<dl>
+					<dt>
+						본 페이지는 전체 관리자 인증 페이지 모바일 버전입니다.<br/>
+						인증 획득시 정보에 대한 보안을 반드시 지키셔야 하며 어길시<br/>
+						민형사상의 책임을 질 수 있습니다.<br/>
+						입점업체 및 더 자세한 관리를 위해서는 PC버전을 이용하세요.<br/>						
+						<a href="/totalAdmin/?_pcmode=chk&<?=str_replace('_mobilemode=chk','',$_SERVER['QUERY_STRING'])?>" style="color:#ccc;"><strong>[PC버전보기]</strong></a>
+					</dt>
+					<dd>Copyright © <?=substr(rm_str($row_setup['licenseNumber']),0,4) ." ". $row_setup['site_name']?>. <br/>All Rights Reserved.</dd>
+				</dl>
+			</div>
+
+		</div>	
+		<!-- / 로그인 -->
+
+	</div>
+
+
+</div>
+</body>
+<?php
+
+		include dirname(__FILE__)."/inc.footer.php";
+
+	endif;
+?>

@@ -1,0 +1,166 @@
+2017-03-09 15:44:21 [INFO ] [] XPayClient initialize [/home/onedaynet/solution/grptimev500/public_html/../pg/pc/lgpay/lgdacom] [test]
+2017-03-09 15:44:21 [DEBUG] [] Config [server_id] = [01]
+2017-03-09 15:44:21 [DEBUG] [] Config [timeout] = [60]
+2017-03-09 15:44:21 [DEBUG] [] Config [log_level] = [4]
+2017-03-09 15:44:21 [DEBUG] [] Config [verify_cert] = [1]
+2017-03-09 15:44:21 [DEBUG] [] Config [verify_host] = [1]
+2017-03-09 15:44:21 [DEBUG] [] Config [report_error] = [1]
+2017-03-09 15:44:21 [DEBUG] [] Config [output_UTF8] = [1]
+2017-03-09 15:44:21 [DEBUG] [] Config [auto_rollback] = [1]
+2017-03-09 15:44:21 [DEBUG] [] Config [log_dir] = [/home/onedaynet/solution/grptimev500/pg/pc/lgpay/lgdacom/log]
+2017-03-09 15:44:21 [DEBUG] [] Config [tlgdacomxpay] = [95160cce09854ef44d2edb2bfb05f9f3]
+2017-03-09 15:44:21 [DEBUG] [] Config [lgdacomxpay] = [95160cce09854ef44d2edb2bfb05f9f3]
+2017-03-09 15:44:21 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-03-09 15:44:21 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-03-09 15:44:21 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-03-09 15:45:01 [INFO ] [] XPayClient initialize [/home/onedaynet/solution/grptimev500/public_html/../pg/pc/lgpay/lgdacom] [test]
+2017-03-09 15:45:01 [DEBUG] [] Config [server_id] = [01]
+2017-03-09 15:45:01 [DEBUG] [] Config [timeout] = [60]
+2017-03-09 15:45:01 [DEBUG] [] Config [log_level] = [4]
+2017-03-09 15:45:01 [DEBUG] [] Config [verify_cert] = [1]
+2017-03-09 15:45:01 [DEBUG] [] Config [verify_host] = [1]
+2017-03-09 15:45:01 [DEBUG] [] Config [report_error] = [1]
+2017-03-09 15:45:01 [DEBUG] [] Config [output_UTF8] = [1]
+2017-03-09 15:45:01 [DEBUG] [] Config [auto_rollback] = [1]
+2017-03-09 15:45:01 [DEBUG] [] Config [log_dir] = [/home/onedaynet/solution/grptimev500/pg/pc/lgpay/lgdacom/log]
+2017-03-09 15:45:01 [DEBUG] [] Config [tlgdacomxpay] = [95160cce09854ef44d2edb2bfb05f9f3]
+2017-03-09 15:45:01 [DEBUG] [] Config [lgdacomxpay] = [95160cce09854ef44d2edb2bfb05f9f3]
+2017-03-09 15:45:01 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-03-09 15:45:01 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-03-09 15:45:01 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-03-09 15:45:01 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Post [LGD_TXID] = [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099]
+2017-03-09 15:45:01 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Post [LGD_AUTHCODE] = [056edd5ded45c5a6ebb950b095aa77eb51ef8435]
+2017-03-09 15:45:01 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Post [LGD_MID] = [tlgdacomxpay]
+2017-03-09 15:45:01 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Post [LGD_TXNAME] = [PaymentByKey]
+2017-03-09 15:45:01 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Post [LGD_PAYKEY] = [20170309154501427682CB9BB7453149CE29BC7FEE61A802BA45E8]
+2017-03-09 15:45:01 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] post_string = LGD_TXID=tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099&LGD_AUTHCODE=056edd5ded45c5a6ebb950b095aa77eb51ef8435&LGD_MID=tlgdacomxpay&LGD_TXNAME=PaymentByKey&LGD_PAYKEY=20170309154501427682CB9BB7453149CE29BC7FEE61A802BA45E8
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Result = [
+
+
+
+
+
+
+
+
+
+{"LGD_RESPCODE":"0000","LGD_RESPMSG":"11: ","LGD_RESPONSE":[{"LGD_IFOS":"376C0C","LGD_MID":"tlgdacomxpay","LGD_FINANCENAME":"농협","LGD_DELIVERYINFO":"(502-854)광주 서구 쌍촌동 905-52 2","LGD_BUYER":"이창열","LGD_BUYERID":"MDFlODI0YzY1YTk","LGD_OID":"84319-29124-35154","LGD_RECEIVERPHONE":"010-2731-5254","LGD_2TR_FLAG":"Y","LGD_DEVICE":"","LGD_TID":"tlgda2017030915450154573","LGD_TIMESTAMP":"20170309154503","LGD_SAOWNER":"이크레디트","LGD_FINANCECODE":"11","LGD_BUYERPHONE":"01027315254","LGD_ESCROWYN":"Y","LGD_PAYTYPE":"SC0040","LGD_CASFLAG":"R","LGD_CASCAMOUNT":"0","LGD_CASTAMOUNT":"0","LGD_AMOUNT":"18000","LGD_BUYERSSN":".","LGD_RESPMSG":"11: ","LGD_PAYDATE":"20170309154502","LGD_PRODUCTINFO":"핸드메이드 베이커리 and 커피","LGD_CASSEQNO":"000","LGD_PRODUCTCODE":"","LGD_HASHDATA":"8e678a4e7fbe9e164e31dff96dda90fa","LGD_BUYERADDRESS":"","LGD_RECEIVER":"이창열","LGD_RESPCODE":"0000","LGD_ACCOUNTNUM":"X0573364987735","LGD_PAYER":"이창열","LGD_BUYEREMAIL":"wyoule1@naver.com"}]}
+]
+2017-03-09 15:45:03 [INFO ] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response Code=[0000], Msg=[11: ], Count=1
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_IFOS, 0) = 376C0C
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_MID, 0) = tlgdacomxpay
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_FINANCENAME, 0) = 농협
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_DELIVERYINFO, 0) = (502-854)광주 서구 쌍촌동 905-52 2
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_BUYER, 0) = 이창열
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_BUYERID, 0) = MDFlODI0YzY1YTk
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_OID, 0) = 84319-29124-35154
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_RECEIVERPHONE, 0) = 010-2731-5254
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_2TR_FLAG, 0) = Y
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_DEVICE, 0) = 
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_TID, 0) = tlgda2017030915450154573
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_TIMESTAMP, 0) = 20170309154503
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_SAOWNER, 0) = 이크레디트
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_FINANCECODE, 0) = 11
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_BUYERPHONE, 0) = 01027315254
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_ESCROWYN, 0) = Y
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_PAYTYPE, 0) = SC0040
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_CASFLAG, 0) = R
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_CASCAMOUNT, 0) = 0
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_CASTAMOUNT, 0) = 0
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_AMOUNT, 0) = 18000
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_BUYERSSN, 0) = .
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_RESPMSG, 0) = 11: 
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_PAYDATE, 0) = 20170309154502
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_PRODUCTINFO, 0) = 핸드메이드 베이커리 and 커피
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_CASSEQNO, 0) = 000
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_PRODUCTCODE, 0) = 
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_HASHDATA, 0) = 8e678a4e7fbe9e164e31dff96dda90fa
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_BUYERADDRESS, 0) = 
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_RECEIVER, 0) = 이창열
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_RESPCODE, 0) = 0000
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_ACCOUNTNUM, 0) = X0573364987735
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_PAYER, 0) = 이창열
+2017-03-09 15:45:03 [DEBUG] [tlgdacomxpay-0120170309154501774027d65a70e468c0b26b060ec404fb04174099] Response (LGD_BUYEREMAIL, 0) = wyoule1@naver.com
+2017-03-09 15:50:06 [INFO ] [] XPayClient initialize [/home/onedaynet/solution/grptimev500/public_html/../pg/pc/lgpay/lgdacom] [test]
+2017-03-09 15:50:06 [DEBUG] [] Config [server_id] = [01]
+2017-03-09 15:50:06 [DEBUG] [] Config [timeout] = [60]
+2017-03-09 15:50:06 [DEBUG] [] Config [log_level] = [4]
+2017-03-09 15:50:06 [DEBUG] [] Config [verify_cert] = [1]
+2017-03-09 15:50:06 [DEBUG] [] Config [verify_host] = [1]
+2017-03-09 15:50:06 [DEBUG] [] Config [report_error] = [1]
+2017-03-09 15:50:06 [DEBUG] [] Config [output_UTF8] = [1]
+2017-03-09 15:50:06 [DEBUG] [] Config [auto_rollback] = [1]
+2017-03-09 15:50:06 [DEBUG] [] Config [log_dir] = [/home/onedaynet/solution/grptimev500/pg/pc/lgpay/lgdacom/log]
+2017-03-09 15:50:06 [DEBUG] [] Config [tlgdacomxpay] = [95160cce09854ef44d2edb2bfb05f9f3]
+2017-03-09 15:50:06 [DEBUG] [] Config [lgdacomxpay] = [95160cce09854ef44d2edb2bfb05f9f3]
+2017-03-09 15:50:06 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-03-09 15:50:06 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-03-09 15:50:06 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-03-09 15:50:36 [INFO ] [] XPayClient initialize [/home/onedaynet/solution/grptimev500/public_html/../pg/pc/lgpay/lgdacom] [test]
+2017-03-09 15:50:36 [DEBUG] [] Config [server_id] = [01]
+2017-03-09 15:50:36 [DEBUG] [] Config [timeout] = [60]
+2017-03-09 15:50:36 [DEBUG] [] Config [log_level] = [4]
+2017-03-09 15:50:36 [DEBUG] [] Config [verify_cert] = [1]
+2017-03-09 15:50:36 [DEBUG] [] Config [verify_host] = [1]
+2017-03-09 15:50:36 [DEBUG] [] Config [report_error] = [1]
+2017-03-09 15:50:36 [DEBUG] [] Config [output_UTF8] = [1]
+2017-03-09 15:50:36 [DEBUG] [] Config [auto_rollback] = [1]
+2017-03-09 15:50:36 [DEBUG] [] Config [log_dir] = [/home/onedaynet/solution/grptimev500/pg/pc/lgpay/lgdacom/log]
+2017-03-09 15:50:36 [DEBUG] [] Config [tlgdacomxpay] = [95160cce09854ef44d2edb2bfb05f9f3]
+2017-03-09 15:50:36 [DEBUG] [] Config [lgdacomxpay] = [95160cce09854ef44d2edb2bfb05f9f3]
+2017-03-09 15:50:36 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-03-09 15:50:36 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-03-09 15:50:36 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Post [LGD_TXID] = [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94]
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Post [LGD_AUTHCODE] = [0b862d9868caecac6ce9fd7b15c10c7314f85ffc]
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Post [LGD_MID] = [tlgdacomxpay]
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Post [LGD_TXNAME] = [PaymentByKey]
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Post [LGD_PAYKEY] = [20170309155036427682CB9BB7453149CE29BC7FEE61A802BA45E8]
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] post_string = LGD_TXID=tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94&LGD_AUTHCODE=0b862d9868caecac6ce9fd7b15c10c7314f85ffc&LGD_MID=tlgdacomxpay&LGD_TXNAME=PaymentByKey&LGD_PAYKEY=20170309155036427682CB9BB7453149CE29BC7FEE61A802BA45E8
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Result = [
+
+
+
+
+
+
+
+
+
+{"LGD_RESPCODE":"A016","LGD_RESPMSG":"중복된 주문번호입니다.#","LGD_RESPONSE":[{"LGD_IFOS":"376C0C","LGD_MID":"tlgdacomxpay","LGD_FINANCENAME":"농협","LGD_DELIVERYINFO":"(502-854)광주 서구 쌍촌동 905-52 2","LGD_BUYER":"이창열","LGD_BUYERID":"MDFlODI0YzY1YTk","LGD_OID":"84319-29124-35154","LGD_RECEIVERPHONE":"010-2731-5254","LGD_2TR_FLAG":"Y","LGD_DEVICE":"","LGD_TID":"tlgda2017030915450154573","LGD_TIMESTAMP":"20170309155037","LGD_SAOWNER":"이크레디트","LGD_FINANCECODE":"11","LGD_BUYERPHONE":"01027315254","LGD_ESCROWYN":"Y","LGD_PAYTYPE":"SC0040","LGD_CASFLAG":"R","LGD_CASCAMOUNT":"0","LGD_CASTAMOUNT":"0","LGD_AMOUNT":"18000","LGD_BUYERSSN":".","LGD_RESPMSG":"중복된 주문번호입니다.#","LGD_PAYDATE":"20170309155037","LGD_PRODUCTINFO":"핸드메이드 베이커리 and 커피","LGD_CASSEQNO":"000","LGD_PRODUCTCODE":"","LGD_HASHDATA":"e327d6f4ffdb92ff148c501242b8af1c","LGD_BUYERADDRESS":"","LGD_RECEIVER":"이창열","LGD_RESPCODE":"A016","LGD_ACCOUNTNUM":"    ","LGD_PAYER":"이창열","LGD_BUYEREMAIL":"wyoule1@naver.com"}]}
+]
+2017-03-09 15:50:36 [INFO ] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response Code=[A016], Msg=[�ߺ��� �ֹ���ȣ�Դϴ�.#], Count=1
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_IFOS, 0) = 376C0C
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_MID, 0) = tlgdacomxpay
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_FINANCENAME, 0) = 농협
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_DELIVERYINFO, 0) = (502-854)광주 서구 쌍촌동 905-52 2
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_BUYER, 0) = 이창열
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_BUYERID, 0) = MDFlODI0YzY1YTk
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_OID, 0) = 84319-29124-35154
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_RECEIVERPHONE, 0) = 010-2731-5254
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_2TR_FLAG, 0) = Y
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_DEVICE, 0) = 
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_TID, 0) = tlgda2017030915450154573
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_TIMESTAMP, 0) = 20170309155037
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_SAOWNER, 0) = 이크레디트
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_FINANCECODE, 0) = 11
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_BUYERPHONE, 0) = 01027315254
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_ESCROWYN, 0) = Y
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_PAYTYPE, 0) = SC0040
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_CASFLAG, 0) = R
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_CASCAMOUNT, 0) = 0
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_CASTAMOUNT, 0) = 0
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_AMOUNT, 0) = 18000
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_BUYERSSN, 0) = .
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_RESPMSG, 0) = 중복된 주문번호입니다.#
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_PAYDATE, 0) = 20170309155037
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_PRODUCTINFO, 0) = 핸드메이드 베이커리 and 커피
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_CASSEQNO, 0) = 000
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_PRODUCTCODE, 0) = 
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_HASHDATA, 0) = e327d6f4ffdb92ff148c501242b8af1c
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_BUYERADDRESS, 0) = 
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_RECEIVER, 0) = 이창열
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_RESPCODE, 0) = A016
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_ACCOUNTNUM, 0) =     
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_PAYER, 0) = 이창열
+2017-03-09 15:50:36 [DEBUG] [tlgdacomxpay-0120170309155036ccead2801bfd232c203bf89f4844daed2ce2cd94] Response (LGD_BUYEREMAIL, 0) = wyoule1@naver.com

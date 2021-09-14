@@ -1,0 +1,39 @@
+2017-04-10 19:31:23 [INFO ] [] XPayClient initialize [/home/onedaynet/solution/grptimev500/public_html/../pg/pc/lgpay/lgdacom] [test]
+2017-04-10 19:31:23 [DEBUG] [] Config [server_id] = [01]
+2017-04-10 19:31:23 [DEBUG] [] Config [timeout] = [60]
+2017-04-10 19:31:23 [DEBUG] [] Config [log_level] = [4]
+2017-04-10 19:31:23 [DEBUG] [] Config [verify_cert] = [1]
+2017-04-10 19:31:23 [DEBUG] [] Config [verify_host] = [1]
+2017-04-10 19:31:23 [DEBUG] [] Config [report_error] = [1]
+2017-04-10 19:31:23 [DEBUG] [] Config [output_UTF8] = [1]
+2017-04-10 19:31:23 [DEBUG] [] Config [auto_rollback] = [1]
+2017-04-10 19:31:23 [DEBUG] [] Config [log_dir] = [/home/onedaynet/solution/grptimev500/pg/pc/lgpay/lgdacom/log]
+2017-04-10 19:31:23 [DEBUG] [] Config [tlgdacomxpay] = [95160cce09854ef44d2edb2bfb05f9f3]
+2017-04-10 19:31:23 [DEBUG] [] Config [lgdacomxpay] = [95160cce09854ef44d2edb2bfb05f9f3]
+2017-04-10 19:31:23 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-04-10 19:31:23 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-04-10 19:31:23 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-04-10 19:31:23 [DEBUG] [tlgdacomxpay-01201704101931230c5e117a03bcd4991493b3eb675a58898fb70565] Post [LGD_TXID] = [tlgdacomxpay-01201704101931230c5e117a03bcd4991493b3eb675a58898fb70565]
+2017-04-10 19:31:23 [DEBUG] [tlgdacomxpay-01201704101931230c5e117a03bcd4991493b3eb675a58898fb70565] Post [LGD_AUTHCODE] = [ff16af886ad3e5f771f297bb27cf412ae1400a9b]
+2017-04-10 19:31:23 [DEBUG] [tlgdacomxpay-01201704101931230c5e117a03bcd4991493b3eb675a58898fb70565] Post [LGD_MID] = [tlgdacomxpay]
+2017-04-10 19:31:23 [DEBUG] [tlgdacomxpay-01201704101931230c5e117a03bcd4991493b3eb675a58898fb70565] Post [LGD_TXNAME] = [Cancel]
+2017-04-10 19:31:23 [DEBUG] [tlgdacomxpay-01201704101931230c5e117a03bcd4991493b3eb675a58898fb70565] Post [LGD_TID] = [tlgda2016121517535408462]
+2017-04-10 19:31:23 [DEBUG] [tlgdacomxpay-01201704101931230c5e117a03bcd4991493b3eb675a58898fb70565] post_string = LGD_TXID=tlgdacomxpay-01201704101931230c5e117a03bcd4991493b3eb675a58898fb70565&LGD_AUTHCODE=ff16af886ad3e5f771f297bb27cf412ae1400a9b&LGD_MID=tlgdacomxpay&LGD_TXNAME=Cancel&LGD_TID=tlgda2016121517535408462
+2017-04-10 19:31:23 [DEBUG] [tlgdacomxpay-01201704101931230c5e117a03bcd4991493b3eb675a58898fb70565] Result = [
+
+
+
+
+
+
+
+
+
+{"LGD_RESPCODE":"0000","LGD_RESPMSG":"旆唽靹标车","LGD_RESPONSE":[{"LGD_HASHDATA":"39884cbe95c96cb24c268452ecd438fa","LGD_RESPCODE":"0000","LGD_TIMESTAMP":"20170410193123","LGD_CANREQDATE":"20170410193123","LGD_RESPMSG":"旆唽靹标车"}]}
+]
+2017-04-10 19:31:23 [INFO ] [tlgdacomxpay-01201704101931230c5e117a03bcd4991493b3eb675a58898fb70565] Response Code=[0000], Msg=[秒家己傍], Count=1
+2017-04-10 19:31:23 [DEBUG] [tlgdacomxpay-01201704101931230c5e117a03bcd4991493b3eb675a58898fb70565] Response (LGD_HASHDATA, 0) = 39884cbe95c96cb24c268452ecd438fa
+2017-04-10 19:31:23 [DEBUG] [tlgdacomxpay-01201704101931230c5e117a03bcd4991493b3eb675a58898fb70565] Response (LGD_RESPCODE, 0) = 0000
+2017-04-10 19:31:23 [DEBUG] [tlgdacomxpay-01201704101931230c5e117a03bcd4991493b3eb675a58898fb70565] Response (LGD_TIMESTAMP, 0) = 20170410193123
+2017-04-10 19:31:23 [DEBUG] [tlgdacomxpay-01201704101931230c5e117a03bcd4991493b3eb675a58898fb70565] Response (LGD_CANREQDATE, 0) = 20170410193123
+2017-04-10 19:31:23 [DEBUG] [tlgdacomxpay-01201704101931230c5e117a03bcd4991493b3eb675a58898fb70565] Response (LGD_RESPMSG, 0) = 旆唽靹标车

@@ -1,0 +1,47 @@
+/*
+copyright(c) 상상너머·원데이넷 all rights reserved.
+허용된 라이센스이외 무단도용재배포를 금합니다.
+*/
+
+@charset 'utf-8';
+
+
+
+/* 썸네일형 리스트 */
+.list_thumb {overflow:hidden; clear:both; background:#fff; border:1px solid #ccc; box-sizing:border-box; border-top:none; padding: 5px}
+.list_thumb li {list-style:none; float:left; width:50%;}
+.list_thumb .item_box {position:relative; margin: 5px; overflow:hidden}
+.list_thumb .item_box .alink {z-index:3; position:absolute; left:0; top:0; width:100%; height:100%}
+.list_thumb .item_box .thumb {position:relative; overflow:hidden;}
+.list_thumb .item_box .ranking {display:none}
+.list_thumb .item_box .soldsoon {display:none}
+.list_thumb .item_box .info .discount {display:none;}
+.list_thumb .item_box .info .before {float:left; margin: 5px 5px 0 0;}
+
+
+/* 일반 리스트형 */
+.item_list {position:relative; overflow:hidden; padding: 5px 13px; background:#fff;}
+.item_list li {overflow:hidden; list-style:none}
+.item_list .item_box {position:relative; border-bottom:1px solid #ccc; padding: 8px 0 13px 0;}
+.item_list .item_box .alink {position:absolute; left:0; top:0; width:100%; height:100%; z-index:3}
+.item_list li:last-child .item_box {border-bottom:none}
+.item_list .item_box .thumb {position:relative; overflow:hidden; width: 100px}
+
+.item_list .item_box .soldsoon {display:none;}
+.item_list .item_box .ranking {display:none;}
+.item_list .item_box .info .discount {display:none;}
+.item_list .item_box .info .price {overflow:hidden}
+.item_list .item_box .info .before {float:left; margin: 4px 5px 0 0;}
+.item_list .item_box .info .after {float:left;}
+.item_list .item_box .info .after .num {color:#}
+
+
+/* 큰썸네일형 리스트 */
+.list_thumb_l .item_box .ranking {display:none;}
+.list_thumb_l .item_box .discount {display:none;}
+
+
+
+/* 상품간략정보 */
+.product_info .discount {display:none}
+.product_info .nowtotal {display:none}

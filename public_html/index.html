@@ -1,0 +1,49 @@
+<?php
+	//카운터 적용
+	include "./include/counter.inc.php";
+	include_once "./include/inc.php";
+
+	include dirname(__FILE__)."/pages/inc.daily.update.php"; // 일일 업데이트 처리
+
+
+	$pcode_url = ($_GET[pcode]?"?pcode=".$_GET[pcode]:"");
+
+	$redirection = './pages/';
+
+	//Mobile check
+	if($_REQUEST['_pcmode']=="chk") {
+		setCookie("AuthNoMobile","chk",0,"/" , "." . str_replace("www." , "" , $_SERVER[HTTP_HOST]));
+		$redirection = './pages/';
+	}
+	else if($_REQUEST['_mobilemode']=="chk") {
+		setCookie("AuthNoMobile","",time()-3600,"/" , "." . str_replace("www." , "" , $_SERVER[HTTP_HOST]));
+		//echo "<meta http-equiv='Refresh' content='0;url=/m/".$pcode_url."'>"; exit;
+		$redirection = './m/';
+	}
+	else {
+
+		// --- JJC004 - 모바일 검출 ---
+		require_once './include/Mobile_Detect/Mobile_Detect.php';
+		$detect = new Mobile_Detect;
+		if ( $detect->isMobile() ) {$redirection = './m/';}
+		if($_COOKIE['AuthNoMobile'] == "chk") { $redirection = './pages/';}
+		// --- JJC004 - 모바일 검출 ---
+
+	}
+
+	if(!$_GET[pn]) { 
+		if($_GET[pcode]) { $_GET[pn] = 'product.view'; $pcode = $_GET[pcode]; }
+		else { $_GET[pn] = "main"; }
+	}
+
+	// pn 변수에 해당하는 파일이 있는지 체크
+	if(!file_exists($redirection.$_GET[pn].".php")) {
+		echo "<script language='javascript'>alert('잘못된 접근입니다.');history.back();</script>";
+		exit;
+	}
+
+	include $redirection."wrap.header.php";
+	include $redirection.$_GET[pn].".php";
+	include $redirection."wrap.footer.php";
+
+?>

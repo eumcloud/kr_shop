@@ -1,0 +1,100 @@
+.cm_ly_pop_tp .form_box .icon_name {background-image: url('../images/cm_images/member_find_name.png'); background-position:12px center; background-repeat:no-repeat}
+.cm_ly_pop_tp .form_box .icon_date {background-image: url('../images/cm_images/member_find_date.png'); background-position:12px center; background-repeat:no-repeat}
+.cm_ly_pop_tp .form_box .icon_email {background-image: url('../images/cm_images/member_find_email.png'); background-position:12px center; background-repeat:no-repeat}
+.cm_ly_pop_tp .form_box .icon_password {background-image: url('../images/cm_images/member_find_password.png'); background-position:12px center; background-repeat:no-repeat} 
+.cm_ly_pop_tp .form_box .icon_bank {background-image: url('../images/cm_images/member_find_bank.png'); background-position:12px center; background-repeat:no-repeat} 
+
+.cm_ly_pop_tp .form_box .save_check {overflow:hidden; letter-spacing:-1px; color:#666; margin-top:8px}
+
+.cm_ly_pop_tp .button_pack {margin-top:25px; text-align:center; display:block;}
+.cm_ly_pop_tp .button_pack a, .cm_ly_pop_tp .button_pack input, .cm_ly_pop_tp .button_pack button {float:left; margin:0 5px}
+
+
+/* 부분취소 상품정보 추가 2015-06-29 */
+.cm_ly_pop_tp .this_item {overflow:hidden; position:relative; padding:10px; border:1px solid #ff6600; margin-bottom:20px; min-height:100px}
+.cm_ly_pop_tp .this_item .thumb {width:100px; position:absolute; left:10px; top:10px; overflow:hidden;}
+.cm_ly_pop_tp .this_item .thumb img {width:100%; float:left;}
+.cm_ly_pop_tp .this_item .info {margin-left:120px}
+.cm_ly_pop_tp .this_item .info dt {color:#333; font-weight:600; letter-spacing:-0.5px; font-size:14px;}
+.cm_ly_pop_tp .this_item .info dd {margin-top:5px; color:#999}
+.cm_ly_pop_tp .this_item .info_title {color:#ff6600; font-weight:600; margin-bottom:10px; font-size:15px; letter-spacing:-1px;}
+.cm_ly_pop_tp .this_item .info_price {margin-top:10px; border-top:1px dashed #ddd; padding-top:10px; overflow:hidden;}
+.cm_ly_pop_tp .this_item .info_price .txt {float:left; color:#000; }
+.cm_ly_pop_tp .this_item .info_price .bar {width:1px; height:10px; float:left; margin:2px 15px 0 15px; background:#ccc;}
+
+
+
+/* ●●●●●●●●●● 이미지형 버튼 : 티켓몰형 (티켓몰/하이센스 중 하나만 활성화할것!!!!) 
+.button_pack {display:inline-block; overflow:hidden;}
+.button_pack *{background: transparent url('../images/cm_images/button_pack.png') no-repeat ; text-decoration:none !important;  letter-spacing:-1px}
+.button_pack a {position:relative; float:left; font-weight:normal; margin:0 3px 0 0; word-wrap:normal; word-break:keep-all;}
+.button_pack button {position:relative; float:left; font-weight:normal; margin:0 3px 0 0; word-wrap:normal; word-break:keep-all;}
+.button_pack .edge {top:0; right:0; position:absolute; margin-right:-3px; overflow:hidden;}
+.button_pack .lineup {background:none;}
+
+.button_pack .btn_sm_white,.button_pack .btn_sm_black,.button_pack .btn_sm_color {font-size:11px; height:25px; line-height:25px; padding:0 12px 0 15px !important; }
+.button_pack .btn_sm_white {background-position:0 0; color:#333 !important;}
+.button_pack .btn_sm_white span {background-position:-497px 0; width:3px; height:25px;}
+.button_pack .btn_sm_white:hover {background-position:-600px 0;}
+.button_pack .btn_sm_white:hover span {background-position:-1097px 0;}
+.button_pack .btn_sm_black {background-position:0 -30px; color:#fff !important;}
+.button_pack .btn_sm_black span {background-position:-497px -30px; width:3px; height:25px;}
+.button_pack .btn_sm_black:hover {background-position:-600px -30px;}
+.button_pack .btn_sm_black:hover span {background-position:-1097px -30px;}
+.button_pack .btn_sm_color {background-position:0 -60px; color:#fff !important;}
+.button_pack .btn_sm_color span {background-position:-497px -60px; width:3px; height:25px;}
+.button_pack .btn_sm_color:hover {background-position:-600px -60px;}
+.button_pack .btn_sm_color:hover span {background-position:-1097px -60px;}
+
+.button_pack .btn_md_white,.button_pack .btn_md_black,.button_pack .btn_md_color {height:35px; line-height:35px; font-size:13px; padding:0 16px 0 20px !important; font-weight:600}
+.button_pack .btn_md_white {background-position:0 -100px; color:#333 !important;}
+.button_pack .btn_md_white span {background-position:-497px -100px; width:3px; height:35px;}
+.button_pack .btn_md_white:hover {background-position:-600px -100px;}
+.button_pack .btn_md_white:hover span {background-position:-1097px -100px;}
+.button_pack .btn_md_black {background-position:0 -140px; color:#fff !important;}
+.button_pack .btn_md_black span {background-position:-497px -140px; width:3px; height:35px;}
+.button_pack .btn_md_black:hover {background-position:-600px -140px;}
+.button_pack .btn_md_black:hover span {background-position:-1097px -140px;}
+.button_pack .btn_md_color {background-position:0 -180px; color:#fff !important;}
+.button_pack .btn_md_color span {background-position:-497px -180px; width:3px; height:35px;}
+.button_pack .btn_md_color:hover {background-position:-600px -180px;}
+.button_pack .btn_md_color:hover span {background-position:-1097px -180px;}
+
+.button_pack .btn_lg_white,.button_pack .btn_lg_black,.button_pack .btn_lg_color {height:55px; line-height:55px; padding:0 40px 0 43px !important; font-size:16px; font-weight:600;}
+.button_pack .btn_lg_white {background-position:0 -240px;color:#333 !important;}
+.button_pack .btn_lg_white span {background-position:-497px -240px; width:3px; height:55px;}
+.button_pack .btn_lg_white:hover {background-position:-600px -240px;}
+.button_pack .btn_lg_white:hover span {background-position:-1097px -240px}
+.button_pack .btn_lg_black {background-position:0 -300px; color:#fff !important;}
+.button_pack .btn_lg_black span {background-position:-497px -300px; width:3px; height:55px;}
+.button_pack .btn_lg_black:hover {background-position:-600px -300px;}
+.button_pack .btn_lg_black:hover span {background-position:-1097px -300px;}
+.button_pack .btn_lg_color {background-position:0 -360px; color:#fff !important;}
+.button_pack .btn_lg_color span {background-position:-497px -360px; width:3px; height:55px;}
+.button_pack .btn_lg_color:hover {background-position:-600px -360px;}
+.button_pack .btn_lg_color:hover span {background-position:-1097px -360px;}
+
+.button_pack .btn_input {background:none; position:relative; position:relative; float:left; margin:0 3px 0 0;}
+.button_pack input,.button_pack button {border:0; display:inline-block; overflow:visible; font-weight:normal; cursor:pointer; word-wrap:normal; word-break:keep-all;}
+
+.button_pack .btn_input .btn_sm_white+ .edge {background-position:-497px 0; width:3px; height:25px; }
+.button_pack .btn_input .btn_sm_white:hover+ .edge {background-position:-1097px 0;}
+.button_pack .btn_input .btn_sm_black+ .edge {background-position:-497px -30px; width:3px; height:25px;}
+.button_pack .btn_input .btn_sm_black:hover+ .edge {background-position:-1097px -30px;}
+.button_pack .btn_input .btn_sm_color+ .edge {background-position:-497px -60px; width:3px; height:25px;}
+.button_pack .btn_input .btn_sm_color:hover+ .edge {background-position:-1097px -60px;}
+
+.button_pack .btn_input .btn_md_white+ .edge {background-position:-497px -100px; width:3px; height:35px;}
+.button_pack .btn_input .btn_md_white:hover+ .edge {background-position:-1097px -100px;}
+.button_pack .btn_input .btn_md_black+ .edge {background-position:-497px -140px; width:3px; height:35px;}
+.button_pack .btn_input .btn_md_black:hover+ .edge {background-position:-1097px -140px;}
+.button_pack .btn_input .btn_md_color+ .edge {background-position:-497px -180px; width:3px; height:35px;}
+.button_pack .btn_input .btn_md_color:hover+ .edge {background-position:-1097px -180px;}
+
+.button_pack .btn_input .btn_lg_white+ .edge {background-position:-497px -240px; width:3px; height:55px;}
+.button_pack .btn_input .btn_lg_white:hover+ .edge {background-position:-1097px -240px;}
+.button_pack .btn_input .btn_lg_black+ .edge {background-position:-497px -300px; width:3px; height:55px;}
+.button_pack .btn_input .btn_lg_black:hover+ .edge {background-position:-1097px -300px;}
+.button_pack .btn_input .btn_lg_color+ .edge {background-position:-497px -360px; width:3px; height:55px;}
+.button_pack .btn_input .btn_lg_color:hover+ .edge {background-position:-1097px -360px;}
+*/

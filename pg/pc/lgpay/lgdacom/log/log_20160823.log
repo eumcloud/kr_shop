@@ -1,0 +1,107 @@
+2016-08-23 14:17:32 [INFO ] [] XPayClient initialize [/home/onedaynet/solution/grptimev500/public_html/../pg/pc/lgpay/lgdacom] []
+2016-08-23 14:17:32 [DEBUG] [] Config [server_id] = [01]
+2016-08-23 14:17:32 [DEBUG] [] Config [timeout] = [60]
+2016-08-23 14:17:32 [DEBUG] [] Config [log_level] = [4]
+2016-08-23 14:17:32 [DEBUG] [] Config [verify_cert] = [1]
+2016-08-23 14:17:32 [DEBUG] [] Config [verify_host] = [1]
+2016-08-23 14:17:32 [DEBUG] [] Config [report_error] = [1]
+2016-08-23 14:17:32 [DEBUG] [] Config [output_UTF8] = [1]
+2016-08-23 14:17:32 [DEBUG] [] Config [auto_rollback] = [1]
+2016-08-23 14:17:32 [DEBUG] [] Config [log_dir] = [/home/onedaynet/solution/grptimev500/pg/pc/lgpay/lgdacom/log]
+2016-08-23 14:17:32 [DEBUG] [] Config [tlgdacomxpay] = [95160cce09854ef44d2edb2bfb05f9f3]
+2016-08-23 14:17:32 [DEBUG] [] Config [lgdacomxpay] = [96960ef1ebfc597c8a3e2bfe330b7fb5]
+2016-08-23 14:17:32 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2016-08-23 14:17:32 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2016-08-23 14:17:32 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2016-08-23 14:23:55 [INFO ] [] XPayClient initialize [/home/onedaynet/solution/grptimev500/public_html/../pg/pc/lgpay/lgdacom] [test]
+2016-08-23 14:23:55 [DEBUG] [] Config [server_id] = [01]
+2016-08-23 14:23:55 [DEBUG] [] Config [timeout] = [60]
+2016-08-23 14:23:55 [DEBUG] [] Config [log_level] = [4]
+2016-08-23 14:23:55 [DEBUG] [] Config [verify_cert] = [1]
+2016-08-23 14:23:55 [DEBUG] [] Config [verify_host] = [1]
+2016-08-23 14:23:55 [DEBUG] [] Config [report_error] = [1]
+2016-08-23 14:23:55 [DEBUG] [] Config [output_UTF8] = [1]
+2016-08-23 14:23:55 [DEBUG] [] Config [auto_rollback] = [1]
+2016-08-23 14:23:55 [DEBUG] [] Config [log_dir] = [/home/onedaynet/solution/grptimev500/pg/pc/lgpay/lgdacom/log]
+2016-08-23 14:23:55 [DEBUG] [] Config [tlgdacomxpay] = [95160cce09854ef44d2edb2bfb05f9f3]
+2016-08-23 14:23:55 [DEBUG] [] Config [lgdacomxpay] = [96960ef1ebfc597c8a3e2bfe330b7fb5]
+2016-08-23 14:23:55 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2016-08-23 14:23:55 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2016-08-23 14:23:55 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2016-08-23 14:23:55 [DEBUG] [tlgdacomxpay-012016082314235529cf39778f4eb63c2e2c306d4d45eb9cd834698b] Post [LGD_TXID] = [tlgdacomxpay-012016082314235529cf39778f4eb63c2e2c306d4d45eb9cd834698b]
+2016-08-23 14:23:55 [DEBUG] [tlgdacomxpay-012016082314235529cf39778f4eb63c2e2c306d4d45eb9cd834698b] Post [LGD_AUTHCODE] = [338cae4c726f68376378a7f3694b2980f3935aea]
+2016-08-23 14:23:55 [DEBUG] [tlgdacomxpay-012016082314235529cf39778f4eb63c2e2c306d4d45eb9cd834698b] Post [LGD_MID] = [tlgdacomxpay]
+2016-08-23 14:23:55 [DEBUG] [tlgdacomxpay-012016082314235529cf39778f4eb63c2e2c306d4d45eb9cd834698b] Post [LGD_TXNAME] = [Cancel]
+2016-08-23 14:23:55 [DEBUG] [tlgdacomxpay-012016082314235529cf39778f4eb63c2e2c306d4d45eb9cd834698b] Post [LGD_TID] = []
+2016-08-23 14:23:55 [DEBUG] [tlgdacomxpay-012016082314235529cf39778f4eb63c2e2c306d4d45eb9cd834698b] post_string = LGD_TXID=tlgdacomxpay-012016082314235529cf39778f4eb63c2e2c306d4d45eb9cd834698b&LGD_AUTHCODE=338cae4c726f68376378a7f3694b2980f3935aea&LGD_MID=tlgdacomxpay&LGD_TXNAME=Cancel&LGD_TID=
+2016-08-23 14:23:55 [DEBUG] [tlgdacomxpay-012016082314235529cf39778f4eb63c2e2c306d4d45eb9cd834698b] Result = [
+
+
+
+
+
+
+
+
+
+{"LGD_RESPCODE":"XC01","LGD_RESPMSG":"LGD_TID 필드가 누락되었습니다.","LGD_RESPONSE":[{"LGD_HASHDATA":"d9b416f21afa8d1bd38673404994bd26","LGD_RESPCODE":"XC01","LGD_TIMESTAMP":"20160823142354","LGD_RESPMSG":"LGD_TID 필드가 누락되었습니다."}]}
+]
+2016-08-23 14:23:55 [INFO ] [tlgdacomxpay-012016082314235529cf39778f4eb63c2e2c306d4d45eb9cd834698b] Response Code=[XC01], Msg=[LGD_TID �ʵ尡 �����Ǿ����ϴ�.], Count=1
+2016-08-23 14:23:55 [DEBUG] [tlgdacomxpay-012016082314235529cf39778f4eb63c2e2c306d4d45eb9cd834698b] Response (LGD_HASHDATA, 0) = d9b416f21afa8d1bd38673404994bd26
+2016-08-23 14:23:55 [DEBUG] [tlgdacomxpay-012016082314235529cf39778f4eb63c2e2c306d4d45eb9cd834698b] Response (LGD_RESPCODE, 0) = XC01
+2016-08-23 14:23:55 [DEBUG] [tlgdacomxpay-012016082314235529cf39778f4eb63c2e2c306d4d45eb9cd834698b] Response (LGD_TIMESTAMP, 0) = 20160823142354
+2016-08-23 14:23:55 [DEBUG] [tlgdacomxpay-012016082314235529cf39778f4eb63c2e2c306d4d45eb9cd834698b] Response (LGD_RESPMSG, 0) = LGD_TID 필드가 누락되었습니다.
+2016-08-23 15:35:36 [INFO ] [] XPayClient initialize [/home/onedaynet/solution/grptimev500/public_html/../pg/pc/lgpay/lgdacom] []
+2016-08-23 15:35:36 [DEBUG] [] Config [server_id] = [01]
+2016-08-23 15:35:36 [DEBUG] [] Config [timeout] = [60]
+2016-08-23 15:35:36 [DEBUG] [] Config [log_level] = [4]
+2016-08-23 15:35:36 [DEBUG] [] Config [verify_cert] = [1]
+2016-08-23 15:35:36 [DEBUG] [] Config [verify_host] = [1]
+2016-08-23 15:35:36 [DEBUG] [] Config [report_error] = [1]
+2016-08-23 15:35:36 [DEBUG] [] Config [output_UTF8] = [1]
+2016-08-23 15:35:36 [DEBUG] [] Config [auto_rollback] = [1]
+2016-08-23 15:35:36 [DEBUG] [] Config [log_dir] = [/home/onedaynet/solution/grptimev500/pg/pc/lgpay/lgdacom/log]
+2016-08-23 15:35:36 [DEBUG] [] Config [tlgdacomxpay] = [95160cce09854ef44d2edb2bfb05f9f3]
+2016-08-23 15:35:36 [DEBUG] [] Config [lgdacomxpay] = [96960ef1ebfc597c8a3e2bfe330b7fb5]
+2016-08-23 15:35:36 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2016-08-23 15:35:36 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2016-08-23 15:35:36 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2016-08-23 18:14:03 [INFO ] [] XPayClient initialize [/home/onedaynet/solution/grptimev500/public_html/../pg/pc/lgpay/lgdacom] [test]
+2016-08-23 18:14:03 [DEBUG] [] Config [server_id] = [01]
+2016-08-23 18:14:03 [DEBUG] [] Config [timeout] = [60]
+2016-08-23 18:14:03 [DEBUG] [] Config [log_level] = [4]
+2016-08-23 18:14:03 [DEBUG] [] Config [verify_cert] = [1]
+2016-08-23 18:14:03 [DEBUG] [] Config [verify_host] = [1]
+2016-08-23 18:14:03 [DEBUG] [] Config [report_error] = [1]
+2016-08-23 18:14:03 [DEBUG] [] Config [output_UTF8] = [1]
+2016-08-23 18:14:03 [DEBUG] [] Config [auto_rollback] = [1]
+2016-08-23 18:14:03 [DEBUG] [] Config [log_dir] = [/home/onedaynet/solution/grptimev500/pg/pc/lgpay/lgdacom/log]
+2016-08-23 18:14:03 [DEBUG] [] Config [tlgdacomxpay] = [95160cce09854ef44d2edb2bfb05f9f3]
+2016-08-23 18:14:03 [DEBUG] [] Config [lgdacomxpay] = [96960ef1ebfc597c8a3e2bfe330b7fb5]
+2016-08-23 18:14:03 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2016-08-23 18:14:03 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2016-08-23 18:14:03 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2016-08-23 18:14:03 [DEBUG] [tlgdacomxpay-0120160823181403e26b4ae288923a11ded0dbd424cd4778b6ecdc44] Post [LGD_TXID] = [tlgdacomxpay-0120160823181403e26b4ae288923a11ded0dbd424cd4778b6ecdc44]
+2016-08-23 18:14:03 [DEBUG] [tlgdacomxpay-0120160823181403e26b4ae288923a11ded0dbd424cd4778b6ecdc44] Post [LGD_AUTHCODE] = [b384630e72239e5934cf19e5797d09f4636c6207]
+2016-08-23 18:14:03 [DEBUG] [tlgdacomxpay-0120160823181403e26b4ae288923a11ded0dbd424cd4778b6ecdc44] Post [LGD_MID] = [tlgdacomxpay]
+2016-08-23 18:14:03 [DEBUG] [tlgdacomxpay-0120160823181403e26b4ae288923a11ded0dbd424cd4778b6ecdc44] Post [LGD_TXNAME] = [PartialCancel]
+2016-08-23 18:14:03 [DEBUG] [tlgdacomxpay-0120160823181403e26b4ae288923a11ded0dbd424cd4778b6ecdc44] Post [LGD_TID] = []
+2016-08-23 18:14:03 [DEBUG] [tlgdacomxpay-0120160823181403e26b4ae288923a11ded0dbd424cd4778b6ecdc44] Post [LGD_CANCELAMOUNT] = [32200]
+2016-08-23 18:14:03 [DEBUG] [tlgdacomxpay-0120160823181403e26b4ae288923a11ded0dbd424cd4778b6ecdc44] post_string = LGD_TXID=tlgdacomxpay-0120160823181403e26b4ae288923a11ded0dbd424cd4778b6ecdc44&LGD_AUTHCODE=b384630e72239e5934cf19e5797d09f4636c6207&LGD_MID=tlgdacomxpay&LGD_TXNAME=PartialCancel&LGD_TID=&LGD_CANCELAMOUNT=32200
+2016-08-23 18:14:04 [DEBUG] [tlgdacomxpay-0120160823181403e26b4ae288923a11ded0dbd424cd4778b6ecdc44] Result = [
+
+
+
+
+
+
+
+
+
+{"LGD_RESPCODE":"XC01","LGD_RESPMSG":"LGD_TID 필드가 누락되었습니다.","LGD_RESPONSE":[{"LGD_HASHDATA":"4d0b1fd331be65dac6e9d8839511e2ae","LGD_RESPCODE":"XC01","LGD_TIMESTAMP":"20160823181403","LGD_RESPMSG":"LGD_TID 필드가 누락되었습니다."}]}
+]
+2016-08-23 18:14:04 [INFO ] [tlgdacomxpay-0120160823181403e26b4ae288923a11ded0dbd424cd4778b6ecdc44] Response Code=[XC01], Msg=[LGD_TID �ʵ尡 �����Ǿ����ϴ�.], Count=1
+2016-08-23 18:14:04 [DEBUG] [tlgdacomxpay-0120160823181403e26b4ae288923a11ded0dbd424cd4778b6ecdc44] Response (LGD_HASHDATA, 0) = 4d0b1fd331be65dac6e9d8839511e2ae
+2016-08-23 18:14:04 [DEBUG] [tlgdacomxpay-0120160823181403e26b4ae288923a11ded0dbd424cd4778b6ecdc44] Response (LGD_RESPCODE, 0) = XC01
+2016-08-23 18:14:04 [DEBUG] [tlgdacomxpay-0120160823181403e26b4ae288923a11ded0dbd424cd4778b6ecdc44] Response (LGD_TIMESTAMP, 0) = 20160823181403
+2016-08-23 18:14:04 [DEBUG] [tlgdacomxpay-0120160823181403e26b4ae288923a11ded0dbd424cd4778b6ecdc44] Response (LGD_RESPMSG, 0) = LGD_TID 필드가 누락되었습니다.

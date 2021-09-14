@@ -1,0 +1,154 @@
+@charset 'utf-8';
+
+/*
+	copyright(c) 상상너머·원데이넷 all rights reserved.
+	허용된 라이센스이외 무단도용재배포를 금합니다.
+*/
+
+/* ●●●●●●●●●● 로그인 */
+.cm_member_login {overflow:hidden; background:#fff; padding:20px; box-sizing:border-box; }
+.cm_member_login li {list-style:none}
+.cm_member_login .title_box {margin-bottom:15px; overflow:hidden; font-family:'lato'; font-size:30px; color:#333; letter-spacing:-1px; font-weight:600; text-align:center;}
+.cm_member_login .form_box {position:relative; overflow:hidden; max-width:350px; margin:0 auto}
+.cm_member_login .form_box li {overflow:hidden; border:1px solid #d1d1d1; border-radius:5px 5px 0 0; position:relative;}
+.cm_member_login .form_box li:last-of-type {border-top:0; border-radius:0 0 5px 5px}
+.cm_member_login .form_box .input_design {height:60px; width:100%; font-size:16px; padding-left:55px; box-sizing:border-box; color:#888; background:#ededed;}
+.cm_member_login .form_box .input_design:focus {color:#000; background-color:#ddd;}
+.cm_member_login .form_box .login_id:before {content:''; width:55px; height:60px; position:absolute; left:0; top:0; background:transparent url('../images/cm_images/member_login_id.png') center center no-repeat; background-size:18px;}
+.cm_member_login .form_box .login_pw:before {content:''; width:55px; height:60px; position:absolute; left:0; top:0; background:transparent url('../images/cm_images/member_login_pw.png') center center no-repeat; background-size:18px;}
+.cm_member_login .form_box .save_id {clear:both; overflow:hidden; }
+.cm_member_login .form_box .save_id label {padding:10px 10px 5px 0; line-height:20px; color:#666; float:left; letter-spacing:-1px; font-size:13px;}
+.cm_member_login .form_box .save_id input {margin:0 5px 0 0; float:left;}
+.cm_member_login .btn_login {background: #da0500; width:100%; height:60px; border:0; color:#fff; font-size:20px; font-family:'lato'; font-weight:600; margin-top:10px; border-radius:5px;}
+.cm_member_login .btn_box {overflow:hidden; text-align:center; border-top:1px solid rgba(0,0,0,0.1); padding-top:10px; max-width:350px; margin:10px auto 0 auto}
+.cm_member_login .btn_box li {text-align:center; letter-spacing:-1px; color:#999; list-style:none; overflow:hidden; box-sizing:border-box; float:left; width:50%; padding:0 3px 0 0}
+.cm_member_login .btn_box li:last-of-type {padding:0 0 0 3px}
+.cm_member_login .button_pack {padding:0; display:block; width:100%; box-sizing:border-box; margin-top:6px}
+.cm_member_login .button_pack a {text-align:center; display:block; width:100%;}
+.cm_member_login .btn_box li:last-of-type .button_pack a {height:76px; line-height:76px; font-size:14px;}
+
+
+
+/* ●●●●●●●●●● 아이디비번찾기 */
+.cm_member_find {overflow:hidden; position:relative; background:#fff; padding:20px;}
+.cm_member_find li {list-style:none}
+.cm_member_find .title_img {text-align:center; font-family:'lato'; font-size:30px; color:#333; margin-bottom:15px; font-weight:600;}
+.cm_member_find .form_box {position:relative; overflow:hidden; max-width:350px; margin:0 auto}
+.cm_member_find .form_box ul {overflow:hidden; position:relative;}
+.cm_member_find .form_box li {overflow:hidden; border:1px solid #d1d1d1; border-radius:5px 5px 0 0}
+.cm_member_find .form_box li:last-of-type {border-top:0; border-radius:0 0 5px 5px}
+.cm_member_find .form_box .input_design {height:60px; width:100%; font-size:16px; padding:0 20px; box-sizing:border-box; color:#888; background:#ededed;}
+.cm_member_find .form_box .input_design:focus {color:#000; background-color:#ddd;}
+.cm_member_find .guide_text {overflow:hidden; clear:both; padding:20px 0 0 0}
+.cm_member_find .guide_text li {list-style:none; color:#999; line-height:18px; margin-bottom:3px; font-size:12px; line-height:16px;}
+.cm_member_find .cm_bottom_button {margin:10px 0 0 0; }
+.cm_member_find .result_box {text-align:center; max-width:350px; margin:0 auto}
+.cm_member_find .result_txt { background:rgba(0,0,0,0.05); padding:23px 10px 0 10px; min-height:123px; box-sizing:border-box; border-radius:5px;}
+.cm_member_find .result_txt dt {font-size:16px; color:#333; margin-bottom:10px; line-height:18px; }
+.cm_member_find .result_txt dd {color:#888; line-height:16px; }
+.cm_member_find .result_box em {color:#ff0000;}
+
+
+
+
+/* ●●●●●●●●●● 단락 타이틀 */
+.cm_member_title {font-weight:600; letter-spacing:-1px; font-size:17px; border-bottom:1px solid #707070; position:relative; color:#333; padding:10px; margin-top:20px;}
+.cm_member_title strong {color:#ff0000; font-weight:600}
+.cm_member_title .explain {font-weight:normal; font-size:12px; color:#999; letter-spacing:-0.5px; margin-top:3px}
+.cm_member_title:first-of-type {margin:0}
+
+
+
+/* ●●●●●●●●●● 입력폼테이블 */
+.cm_member_form {}
+.cm_member_form ul {overflow:hidden}
+.cm_member_form li {list-style:none; position:relative; border-bottom:1px solid #dedede; width:100%; clear:both;}
+.cm_member_form .opt {position:absolute; left:10px; top:10px; color:#888; height:34px; line-height:34px; padding-left:12px; }
+.cm_member_form .opt {background:transparent url('../images/cm_images/member_form_bullet.png') left center no-repeat; background-size:8px;  }
+.cm_member_form .value {margin-left:90px; background:#fff; overflow:hidden; padding:10px 10px 5px 0; color:#333; letter-spacing:0px; line-height:36px; font-size:15px}
+.cm_member_form .ess .opt {background-image:url('../images/cm_images/member_form_bullet2.png');}
+.cm_member_form .input_design {box-sizing:border-box; float:left; width:100%; background:#f1f1f1; border:1px solid #c1c1c1; border-right:0; border-bottom:0; height:35px; padding:0 10px; color:#666; border-radius:5px; letter-spacing:0px; font-size:13px; margin-bottom:5px}
+.cm_member_form .input_design:focus {background-color:#ddd; color:#333}
+/*
+.cm_member_form .input_double {overflow:hidden; clear:both; }
+.cm_member_form .input_double .input_wrap {margin-top:10px; width:50%; float:left; }
+.cm_member_form .input_double .input_wrap:first-of-type div {margin-right:10px}
+*/
+.cm_member_form .textarea_design {background:#f1f1f1; border:1px solid #c1c1c1; border-right:0; border-bottom:0; line-height:18px; height:90px; padding:10px; color:#666; border-radius:5px; font-size:13px;  margin-bottom:5px; box-sizing:border-box; }
+.cm_member_form .textarea_design:focus {background-color:#ddd; color:#333}
+.cm_member_form .select_design {padding:0 10px; height:34px; line-height:33px; width:100%; border:1px solid #ccc;}
+.cm_member_form .dash {float:left; margin:20px 5px 0 5px; font-size:15px; width:10px; height:1px; background:#ccc;}
+.cm_member_form .button_pack {margin-bottom:5px; clear:both}
+.cm_member_form label {border-radius:30px; border:1px solid #ddd; float:left; margin-right:5px; font-size:13px; line-height:20px; padding:5px 15px 5px 10px; margin-bottom:5px; box-sizing:border-box; }
+.cm_member_form .label_full {width:100%;}
+.cm_member_form .tip_txt {clear:both;}
+.cm_member_form .tip_txt dd {line-height:15px; color:#999; font-size:11px;}
+.cm_member_form .tip_txt dt {line-height:15px; color:#ff4949; font-size:11px;}
+
+
+
+/* ●●●●●●●●●● 약관동의  */
+.cm_member_agree {overflow:hidden; background:#fafafa; padding:15px 15px 0 15px;}
+.cm_member_agree .text_box {background:#fff; border:1px solid #ccc; overflow:hidden;}
+.cm_member_agree .textarea_design {background:#fff; padding:10px; width:100%; box-sizing:border-box; line-height:18px; height:120px; color:#999; font-size:12px;}
+.cm_member_agree .agree_check {overflow:hidden; position:relative; text-align:center;}
+.cm_member_agree .agree_check label {padding:10px; overflow:hidden; color:#555; font-size:13px;}
+.cm_member_agree .btn_view_all {background:#fff; display:block; margin:5px 0 15px 0; border:1px solid #ddd; padding:8px 0; border-radius:30px; text-align:center;}
+.cm_member_agree .btn_view_all .lineup {background:transparent url('../images/cm_images/member_text_view.png') left center no-repeat; background-size:11px; padding-left:15px; font-size:14px; color:#999}
+
+@media screen and (min-width:550px) {
+	.cm_member_agree .agree_check {padding:3px 0 10px 0}
+	.cm_member_agree .btn_view_all {display:inline-block; padding:6px 20px; position:absolute; right:0; top:3px;}
+}
+
+
+
+
+
+/* ●●●●●●●●●● 가입완료메세지 */
+.cm_member_ok_message {background:#fff; overflow:hidden; padding:20px 10px 10px 10px; text-align:center;}
+.cm_member_ok_message img {width:100%; max-width:150px}
+.cm_member_ok_message .notice {border-bottom:1px solid #eee; padding-bottom:20px; font-weight:400}
+.cm_member_ok_message .notice dt {font-size:23px; margin-bottom:5px}
+.cm_member_ok_message .notice dd {font-size:20px; letter-spacing:-1px; color:#888; }
+.cm_member_ok_message .notice b,.cm_member_ok_message .notice strong {color:#000; font-weight:400; font-family:inherit}
+.cm_member_ok_message .txt {font-size:14px; margin-top:20px; letter-spacing:-1px; color:#999}
+
+
+
+
+/* ●●●●●●●●●● 휴면계정 첫화면 */
+.cm_member_sleep {overflow:hidden; background:#fff; text-align:center; }
+.cm_member_sleep .inner_box {padding:30px 20px 40px 20px; position:relative; background:#49515d;}
+.cm_member_sleep .title_box {overflow:hidden; font-family:"NanumGothic"; font-size:25px; color:#fff; letter-spacing:-1px; font-weight:600; letter-spacing:-1px;}
+.cm_member_sleep .guide_txt {font-size:12px; color:rgba(255,255,255,0.4);; padding:20px 0 30px 0; line-height:16px; }
+.cm_member_sleep .guide_txt strong {font-weight:400; color:#fff}
+.cm_member_sleep .btn_box {overflow:hidden;}
+.cm_member_sleep .btn_email_ok {border-radius:100px; background:#d1332f; padding:0 40px}
+.cm_member_sleep .btn_email_ok .txt {color:#fff; font-size:15px; line-height:50px; background:transparent url('../images/cm_images/member_sleep_btn.png') left 13px no-repeat; padding-left:25px; background-size:20px;}
+
+
+
+
+
+/* ●●●●●●●●●● 비밀번호변경안내 */
+.cm_member_password {overflow:hidden; padding:20px; background:#fff; }
+.cm_member_password .top_txt {background:transparent url('../images/cm_images/password_img.png') center top no-repeat; background-size:50px; text-align:center; padding-top:70px}
+.cm_member_password .top_txt dt {font-family:"NanumGothic"; font-size:35px; color:#49515d; letter-spacing:-2px; font-weight:600;}
+.cm_member_password .top_txt dd  {color:#666; font-family:"NanumGothic"; font-size:15px; margin-bottom:5px; letter-spacing:-1px;}
+.cm_member_password .guide_txt {margin:20px 0 20px 0}
+.cm_member_password .guide_txt li {list-style:none; color:#999; line-height:16px; position:relative; padding:5px 0 0 8px}
+.cm_member_password .guide_txt li:before {content:''; width:2px; height:2px; position:absolute; left:0; top:12px; background:#333; border-radius:100px; }
+.cm_member_password .guide_txt strong {font-weight:400; color:#ff6600}
+.cm_member_password .cm_member_form {border:1px solid #ddd;}
+.cm_member_password .cm_member_form li:last-of-type {border-bottom:0}
+.cm_member_password .cm_member_form .value {margin-left:110px}
+.cm_member_password .cm_member_form .opt {color:#333}
+
+
+
+/* 가입연령관련 문구추가 2017-09-08 */
+.cm_auth_tip {overflow:hidden; margin-top:20px; text-align:center;}
+.cm_auth_tip .tx {font-size:11px; color:#999; padding-left:32px; letter-spacing:-0.5px; line-height:15px; text-align:left}
+.cm_auth_tip .tx {background:transparent url('../images/cm_images/auth_tip_icon.png') left 1px no-repeat; background-size:26px; }
+

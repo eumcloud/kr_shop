@@ -1,0 +1,936 @@
+<?      // 해당 스킨 모바일 버전에 맞추어 전체적인 수정을 했음 LCY102
+	// 로그인 체크
+	//member_chk();
+
+	$pass_name = $_COOKIE["guest_order_name"];
+	$pass_ordernum = $_COOKIE["guest_order_num"];
+	if($pass_name && $pass_ordernum){
+		$que = " select o.* , oc.oc_tid
+							from odtOrder as o
+							left join odtOrderCardlog as oc on (oc.oc_oordernum=o.ordernum)
+							where
+								o.ordernum='{$ordernum}'
+								and ordername='".addslashes($pass_name)."' and member_type = 'guest'
+								and  replace(ordernum,'-','') = '".addslashes(rm_str($pass_ordernum))."'
+							";
+
+		$r = _MQ($que);
+	}
+	if(!$r[ordernum]) error_msg("해당 주문이 없습니다.");
+
+?>
+
+<div class="common_page">
+<div class="common_inner common_full post_hide_section">
+
+	<!-- ●●●●●●●●●● 주문상세 주문번호출력 -->
+	<div class="cm_order_number">
+		<span class="order_number">주문번호 : <strong><?=$r['ordernum']?></strong></span>
+		<!--  버튼있을때 -->
+		<!-- <div class="btn_box">
+			<span class="lineup">
+			<? if($r['canceled'] == "N" && $r['paystatus'] == "Y") { if($r['mem_cancelchk'] == "Y") { ?>
+			<span class="button_pack"><a href="#none" onclick="order_cancel('<?=$r['ordernum']?>');return false;" class="btn_md_white">주문취소</a></span>
+			<? } else { ?>
+			<span class="button_pack"><a href="#none" onclick="alert('주문취소가 불가능한 상태입니다. 고객센터(<?=$row_company[tel]?>)로 문의하세요.');return false;" class="btn_md_white">주문취소</a></span>
+			<? }} ?>
+			</span>
+		</div> -->
+	</div>
+
+
+	<!-- ●●●●●●●●●● 단락타이틀 -->
+	<div class="cm_shop_title">
+		<strong>주문</strong> 상품
+		<!-- <div class="explain">주문하실 상품을 최종적으로 확인하신 후 결제를 진행해주세요.</div> -->
+	</div>
+	<!-- / 단락타이틀 -->
+	<div class="cm_shop_cart_list">
+		<div class="cart_item_list if_nocart if_orderview">
+			<ul>
+			<?
+
+				$arr_opuid = array();// JJC : 교환/반품 : 2018-07-09
+
+				// 주문상품 정보 추출
+				$cque = "
+					select
+						code,name,prolist_img,sum(op_cnt*(op_pprice + op_poptionprice)) as sum_price,cl_title,cl_price,orderstatus_step,sum(op.op_delivery_price) as op_delivery_price,sum(op.op_add_delivery_price) as op_add_delivery_price,op_orderproduct_type,op_pname,canceled
+					from odtOrder as o
+					inner join odtOrderProduct as op on (o.ordernum = op.op_oordernum)
+					inner join odtProduct as p on (p.code=op.op_pcode)
+					left join odtOrderCouponLog as cl on (cl.cl_pcode = op.op_pcode and cl.cl_oordernum = op.op_oordernum)
+					where op.op_oordernum='".$ordernum."'
+					group by op_pcode
+				";
+				$cr = _MQ_assoc($cque);
+				if( count($cr)==0 ) { error_loc_msg('/?pn=mypage.order.list','필수 정보가 누락되었습니다. 목록으로 이동합니다.'); }
+
+				foreach($cr as $k=>$v) {
+
+					/* 배송비 처리 */
+					if($v['op_orderproduct_type'] != "product") {	// 배송적용 상품이 아니면
+						$delivery_print = "해당없음";
+						$delivery_price = 0;
+						$add_delivery_print = "";
+					} else {
+						// 배송정보
+						$delivery_price = $v['op_delivery_price'];
+						$delivery_print = "-";
+						// 추가배송비 여부
+						unset($add_delivery_print);
+						if($v['op_add_delivery_price']) {
+							$add_delivery_print = "<div class='guide_txt'>추가배송비+".number_format($v['op_add_delivery_price'])."원</div>";
+						}
+					}
+					/* 배송비 처리 끝 */
+
+					/* 옵션 처리 */
+					unset($option_html);
+
+					$sque = "
+						select * from odtOrderProduct as op
+						inner join odtProduct as p on (p.code=op.op_pcode)
+						left join odtOrderSettle as os on (os.os_cpid = p.customerCode and os.os_oordernum = op.op_oordernum)
+						left join odtRequestReturn as rr on (op.op_uid = SUBSTRING_INDEX(rr.rr_opuid , ',',-1) and rr.rr_ordernum = op.op_oordernum)
+						where op.op_oordernum='".$ordernum."' and op.op_pcode = '".$v['code']."' order by op_is_addoption desc,op_option1,op_option2,op_option3
+					";
+
+					$sr = _MQ_assoc($sque);
+					foreach($sr as $sk => $sv) {
+
+						$arr_opuid[$sv['op_uid']] ++;// JJC : 교환/반품 : 2018-07-09
+
+						/* 쿠폰 처리 */
+						unset($expire);
+						if($sv['expire']) { $expire = "<div class='thisis_due'>유효기간 :  ".date('Y-m-d',strtotime($sv['expire']))." 까지 </div>"; }
+						unset($coupon_html,$coupon_html_body,$use_cnt,$notuse_cnt);
+						if($sv['op_orderproduct_type'] == "coupon") {
+							$coupon_assoc = _MQ_assoc("select * from odtOrderProductCoupon where opc_opuid = '".$sv['op_uid']."'");
+							if(sizeof($coupon_assoc) < 1) { $coupon_html_body = "<div class='thisis_txt'>결제가 확인되면 쿠폰이 발급됩니다.</div>"; }
+							foreach($coupon_assoc as $coupon_key => $coupon_row) {
+								if($sv['op_cancel']=='N' && $v['canceled']=='N') { //LMH001
+									if($coupon_row['opc_status'] == "대기") {
+										$notuse_cnt++;
+										$coupon_html_body .="
+											<div class='coupon_number'>
+												<span class='texticon_pack'><span class='orange'>미사용</span></span>
+												".$coupon_row['opc_expressnum']."
+												<span class='button_pack'>
+													<a href='/pages/mypage.order.pro.php?_mode=coupon_sms_resend&opcuid=".$coupon_row['opc_uid']."' target='common_frame' class='btn_sm_black'>문자발송</a>
+												</span>
+											</div>
+										";
+									} else if($coupon_row['opc_status'] == "사용") {
+										$coupon_html_body .="
+											<div class='coupon_number'>
+												<span class='texticon_pack'><span class='light'>사용완료</span></span>
+												".$coupon_row['opc_expressnum']."
+											</div>
+										";
+										$use_cnt++;
+									} else if($coupon_row['opc_status'] == "취소") {
+										$coupon_html_body .="
+											<div class='coupon_number'>
+												<span class='texticon_pack'><span class='dark'>취소</span></span>
+												".$coupon_row['opc_expressnum']."
+											</div>
+										";
+									} else { error_msg("잘못된 접근입니다. 다시 시도하세요. 계속 문제가 발생하면 관리자에게 문의하세요."); }
+								} else { //LMH001
+									$coupon_html_body .="
+										<div class='coupon_number'>
+											<span class='texticon_pack'><span class='dark'>취소</span></span>
+											".$coupon_row['opc_expressnum']."
+										</div>
+									";
+								}
+							}
+							$coupon_html .="<dd class='thisis_coupon'>".$expire.$coupon_html_body."</dd>";
+						}
+						/* 쿠폰 처리 끝 */
+
+						/* 배송상태 처리 */
+						unset($status_print,$delivery_btn_print);
+						if($sv['op_delivstatus'] == "N") {
+							$status_print = $arr_o_status[$v['orderstatus_step']];
+						} else {
+							if($sv['op_orderproduct_type']=='coupon'){
+								/*if($notuse_cnt>0) { $status_print .= "<span class='orange'>미사용(".number_format($notuse_cnt)."개)</span>"; }
+								if($use_cnt>0) { $status_print .= "<span class='light'>사용(".number_format($use_cnt)."개)</span>"; }*/
+								$status_print .= $arr_o_status['발급완료'];
+							} else {
+								$status_print .= $arr_o_status['발송완료'];
+								$delivery_btn_print .= "
+								<dd><span class='button_pack'><a href='".$arr_delivery_company[$sv['op_expressname']].rm_str($sv['op_expressnum'])."' target='_blank' class='btn_md_white'>배송조회</a></span></dd>
+								";
+							}
+						}
+						/* 배송상태 처리 끝 */
+
+						// 부분취소 버튼 LMH001
+						unset($app_btn_cancel,$app_cancel_class);
+						if($r['paystatus']=='Y' && $sv['op_is_addoption']!='Y') {
+							switch($sv['op_cancel']) {
+								case 'Y': // 취소완료
+								$app_btn_cancel = "<span class='option_cancel'><span class='button_pack'><a href='#none' onclick=\"return false;\" data-ordernum='".$r['ordernum']."' data-opuid='".$sv['op_uid']."' class='btn_sm_white product_cancel_view'>취소내역</a></span></span>";
+								$app_status_cancel = "<span class='light'>취소완료</span>";
+								$app_cancel_class = "if_option_cancel";
+								break;
+								case 'R': // 취소진행
+								$app_btn_cancel = "<span class='option_cancel'><span class='button_pack'><a href='#none' onclick=\"return false;\" data-ordernum='".$r['ordernum']."' data-opuid='".$sv['op_uid']."' class='btn_sm_white product_cancel_view'>취소진행중</a></span></span>";
+								$app_status_cancel = "<span class='light'>취소진행중</span>";
+								$app_cancel_class = "if_option_cancel";
+								break;
+								default:
+								if($r['canceled']=='N') {
+									$app_btn_cancel = "<span class='option_cancel'><span class='button_pack'><a href='#none' onclick=\"return false;\" data-ordernum='".$r['ordernum']."' data-opuid='".$sv['op_uid']."' class='btn_sm_white product_cancel'>주문취소</a></span></span>";
+									$app_status_cancel = "";
+									$app_cancel_class = "if_option_cancel";
+								}
+								break;
+							} $app_btn_cancel = $delivery_btn_print ? $delivery_btn_print : $app_btn_cancel;
+							// 주문취소 버튼 자체를 숨기고자 할 경우 아래 주석 해제
+							/*if( $sv[op_orderproduct_type] == "coupon" ) {
+								$coupon_chk = _MQ("select count(*) as cnt from odtOrderProductCoupon where opc_opuid = '".$sv['op_uid']."' and opc_status = '사용' ");
+								if( $coupon_chk[cnt] > 0 ) { $app_status_cancel = ''; $app_btn_cancel = ''; }
+							}*/
+						}
+
+						$option_name		= !$sv['op_option1'] ? "옵션없음" : $sv['op_option1']." ".$sv['op_option2']." ".$sv['op_option3'];
+						$option_price		= $sv['op_pprice'] + $sv['op_poptionprice'];
+						$option_cnt			= $sv['op_cnt'];
+						$option_sum_price	= $sv['op_cnt'] * ($sv['op_pprice'] + $sv['op_poptionprice']);
+						$option_html .="
+							<dd class='".($sv['op_is_addoption']<>"Y"?"ess":"")." ".$app_cancel_class."'>
+								<div class='option_name'>".$option_name."</div>
+								<div class='counter_box'>
+									<span class='option_number'>(<strong>".number_format($option_cnt)."</strong>개)</span>
+									<span class='counter_right'>
+										<span class='option_price'><strong>".number_format($option_price)."</strong>원</span>
+										".$app_btn_cancel."
+									</span>
+								</div>
+							</dd>
+							".$coupon_html."
+						";
+
+					}
+					/* 옵션 처리 끝 */
+
+					/* 상품 정보 */
+					$pro_name	= strip_tags($v['name']);	// 상품명
+					$img_src	= replace_image(IMG_DIR_PRODUCT.app_thumbnail("장바구니",$v)); // 상품 이미지
+					$sum_price	= $v['sum_price']; // 옵션가격 합계
+
+					// 상품 할인 쿠폰 기능
+					unset($product_coupon_html);
+					if($v['cl_title']) {
+						$product_coupon_html = "
+							<div class='item_coupon'>
+								<div>
+									<span class='white_box'>
+										<span class='coupon_ti'>적용쿠폰</span>
+										<span class='coupon_name'>".stripslashes($v['cl_title'])." 할인</span>
+									</span>
+									<span class='color_box'>
+										<span class='edge1'></span><span class='edge2'></span>
+										<span class='coupon_discount'>".number_format($v['cl_price'])."원</span>
+										<span class='coupon_price'>할인적용</span>
+									</span>
+								</div>
+							</div>
+						";
+					}
+					/* 상품 정보 끝 */
+
+
+			?>
+			<!-- option_open 클래스나오면 상세옵션 보여짐 -->
+			<li class="toggle_target" id="toggle_<?=$sv['op_uid']?>">
+
+				<!-- 주문보기에서 나오는 상태표시 -->
+				<div class="order_view_state">
+					<span class="texticon_pack checkicon"><?=$status_print?></span>
+				</div>
+
+				<!-- 상품이름과 사진 -->
+				<div class="item_info">
+					<!-- 주문내역에서만 나오는 버튼 클릭하면 열리고 , 다시클릭하면 닫힘  -->
+					<a href="#none" onclick="return false;" data-target="<?=$sv['op_uid']?>" class="toggle_btn btn_open_option">선택한 옵션보기 (총<?=number_format(count($sr))?>개) <span class="shape"></span></a>
+
+					<a href="/m/?pn=product.view&pcode=<?=$v['code']?>" target="_blank" class="upper_link"></a>
+					<!-- 상품사진 -->
+					<div class="thumb"><img src="<?=product_thumb_img( $v , '장바구니' ,  'data')?>" alt="<?=$pro_name?>" title="<?=$pro_name?>"/></div>
+					<div class="name"><?=$pro_name?></div>
+				</div>
+
+				<!-- 상품정보 주문내역보기에서는 이 div가 보이고 안보이고 -->
+				<div class="item_name">
+					<dl>
+						<?=$option_html?>
+					</dl>
+				</div>
+				<!-- / 상품정보 -->
+
+				<!-- 상품가격(배송비) -->
+				<div class="item_charge">
+					<dl>
+						<dd>
+							<span class="opt">상품합계</span>
+							<div class="value"><strong><?=number_format($sum_price)?></strong>원</div>
+						</dd>
+						<dd>
+							<span class="opt">배송비</span>
+							<div class="value">
+								<? if( $delivery_price > 0 ) { ?>
+									<strong><?=number_format($delivery_price)?></strong>원
+								<? } else { ?>
+									<?=$delivery_print?>
+								<? } ?>
+								<?=$add_delivery_print?>
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<!-- / 상품가격(배송비) -->
+
+				<?=$product_coupon_html?>
+
+				<!-- 주문보기에서 나오는 버튼들 -->
+				<div class="order_view_btn">
+					<dl>
+						<?=$delivery_btn_print?>
+					</dl>
+				</div>
+
+			</li>
+			<? } ?>
+			</ul>
+		</div>
+	</div><!-- .cm_shop_cart_list -->
+
+	<!-- ●●●●●●●●●● 최종계산 -->
+	<div class="cm_shop_last_sum">
+
+		<span class="box normal_box">
+			<span class="icon"><span class="shape"></span></span>
+			<span class="txt">상품합계금액</span>
+			<span class="price"><strong><?=number_format($r['tPrice']-$r['dPrice']+$r['sPrice'])?></strong><em>원</em></span>
+		</span>
+
+		<span class="box plus_box">
+			<span class="icon"><span class="shape"></span></span>
+			<span class="txt">총 배송비</span>
+			<span class="price"><strong><?=number_format($r['dPrice'])?></strong><em>원</em></span>
+		</span>
+
+		<span class="box minus_box">
+			<span class="icon"><span class="shape"></span></span>
+			<span class="txt">총 할인금액</span>
+			<span class="price"><strong><?=number_format($r['sPrice'])?></strong><em>원</em></span>
+		</span>
+
+		<span class="box equal_box">
+			<span class="icon"><span class="shape"></span></span>
+			<span class="txt">총 결제금액</span>
+			<span class="price"><strong><?=number_format($r['tPrice'])?></strong><em>원</em></span>
+		</span>
+
+		<div class="save_point">본 주문으로 발생한 적립금: <strong><?=number_format($r['gGetPrice'])?></strong>원</div>
+	</div>
+	<!-- / 최종계산 -->
+
+	<!-- ●●●●●●●●●● 단락타이틀 -->
+	<div class="cm_shop_title">
+		<strong>주문자</strong> 정보
+		<!-- <div class="explain"><img src="images/cm_images/member_form_bullet2.png" alt="필수" />표시된 것은 필수항목입니다.</div> -->
+	</div>
+	<!-- / 단락타이틀 -->
+
+	<!-- ●●●●●●●●●● 주문자정보 -->
+	<div class="cm_order_form if_noinput">
+		<ul>
+			<li class="ess ">
+				<span class="opt">주문자 이름</span>
+				<div class="value"><?=$r['ordername']?></div>
+			</li>
+			<li class="ess ">
+				<span class="opt">주문자 휴대폰</span>
+				<div class="value"><?=phone_print($r['orderhtel1'],$r['orderhtel2'],$r['orderhtel3'])?></div>
+			</li>
+			<li class="ess ">
+				<span class="opt">주문자 이메일</span>
+				<div class="value"><?=$r['orderemail']?></div>
+			</li>
+		</ul>
+	</div>
+
+	<? if($r['order_type'] == "coupon" || $r['order_type'] == "both") { // 쿠폰상품이 있을경우에만 노출 ?>
+	<!-- ●●●●●●●●●● 단락타이틀 -->
+	<div class="cm_shop_title">
+		<strong>사용자</strong> 정보
+		<!-- <div class="explain"><img src="images/cm_images/member_form_bullet2.png" alt="필수" />표시된 것은 필수항목입니다.</div> -->
+	</div>
+	<!-- / 단락타이틀 -->
+	<div class="cm_order_form if_noinput">
+		<ul>
+			<li class="ess ">
+				<span class="opt">사용자 이름</span>
+				<div class="value"><?=$r['username']?></div>
+			</li>
+			<li class="ess ">
+				<span class="opt">사용자 휴대폰</span>
+				<div class="value"><?=phone_print($r['userhtel1'],$r['userhtel2'],$r['userhtel3'])?></div>
+			</li>
+			<li class="ess ">
+				<span class="opt">사용자 이메일</span>
+				<div class="value"><?=$r['useremail']?></div>
+			</li>
+		</ul>
+	</div>
+	<? } // 사용자정보 끝 ?>
+
+	<? if($r['order_type'] == "product" || $r['order_type'] == "both") { // 배송상품이 있을경우에만 노출 ?>
+	<!-- ●●●●●●●●●● 단락타이틀 -->
+	<div class="cm_shop_title">
+		<strong>받는분(배송)</strong> 정보
+		<!-- <div class="explain"><img src="images/cm_images/member_form_bullet2.png" alt="필수" />표시된 것은 필수항목입니다.</div> -->
+	</div>
+	<!-- / 단락타이틀 -->
+	<div class="cm_order_form if_noinput">
+		<ul>
+			<li class="ess ">
+				<span class="opt">받는분 이름</span>
+				<div class="value"><?=$r['recname']?></div>
+			</li>
+			<li class="ess ">
+				<span class="opt">받는분 휴대폰</span>
+				<div class="value"><?=phone_print($r['rechtel1'],$r['rechtel2'],$r['rechtel3'])?></div>
+			</li>
+			<li class="ess">
+				<span class="opt">받는분 주소</span>
+				<div class="value">
+					<div class="text_multi">
+						<dl>
+							<dt>(<?=$r['reczip1']."-".$r['reczip2']?>) <?=$r['recaddress']?> <?=$r['recaddress1']?></dt>
+							<?=($r['recaddress_doro'] ? "<dd>도로명주소 : " . $r['recaddress_doro'] . "</dd>" : "")?>
+							<?=($r['reczonecode'] ? "<dd>새 우편번호 : " . $r['reczonecode'] . "</dd>" : "")?>
+						</dl>
+					</div>
+				</div>
+			</li><?php
+			// LDD018
+			if($r['delivery_date'] != '0000-00-00') {
+			?>
+			<li>
+				<span class="opt">배송일 지정</span>
+				<div class="value"><?php echo $r['delivery_date']; ?></div>
+			</li>
+			<?php } ?>
+			<li class="">
+				<span class="opt">배송시 유의사항</span>
+				<div class="value"><?=nl2br(stripslashes($r['comment']))?></div>
+			</li>
+		</ul>
+	</div>
+	<? } // 배송지정보 끝 ?>
+
+	<!-- ●●●●●●●●●● 단락타이틀 -->
+	<div class="cm_shop_title">
+		<strong>결제</strong> 정보
+		<!-- <div class="explain"><img src="images/cm_images/member_form_bullet2.png" alt="필수" />표시된 것은 필수항목입니다.</div> -->
+	</div>
+	<!-- / 단락타이틀 -->
+	<div class="cm_order_form if_noinput">
+		<ul>
+<? if($r[o_promotion_price] > 0) { //쿠폰, 포인트 할인금액 2015-11-13 LCY002  ?>
+		         <li class="ess ">
+		              <span class="opt">할인 상세금액</span>
+		              <div class="value">
+					<div class="benefit_sum">
+						<dl>
+				                 		<dd><span class="lineup">프로모션코드 : <strong><?=number_format($r['o_promotion_price'])?></strong>원<span class="shape"></span></span></dd>
+
+						</dl>
+					</div>
+		              </div>
+
+		         </li>
+
+	<? } ?>
+			<li class="ess ">
+				<span class="opt">최종 결제금액</span>
+				<div class="value"><strong><?=number_format($r['tPrice'])?></strong>원<?=($ol['ool_escrow_fee']>0 ? " (수수료 " . number_format($ol['ool_escrow_fee']) . "원 포함)" : null)?></div>
+			</li>
+			<li class="ess ">
+				<span class="opt">결제수단 선택</span>
+				<div class="value"><?=$arr_paymethod_name[$r['paymethod']]?></div>
+			</li>
+			<?
+				if( $r['paymethod'] == "V" ) {
+					$ol = _MQ("select * from odtOrderOnlinelog where ool_ordernum = '$ordernum' and ool_type='R' order by ool_uid desc limit 1");
+					$o_price_real = $ol['ool_amount_total'];
+			?>
+			<li class="ess">
+				<span class="opt">입금은행</span>
+				<div class="value"><?=$ol['ool_account_num']?> (<?=$ol['ool_bank_name']?>)</div>
+			</li>
+			<li class="ess ">
+				<span class="opt ">입금자명</span>
+				<div class="value"><?=$ol['ool_deposit_name']?> <?=$r['taxorder']=="Y"?"(현금영수증 발행을 신청하였습니다)":""?></div>
+			</li>
+			<? } ?>
+			<? if($r['paymethod'] == "B") { ?>
+			<li class="ess">
+				<span class="opt">입금은행</span>
+				<div class="value"><?=$r['paybankname']?></div>
+			</li>
+			<li class="ess ">
+				<span class="opt ">입금예정일</span>
+				<div class="value"><?=$r['paydatey']."-".$r['paydatem']."-".$r['paydated']?></div>
+			</li>
+			<li class="ess ">
+				<span class="opt">입금자명</span>
+				<div class="value"><?=$r['payname']?> <?=$r['taxorder']=="Y"?"<br/>(현금영수증 발행을 신청하였습니다)":""?></div>
+			</li>
+			<? } ?>
+		</ul>
+	</div>
+
+	<!-- ●●●●●●●●●● 가운데정렬버튼 -->
+	<div class="cm_bottom_button">
+		<ul>
+			<li><span class="button_pack"><a href="/m/?<?=$_PVSC?enc('d',$_PVSC):"pn=mypage.order.list"?>" title="" class="btn_lg_white">목록으로</a></span></li>
+			<?
+				// JJC : 교환/반품 : 2018-07-09
+				/* 교환/반품가능여부체크 : 취소되지않음 && (발송완료상품중 교환/반품신청이 없는 상품수 > 0) */
+
+				$arr_rropuid = array();
+				$rr_que = "select rr_opuid from odtRequestReturn where rr_ordernum = '". $ordernum ."' ";
+				$rr_res = _MQ_assoc($rr_que);
+				foreach($rr_res as $rr_k => $rr_v){
+					$ex = array_filter(explode("," , $rr_v['rr_opuid']));
+					$arr_rropuid = array_merge($arr_rropuid , $ex);
+				}
+
+				$arr_diff = array_diff(array_keys($arr_opuid) , $arr_rropuid);
+
+				if($r['canceled'] == 'N' && sizeof($arr_diff) > 0  ){
+
+			?>
+			<li><span class="button_pack"><a href="/m/?pn=service.return.form&ordernum=<?=$r['ordernum']?>" title="" class="btn_lg_black">교환/반품</a></span></li>
+			<?
+				}
+			?>
+		</ul>
+	</div>
+	<!-- // 가운데정렬버튼 -->
+
+</div><!-- .common_inner -->
+</div><!-- .common_page -->
+
+<script>
+// 옵션보기
+$(document).ready(function(){
+	$('.toggle_btn').on('click',function(){
+		var target = $(this).data('target');
+		if( $('#toggle_'+target).hasClass('option_open') ) {
+			$('.toggle_target').removeClass('option_open');
+		} else {
+			$('.toggle_target').removeClass('option_open');
+			$('#toggle_'+target).toggleClass('option_open');
+		}
+	});
+});
+
+// 주문취소
+function order_cancel(ordernum){
+	if( confirm('정말 주문을 취소하시겠습니까?') ) {
+		common_frame.location.href=("/pages/mypage.order.pro.php?_mode=cancel&ordernum=" + ordernum + "&_PVSC=<?=$_PVSC?>");
+	}
+}
+$(document).ready(function(){
+	$('#cash_issue').on('click',function(e){ // 현금영수증 신청 버튼
+		e.preventDefault();
+		if (confirm('<?=$r[ordername]?>님 <?=$r[orderhtel1]?>-<?=$r[orderhtel2]?>-<?=$r[orderhtel3]?> 번호로 현금영수증 발행을 신청합니다.')) {
+			$.ajax({
+				data: {'ordernum':'<?=$ordernum?>'},
+				type: 'POST',
+				cache: false,
+				url: '/pages/totalCashReceipt.ajax.php',
+				success: function(data) {
+					if(data=='AUTH'){ // 작업에 성공했다면 진행 - AUTH = 현금영수증 발행, OK = 현금영수증 신청 완료
+						$('#cash_status').text('현금영수증이 발행되었습니다.');
+					} else if(data=='OK') {
+						$('#cash_status').text('현금영수증 발행이 신청되었습니다.');
+					} else { // 아니라면 오류 메세지
+						alert('현금영수증 발행 신청에 실패했습니다.');
+					}
+				},
+				error:function(request,status,error){
+			alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+		   }
+			});
+		} else {
+			return false;
+		}
+	});
+});
+</script>
+
+
+
+<!-- ●●●●●●●●●● 부분취소신청 (티플형) LMH001 -->
+<div class="cm_ly_pop_tp" id="product_cancel_pop" style="display:none;">
+
+	<!--  레이어팝업 공통타이틀 영역 -->
+	<div class="title_box">부분취소/환불 신청<a href="#none" onclick="return false;" class="close btn_close" title="닫기"><span class="shape"></span></a></div>
+
+	<!-- 하얀색박스공간 -->
+	<div class="inner_box">
+
+		<!-- 설명글 -->
+		<div class="top_txt">
+			부분 취소하실 상품을 꼭 다시한번 확인하시고,<br/>
+			다음 정보를 입력해주시면 관리자의 확인 후 처리됩니다.
+		</div>
+
+		<!-- 상품정보 -->
+		<div class="this_item">
+			<div class="thumb"><a href="#none" onclick="return false;"><img class="product_thumb" src="" alt="" /></a></div>
+			<div class="info">
+				<div class="info_title">부분취소 신청하실 상품정보</div>
+				<dl>
+					<dt class="product_name"></dt>
+					<dd class="product_option"></dd>
+				</dl>
+				<div class="info_price">
+
+					<? // 2016-11-30 ::: 부분취소 - 할인비용 항목 추가 ::: JJC ?>
+					<span class="txt">
+						상품금액 : <span class="part_product_price">0</span> ,
+						배송비용 : <span class="part_delivery_price">0</span><br>
+						할인비용 : <span class="part_discount_price">0</span> ,<? // 2016-11-30 ::: 부분취소 - 할인비용 항목 추가 ::: JJC ?>
+						환불금액 : <span class="part_return_price">0</span>
+					</span>
+					<? // 2016-11-30 ::: 부분취소 - 할인비용 항목 추가 ::: JJC ?>
+
+				</div>
+			</div>
+		</div>
+		<!-- / 상품정보 -->
+
+		<form name="product_cancel">
+		<input type="hidden" name="mode" value="cancel"/><input type="hidden" name="ordernum" value=""/><input type="hidden" name="op_uid" value=""/><input type="hidden" name="cancel_mem_type" value="member"/>
+		<!-- 폼들어가는곳 -->
+		<div class="cm_board_form">
+			<ul>
+				<li>
+					<span class="opt">환불수단</span>
+					<div class="value">
+                        <?php if(in_array($row_setup['P_KBN'],array('I','A','K','L','B','D'))) { ?>
+                            <?php if( !in_array($r['paymethod'],array('C','L','G')) ) { ?>
+								<label class="save_check"><input type="radio" name="cancel_type" class="cancel_type_pg" value="pg"/>직접 환불</label>&nbsp;&nbsp;&nbsp;
+                            <?php }else{ ?>
+                                <label class="save_check"><input type="radio" name="cancel_type" class="cancel_type_pg" value="pg"/>PG사 결제 취소</label>&nbsp;&nbsp;&nbsp;
+                            <?php } ?>
+                        <?php } ?>
+					</div>
+				</li>
+				<?php if( !in_array($r['paymethod'],array('C','L','G')) ) { ?>
+				<li class="view_pg" style="display:none;">
+					<span class="opt">환불계좌</span>
+					<div class="value">
+						<?// 2016-11-30 ::: 깨짐 수정 ::: JJC ?>
+						<div class="select">
+							<span class="shape"></span>
+							<select name="cancel_bank" class="select_design">
+								<?php foreach($ksnet_bank as $kk=>$vv) { ?>
+								<option value="<?=$kk?>" <?=$row_member[cancel_bank]==$kk?'selected':''?>><?=$vv?></option>
+								<?php } ?>
+							</select>
+						</div>
+						<input type="text" name="cancel_bank_account" class="input_design icon_bank" value="<?=$row_member[cancel_bank_account]?>" placeholder="계좌번호" />
+						<input type="text" name="cancel_bank_name" class="input_design icon_name" value="<?=$row_member[cancel_bank_name]?>" placeholder="예금주"/>
+						<?// 2016-11-30 ::: 깨짐 수정 ::: JJC ?>
+						<label class="save_check"><input type="checkbox" name="save_myinfo" value="Y"/>나의 정보에 함께 저장하기</label>
+					</div>
+				</li>
+				<?php } ?>
+				<li>
+					<span class="opt">전달내용</span>
+					<div class="value">
+						<textarea name="cancel_msg" rows="3" cols="" class="textarea_design" placeholder="관리자에게 전달하실 내용이 있다면 입력해주세요." ></textarea>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- / 폼들어가는곳 -->
+
+		<!-- 레이어팝업 버튼공간 -->
+		<div class="cm_bottom_button">
+			<ul>
+				<li><span class="button_pack"><button type="submit" class="btn_md_color">취소신청</button></span></li>
+				<li><span class="button_pack"><a href="#none" onclick="return false;" title="" class="close btn_md_black">닫기<span class="edge"></span></a></span></li>
+			</ul>
+		</div>
+		<!-- / 레이어팝업 버튼공간 -->
+		</form>
+
+	</div>
+	<!-- / 하얀색박스공간 -->
+
+</div>
+<!-- ●●●●●●●●●● 부분취소신청 (티플형) -->
+<div class="cm_ly_pop_tp" id="product_cancel_view_pop" style="display:none;">
+
+	<!--  레이어팝업 공통타이틀 영역 -->
+	<div class="title_box">부분취소/환불 신청 내역<a href="#none" onclick="return false;" class="close btn_close" title="닫기"><span class="shape"></span></a></div>
+
+	<!-- 하얀색박스공간 -->
+	<div class="inner_box">
+
+		<!-- 설명글 -->
+		<div class="top_txt">
+			<span style="font-size:inherit; color:inherit; font-weight:inherit;" class="cancel_date"></span>에 부분취소 요청하신 내역입니다.
+		</div>
+
+		<!-- 상품정보 -->
+		<div class="this_item">
+			<div class="thumb"><a href="#none" onclick="return false;"><img class="product_thumb" src="" alt="" /></a></div>
+			<div class="info">
+				<div class="info_title">부분취소 신청하신 상품정보</div>
+				<dl>
+					<dt class="product_name"></dt>
+					<dd class="product_option"></dd>
+				</dl>
+				<div class="info_price">
+					<? // 2016-11-30 ::: 부분취소 - 할인비용 항목 추가 ::: JJC ?>
+					<span class="txt">
+						상품금액 : <span class="part_product_price">0</span> ,
+						배송비용 : <span class="part_delivery_price">0</span><br>
+						할인비용 : <span class="part_discount_price">0</span> , <? // 2016-11-30 ::: 부분취소 - 할인비용 항목 추가 ::: JJC ?>
+						환불금액 : <span class="part_return_price">0</span>
+					</span>
+					<? // 2016-11-30 ::: 부분취소 - 할인비용 항목 추가 ::: JJC ?>
+				</div>
+			</div>
+		</div>
+		<!-- / 상품정보 -->
+
+		<div class="cm_board_form">
+			<ul>
+				<li>
+					<span class="opt">환불수단</span>
+					<div class="value">
+                        <?php if(in_array($row_setup['P_KBN'],array('I','A','K','L','B'))) { ?>
+                            <?php if( !in_array($r['paymethod'],array('C','L','G')) ) { ?>
+                                <label class="save_check"><input type="radio" name="cancel_type_val" disabled class="cancel_type_pg" value="pg"/>직접 환불</label>&nbsp;&nbsp;&nbsp;
+                            <?php }else{ ?>
+                                <label class="save_check"><input type="radio" name="cancel_type_val" disabled class="cancel_type_pg" value="pg"/>PG사 결제 취소</label>&nbsp;&nbsp;&nbsp;
+                            <?php } ?>
+                        <?php } ?>
+					</div>
+				</li>
+				<?php if( !in_array($r['paymethod'],array('C','L','G')) ) { ?>
+				<li class='cancel_bank_wrap'>
+					<span class="opt">환불계좌</span>
+					<div class="value">
+						<input type="text" name="cancel_bank_name" class="input_design icon_name" value="" readonly placeholder="예금주"/>
+						<div class="select"><span class="shape"></span>
+						<select name="cancel_bank" readonly class="select_design">
+							<option value="" selected></option>
+						</select>
+						</div>
+						<input type="text" name="cancel_bank_account" class="input_design icon_bank" value="" readonly placeholder="계좌번호" />
+					</div>
+				</li>
+				<? } ?>
+				<li>
+					<span class="opt">전달내용</span>
+					<div class="value">
+						<textarea name="cancel_msg" rows="3" cols="" class="textarea_design" readonly placeholder="관리자에게 전달하신 내용이 없습니다." ></textarea>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- / 폼들어가는곳 -->
+
+		<!-- 레이어팝업 버튼공간 -->
+		<div class="cm_bottom_button">
+			<ul>
+				<li><span class="button_pack"><a href="#none" onclick="return false;" title="" class="close btn_md_white">닫기<span class="edge"></span></a></span></li>
+			</ul>
+		</div>
+		<!-- / 레이어팝업 버튼공간 -->
+
+	</div>
+	<!-- / 하얀색박스공간 -->
+
+</div>
+<script>
+$(document).ready(function(){
+	$('input[name=cancel_type]').on('change',function(){
+		var type = $(this).val();
+		if( type=='pg' ) { $('.view_pg').show(); } else { $('.view_pg').hide(); }
+	});
+	var $product_pop = $('#product_cancel_pop');
+	$('.product_cancel').on('click',function(){
+		var ordernum = $(this).data('ordernum'), op_uid = $(this).data('opuid'), $product_pop = $('#product_cancel_pop'), $product_form = $('form[name=product_cancel]');
+		$.ajax({
+			data: {'ordernum': ordernum, 'op_uid': op_uid, 'mode': 'product'},
+			type: 'POST',
+			cache: false,
+			url: '/pages/mypage.order.view.ajax.php',
+			dataType: 'JSON',
+			success: function(data) {
+				if(data['result']=='OK'){
+					$product_pop.find('.product_thumb').attr('src',data['data']['image']);
+					$product_pop.find('.product_name').text(data['data']['name']);
+
+					 // 2016-11-30 ::: 부분취소 - 할인비용 항목 추가 ::: JJC
+					$product_pop.find('.part_product_price').text(data['data']['price']);//상품금액
+					$product_pop.find('.part_delivery_price').text(data['data']['delivery']);//배송비용
+					$product_pop.find('.part_discount_price').text(data['data']['discount']);//할인비용
+					$product_pop.find('.part_return_price').text(data['data']['return']);//환불금액
+					 // 2016-11-30 ::: 부분취소 - 할인비용 항목 추가 ::: JJC
+
+					if(data['data']['option']) {
+						$product_pop.find('.product_option').text('옵션: ' + data['data']['option']);
+						if(data['data']['addoption']) {
+							$product_pop.find('.product_option').append('<br/>추가옵션: '+data['data']['addoption']);
+						}
+					} else { $product_pop.find('.product_option').text(''); }
+					$product_form.find('input[name=ordernum]').val(ordernum);
+					$product_form.find('input[name=op_uid]').val(op_uid);
+					if(data['data']['pg_check']=='N') {
+						$('input[name=cancel_type].cancel_type_pg').parent().hide();
+						$('input[name=cancel_type].cancel_type_pg').prop('disabled',true);
+						$('input[name=cancel_type].cancel_type_point').prop('checked',true).trigger('change');
+					}
+					/*$('.post_hide_section').hide();
+					$product_pop.show();*/
+					$('#product_cancel_pop').lightbox_me({
+						centered: true, closeEsc: false, overlaySpeed: 0, lightboxSpeed: 0,
+						onLoad: function() { },
+						onClose: function(){
+							$product_form.find('input[name=ordernum]').val('');
+							$product_form.find('input[name=op_uid]').val('');
+						}
+					});
+				} else {
+					alert(data['result_text']);
+				}
+			},
+			error:function(request,status,error){
+				alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+			}
+		});
+	});
+
+	$('form[name=product_cancel]').on('submit',function(e){ e.preventDefault();
+
+		<?// 2016-11-30 ::: 사전체크 ::: JJC ?>
+		var app_cancel_type = $("form[name=product_cancel] input[name=cancel_type]").filter(function() {if (this.checked) return this;}).val(); // 선택한 환불수단
+		app_cancel_type = app_cancel_type == undefined ? '' : app_cancel_type;// - undefined 초기화
+		if( app_cancel_type == '' ){ alert('환불수단을 선택해주시기 바랍니다.'); return false; }
+
+		<? if( !in_array($v[o_paymethod],array('card','point')) ) { ?>
+			if( $('form[name=product_cancel] input[name=cancel_bank_name]').val() == '' && ( $('input[name=cancel_type]:checked').val() != 'card' && $('input[name=cancel_type]:checked').val() != 'point' )){ alert('예금주를 입력해주시기 바랍니다.'); return false; }
+			if( $('form[name=product_cancel]  select[name=cancel_bank]').val() == ''  && ( $('input[name=cancel_type]:checked').val() != 'card' && $('input[name=cancel_type]:checked').val() != 'point' ) ){ alert('은행을 선택해주시기 바랍니다.'); return false; }
+			if( $('form[name=product_cancel]  input[name=cancel_bank_account]').val() == ''  && ( $('input[name=cancel_type]:checked').val() != 'card' && $('input[name=cancel_type]:checked').val() != 'point' ) ){ alert('계좌번호를 입력해주시기 바랍니다.'); return false; }
+		<? } ?>
+		<?// 2016-11-30 ::: 사전체크 ::: JJC ?>
+
+		if(confirm("정말 주문을 취소하시겠습니까?")===true) {
+			var data = $(this).serialize();
+			$.ajax({
+				data: data,
+				type: 'POST',
+				cache: false,
+				url: '/pages/mypage.order.view.ajax.php',
+				success: function(data) {
+					if(data=='OK') {
+						alert('성공적으로 취소요청 되었습니다.'); location.reload(); return false;
+					} else {
+						alert(data);
+					}
+				},
+				error:function(request,status,error){
+					alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+				}
+			});
+		}
+	});
+	$('#product_cancel_pop .close').on('click',function(){
+		$product_pop.hide();
+		$('.post_hide_section').show();
+	});
+});
+</script>
+<script>
+$(document).ready(function(){
+	var $product_pop = $('#product_cancel_view_pop');
+	$('.product_cancel_view').on('click',function(){
+		var ordernum = $(this).data('ordernum'), op_uid = $(this).data('opuid'), $product_pop = $('#product_cancel_view_pop');
+		$.ajax({
+			data: {'ordernum': ordernum, 'op_uid': op_uid, 'mode': 'view'},
+			type: 'POST',
+			cache: false,
+			url: '/pages/mypage.order.view.ajax.php',
+			dataType: 'JSON',
+			success: function(data) {
+				if(data['result']=='OK'){
+					$product_pop.find('.product_thumb').attr('src',data['data']['image']);
+					$product_pop.find('.product_name').text(data['data']['name']);
+
+
+					// 2016-11-30 ::: 부분취소 - 할인비용 항목 추가 ::: JJC
+					$product_pop.find('.part_product_price').text(data['data']['price']);//상품금액
+					$product_pop.find('.part_delivery_price').text(data['data']['delivery']);//배송비용
+					$product_pop.find('.part_discount_price').text(data['data']['discount']);//할인비용
+					$product_pop.find('.part_return_price').text(data['data']['return']);//환불금액
+					// 2016-11-30 ::: 부분취소 - 할인비용 항목 추가 ::: JJC
+
+					$product_pop.find('.cancel_date').text(data['data']['date']);
+					$product_pop.find('select[name=cancel_bank] option').text(data['data']['bank']);
+					$product_pop.find('input[name=cancel_bank_account]').val(data['data']['bank_account']);
+					$product_pop.find('input[name=cancel_bank_name]').val(data['data']['bank_name']);
+					$product_pop.find('textarea[name=cancel_msg]').val(data['data']['msg']);
+					$product_pop.find('input[name=cancel_type_val].cancel_type_'+data['data']['cancel_type']).prop('checked',true);
+					if(data['data']['option']) {
+						$product_pop.find('.product_option').text('옵션: ' + data['data']['option']);
+						if(data['data']['addoption']) {
+							$product_pop.find('.product_option').append('<br/>추가옵션: '+data['data']['addoption']);
+						}
+					} else { $product_pop.find('.product_option').text(''); }
+					if(data['data']['cancel_type']!='pg') {
+						$product_pop.find('.cancel_bank_wrap').hide();
+					}
+					/*$('.post_hide_section').hide();
+					$product_pop.show();*/
+					$('#product_cancel_view_pop').lightbox_me({
+						centered: true, closeEsc: false, overlaySpeed: 0, lightboxSpeed: 0,
+						onLoad: function() { },
+						onClose: function(){
+							$product_form.find('input[name=ordernum]').val('');
+							$product_form.find('input[name=op_uid]').val('');
+						}
+					});
+				} else {
+					alert(data['result_text']);
+				}
+			},
+			error:function(request,status,error){
+				alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+			}
+		});
+	});
+	$('#product_cancel_view_pop .close').on('click',function(){
+		$product_pop.hide();
+		$('.post_hide_section').show();
+	});
+});
+</script>
+<!-- / 부분취소신청 -->

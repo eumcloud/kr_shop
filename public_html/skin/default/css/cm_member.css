@@ -1,0 +1,165 @@
+@charset 'utf-8';
+
+/*
+	copyright(c) 상상너머·원데이넷 all rights reserved.
+	허용된 라이센스이외 무단도용재배포를 금합니다.
+*/
+
+
+/* ●●●●●●●●●● 로그인 */
+.cm_member_login {overflow:hidden; padding:80px 60px; background:#fff;}
+.cm_member_login li {list-style:none}
+.cm_member_login .title_box {margin-bottom:20px; overflow:hidden; font-family:calibri; font-size:50px; color:#333; letter-spacing:-1px; font-weight:600;}
+.cm_member_login .form_box {position:relative; width:500px; margin:0 auto; overflow:hidden}
+.cm_member_login .form_box ul {overflow:hidden; position:relative; float:left;}
+.cm_member_login .form_box li {margin:0 0 5px 0; overflow:hidden; position:relative;}
+.cm_member_login .form_box .input_design {height:63px; line-height:63px; width:353px; font-size:19px; text-indent:55px; color:#888; float:left; border:0; background:#ededed; border:1px solid #d1d1d1;}
+.cm_member_login .form_box .input_design:focus {color:#000; background-color:#fafafa; border:1px solid #999;}
+.cm_member_login .form_box .login_id:before {content:''; width:63px; height:63px; position:absolute; left:0; top:0; background:transparent url('../images/cm_images/member_login_id.png') center center no-repeat}
+.cm_member_login .form_box .login_pw:before {content:''; width:63px; height:63px; position:absolute; left:0; top:0; background:transparent url('../images/cm_images/member_login_pw.png') center center no-repeat}
+.cm_member_login .form_box .save_id {clear:both; overflow:hidden; }
+.cm_member_login .form_box .save_id label {padding:5px 0; line-height:15px; color:#666; float:left; font-size:11px; letter-spacing:-1px}
+.cm_member_login .form_box .save_id label:hover {color:#ff0000}
+.cm_member_login .form_box .save_id input {height:15px; margin:0 5px 0 0; float:left;}
+.cm_member_login .btn_login {background: #da0500; width:140px; height:135px; border:0; color:#fff; font-size:25px; font-family:calibri; font-weight:600; float:right;}
+.cm_member_login .btn_login:hover {background: #9b0400; color:#fff;}
+.cm_member_login .btn_box {width:500px; margin:20px auto 0 auto; overflow:hidden; text-align:center; position:relative;}
+.cm_member_login .btn_box ul {border:1px solid #eee; overflow:hidden;}
+.cm_member_login .btn_box li {float:left; text-align:center; width:50%; letter-spacing:-1px; color:#999; padding:20px 0;  list-style:none; overflow:hidden; font-size:12px;}
+.cm_member_login .btn_box li:hover {color:#000}
+.cm_member_login .btn_box:before {content:''; width:1px; height:100%; background:#eee; position:absolute; left:50%; top:0;}
+
+.cm_member_login .btn_box2 .btn_box2_1 {border:1px solid #eee; overflow:hidden;}
+.cm_member_login .btn_box2 .btn_box2_2 {float:left; text-align:center; width:100%; letter-spacing:-1px; color:#999; padding:20px 0;  list-style:none; overflow:hidden; font-size:12px;}
+.cm_member_login .btn_box2 .btn_box2_2:hover {color:#000}
+
+.cm_member_login .button_pack {padding:0; margin:10px 0 0 0;}
+.cm_member_login .button_pack a {width:115px; text-align:center;}
+
+
+
+
+
+
+/* ●●●●●●●●●● 아이디비번찾기 */
+.cm_member_find {overflow:hidden; padding:60px; position:relative;  background:#fff;}
+.cm_member_find:before {content:''; width:1px; height:300px; background:#eee; position:absolute; left:50%; top:60px;}
+.cm_member_find li {list-style:none}
+.cm_member_find .title_img {height:80px; color:#999; font-size:17px; font-weight:normal; letter-spacing:-1px; }
+.cm_member_find .title_img strong {font-family:calibri; font-size:40px; color:#333; font-weight:600;  }
+.cm_member_find .guide_text {overflow:hidden; clear:both; padding-top:30px;}
+.cm_member_find .guide_text li {background:transparent url('../images/cm_images/bullet_black.gif') left 7px no-repeat; padding-left:6px;  color:#999; line-height:16px; margin-right:0 !important}
+.cm_member_find .result_box {background:#fff; border:1px solid #ddd; width:100%; height:150px; line-height:17px; padding:30px 0; font-size:11px; text-align:center; position:absolute; z-index:55}
+.cm_member_find .result_box .result_txt {font-weight:600; font-size:17px; color:#333; margin-bottom:15px; line-height:19px;}
+.cm_member_find .result_box em {color:#ff0000}
+.cm_member_find .result_box .cm_button_area {margin-top:20px}
+.cm_member_find .left_box {float:left; width:50%;}
+.cm_member_find .left_box .form {margin-right:60px}
+.cm_member_find .right_box {float:right; width:50%;}
+.cm_member_find .right_box .form {margin-left:60px}
+.cm_member_find .form {position:relative;}
+.cm_member_find .form li {margin:0 162px 5px 0; }
+.cm_member_find .form .input_design {height:63px; line-height:63px; width:100%; font-size:17px; padding-left:15px; color:#888; background:#eee; border:1px solid #d1d1d1;}
+.cm_member_find .form .input_design:focus {color:#000; background-color:#fafafa; border:1px solid #999;}
+.cm_member_find .btn_ok {width:140px; height:135px; border:0; background: #56585f; color:#fff; font-size:30px; font-family:calibri; position:absolute; right:0; top:80px;}
+.cm_member_find .btn_ok:hover {background: #222;}
+
+
+
+/* ●●●●●●●●●● 단락 타이틀 */
+.cm_member_title {font-weight:600; letter-spacing:-2px; font-size:17px; border-bottom:2px solid #707070; padding-bottom:10px; position:relative; color:#333; margin-top:30px;}
+.cm_member_title strong {color:#ff0000; font-weight:600}
+.cm_member_title .explain {position:absolute; right:0; top:10px; font-weight:normal; font-size:11px; color:#999; letter-spacing:-1px;}
+.cm_member_title+ .cm_member_form {border-top:0}
+
+
+
+/* ●●●●●●●●●● 약관동의  */
+.cm_member_agree {overflow:hidden; background:#fafafa; padding:20px 20px 0 20px;}
+.cm_member_agree .text_box {background:#fff; border:1px solid #ccc; overflow:hidden;}
+.cm_member_agree .textarea_design {margin:0 auto; background:#fff; padding:10px; width:98%; line-height:18px; height:150px; color:#999;}
+.cm_member_agree .arrow {position:absolute; left:50%; bottom:0; margin:0 0 -16px -16px;}
+.cm_member_agree .agree_check {padding:10px 0; text-align:center; overflow:hidden; position:relative;}
+.cm_member_agree .agree_check label {padding:10px 0; overflow:hidden; color:#555;}
+.cm_member_agree .agree_check input {float:left; margin:1px 5px 0 0}
+.cm_member_agree .agree_check label:hover {color:#ff0000}
+.cm_member_agree .btn_view_all {position:absolute; right:0; top:13px; background:#fff url('../images/cm_images/member_text_view.png') 15px center no-repeat; border:1px solid #ddd; padding:6px 15px 6px 35px; border-radius:30px}
+.cm_member_agree .btn_view_all:hover {border:1px solid #666; background-color:#eee}
+
+
+
+/* ●●●●●●●●●● 입력폼테이블 */
+.cm_member_form {background:#fbfbfb; border-top:1px solid #ddd}
+.cm_member_form ul {overflow:hidden}
+.cm_member_form li {list-style:none; position:relative; border-bottom:1px solid #dedede; width:100%; clear:both}
+.cm_member_form .opt {position:absolute; left:15px; top:10px; font-weight:600; color:#333; height:34px; line-height:34px; background:transparent url('../images/cm_images/member_form_bullet.png') left center no-repeat; padding-left:15px}
+.cm_member_form .value {margin-left:135px; background:#fff; border-left:1px solid #dedede; overflow:hidden; padding:12px; line-height:32px; color:#333; letter-spacing:0px;}
+.cm_member_form .ess .opt {background-image:url('../images/cm_images/member_form_bullet2.png')}
+.cm_member_form .double {float:left; width:50%; clear:none}
+.cm_member_form .input_design {width:100%; background:#f1f1f1; border:1px solid #c1c1c1; border-right:0; border-bottom:0; height:34px; line-height:33px; text-indent:10px; float:left; color:#666; border-radius:5px; letter-spacing:0px;}
+.cm_member_form .input_design:focus {background-color:#ddd; color:#333}
+.cm_member_form .input_double {overflow:hidden; clear:both; }
+.cm_member_form .input_double .input_wrap {margin-top:10px; width:50%; float:left; }
+.cm_member_form .input_double .input_wrap:first-of-type div {margin-right:10px}
+.cm_member_form .textarea_design {border:1px solid #ccc; padding:4px; color:#333; width:99%; line-height:18px; height:80px;}
+.cm_member_form .textarea_design:focus {border:1px solid #000; background:#fafafa}
+.cm_member_form .select_design {padding:0 10px; height:34px; line-height:33px; width:100%; border:1px solid #ccc;}
+.cm_member_form .dash {float:left; margin:15px 5px 0 5px; font-size:15px; width:10px; height:1px; background:#ccc;}
+.cm_member_form .button_pack {float:left; margin-left:10px;}
+.cm_member_form label {padding:0 15px; border-radius:30px; border:1px solid #eee; height:33px; line-height:33px; line-height:36px\0; float:left; margin-right:5px;}
+.cm_member_form label:hover {color:#ff0000; border:1px solid #aaa}
+.cm_member_form label input {margin:10px 5px 0 0}
+.cm_member_form .tip_txt {clear:both; padding-top:5px; margin-left:5px}
+.cm_member_form .tip_txt dd {background:transparent url('../images/cm_images/member_tip_bullet_b.png') left 8px no-repeat; line-height:1.8; padding-left:6px; color:#999; font-size:11px;}
+.cm_member_form .tip_txt dt {background:transparent url('../images/cm_images/member_tip_bullet_r.png') left 8px no-repeat; line-height:1.8; padding-left:6px; color:#ff4949; font-size:11px;}
+
+
+
+
+
+/* ●●●●●●●●●● 가입완료메세지 */
+.cm_member_ok_message {background:#fff; overflow:hidden; padding:60px; text-align:center;}
+.cm_member_ok_message .notice {font-size:30px; letter-spacing:-2px; margin:30px 0; color:#888; border-bottom:1px dashed #ccc; padding-bottom:20px; font-family:'나눔고딕','NanumGothic'; font-weight:400}
+.cm_member_ok_message .notice b,.cm_member_ok_message .notice strong {color:#000; font-weight:600; font-family:inherit}
+.cm_member_ok_message .txt {font-size:15px; margin-bottom:20px; letter-spacing:-1px;}
+.cm_member_ok_message .txt b {color:#ff4800; font-weight:800}
+
+
+
+
+/* ●●●●●●●●●● 휴면계정 첫화면 */
+.cm_member_sleep {overflow:hidden; padding:80px; background:#fff; text-align:center; }
+.cm_member_sleep .inner_box {padding:80px 50px 60px 50px; position:relative; background:#49515d;}
+.cm_member_sleep .inner_box .top_ic {width:60px; height:60px; background:transparent url('../images/cm_images/member_sleep_ic.png') center center no-repeat; position:absolute; left:50%; top:-30px; margin-left:-30px}
+.cm_member_sleep .title_box {overflow:hidden; font-family:"NanumGothic"; font-size:40px; color:#fff; letter-spacing:-1px; font-weight:600;}
+.cm_member_sleep .guide_txt {font-size:14px; color:#888; padding:30px 0 40px 0; line-height:19px; }
+.cm_member_sleep .guide_txt strong {font-weight:400; color:#ccc}
+.cm_member_sleep .btn_box {overflow:hidden;}
+.cm_member_sleep .btn_email_ok {border-radius:100px; background:#d1332f; padding:0 60px}
+.cm_member_sleep .btn_email_ok .txt {color:#fff; font-size:14px; line-height:60px; background:transparent url('../images/cm_images/member_sleep_btn.png') left 12px no-repeat; padding-left:40px; font-weight:600}
+.cm_member_sleep .btn_email_ok:hover {background:#a82926;}
+
+
+
+
+/* ●●●●●●●●●● 비밀번호변경안내 */
+.cm_member_password {overflow:hidden; padding:80px 100px 60px 100px; background:#fff; }
+.cm_member_password .top_txt {background:transparent url('../images/cm_images/password_img.png') left top no-repeat; padding-left:130px;}
+.cm_member_password .top_txt dt {font-family:"NanumGothic"; font-size:45px; color:#49515d; letter-spacing:-2px; font-weight:600;}
+.cm_member_password .top_txt dd  {color:#666; font-family:"NanumGothic"; font-size:19px; margin-bottom:5px; letter-spacing:-1px;}
+.cm_member_password .guide_txt {margin:30px 10px 40px 10px}
+.cm_member_password .guide_txt li {list-style:none; color:#999; line-height:20px; position:relative; padding-left:8px}
+.cm_member_password .guide_txt li:before {content:''; width:2px; height:2px; position:absolute; left:0; top:8px; background:#333; border-radius:100px; }
+.cm_member_password .guide_txt strong {font-weight:400; color:#ff6600}
+.cm_member_password .cm_member_form {position:relative; }
+.cm_member_password .cm_member_form .value {padding-right:330px;}
+.cm_member_password .add_txt {position:absolute; right:0; top:0; text-align:center; width:330px; height:99%; z-index:2; background:#fff;}
+.cm_member_password .add_txt strong {font-weight:400; color:#000}
+.cm_member_password .add_txt .lineup {margin-top:70px; color:#888; line-height:17px; }
+
+
+
+
+/* 가입연령관련 문구추가 2017-09-08 */
+.cm_auth_tip {overflow:hidden; margin-top:20px; text-align:center;}
+.cm_auth_tip .tx {font-size:11px; color:#999; background:transparent url('../images/cm_images/auth_tip_icon.gif') left 0 no-repeat; padding-left:20px; letter-spacing:-0.5px; line-height:17px; min-height:18px}
